@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "There was nothing he could do ____ wait. The correct option to complete the sentence is",
+    "options": { "A": "and", "B": "otherwise", "C": "than", "D": "except" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 2,
+    "question": "The boys were walking ____ the road. The correct option to complete the sentence is",
+    "options": { "A": "after", "B": "into", "C": "along", "D": "beside" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 3,
+    "question": "Spot the error in the following sentence: Which newspaper do you subscribe for?",
+    "options": { "A": "Which newspaper", "B": "do you", "C": "subscribe for", "D": "No error" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 4,
+    "question": "Choose the most appropriate meaning of the idiom 'To cry wolf'.",
+    "options": { "A": "To cry copiously", "B": "To raise false alarm", "C": "To be frightened", "D": "To scare people" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 5,
+    "question": "If someone uses the idiom 'a black sheep', he/she is talking about",
+    "options": { "A": "a sheep that in black", "B": "an unlucky person", "C": "an ugly person", "D": "None of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 6,
+    "question": "A large collection of files are called",
+    "options": { "A": "folder", "B": "records", "C": "sectors", "D": "database" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 7,
+    "question": "When one is 'airing dirty linen in public', the person is",
+    "options": { "A": "discussing private affairs in public", "B": "hanging out clothes in the open to dry", "C": "standing up and fighting", "D": "complaining" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 8,
+    "question": "If you talking about a 'tit for tat' situation, you are",
+    "options": { "A": "making someone angry", "B": "doing harm as done to you", "C": "rewarding people for the good done", "D": "taking advantage of someone" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 9,
+    "question": "My mother cooks delicious food. Here the underlined word can be replaced by",
+    "options": { "A": "bland", "B": "insipid", "C": "tasty", "D": "None of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 10,
+    "question": "Identify the synonym for the underlined word in the sentence below: He was dismayed when he discovered that his favourite book was lost.",
+    "options": { "A": "confused", "B": "scared", "C": "worried", "D": "frightened" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 11,
+    "question": "My father is suffering from diabetes for the past three years. Here the underlined word can be replaced by",
+    "options": { "A": "has been suffering", "B": "has suffered", "C": "is suffer", "D": "No improvement" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 12,
+    "question": "Despite of their differences on matters of principles, they all agree on the demand of hike in salary. The sentence can be improved by replacing the underlined word with",
+    "options": { "A": "Despite for their", "B": "Despite their", "C": "Despite of there", "D": "No improvement" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 13,
+    "question": "The new owners of the paper changed the ____ completely.",
+    "options": { "A": "layout", "B": "outlook", "C": "outlay", "D": "outlet" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 14,
+    "question": "The two brothers look so ____ that it is difficult to differentiate them. The sentence can be completed by using the word",
+    "options": { "A": "same", "B": "similar", "C": "identical", "D": "alike" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 15,
+    "question": "The landslide was ____ the traffic, so he missed his flight. The word that completes the sentence is",
+    "options": { "A": "halting", "B": "obstructing", "C": "hiding", "D": "disturbing" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 16,
+    "question": "Choose the proper sequence of the parts of the sentence which are labelled E, F, G, H to produce the correct sentence. It has been established that E: Einstein was; F: although a great scientist; G: weak in arithmetic; H: right from his school days",
+    "options": { "A": "GEFH", "B": "FEGH", "C": "EFGH", "D": "HEFG" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 17,
+    "question": "Choose the proper sequence of the parts of the sentence which are labelled P, Q, R, S to produce the correct sentence. P: I wanted to tell her; Q: not to talk to him; R: not listen to me; S: but she would",
+    "options": { "A": "PQSR", "B": "PQRS", "C": "PSQR", "D": "QRPS" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 18,
+    "question": "Choose the proper sequence of the parts of the sentence which are labelled P, Q, R, S to produce the correct sentence. P: They went out in the morning by a bus; Q: to spend the day at Shillong; R: a famous tourist destination; S: some 100 km away",
+    "options": { "A": "PQRS", "B": "QRSP", "C": "RSPQ", "D": "SRQP" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 19,
+    "question": "Select the word/phrase which is closest to the opposite in meaning of the underlined word. He is a brilliant artist.",
+    "options": { "A": "great", "B": "clever", "C": "dull", "D": "budding" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 20,
+    "question": "The house looks dilapidated. The antonym of the underlined word is",
+    "options": { "A": "costly", "B": "well-furnished", "C": "broken-down", "D": "renovated" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 21,
+    "question": "Choose the appropriate word to fill in the blank. Every rash driver becomes a ____ killer.",
+    "options": { "A": "careless", "B": "reckless", "C": "potential", "D": "powerful" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 22,
+    "question": "Scarcely did the teacher entered the class when he heard the noise. The word that may be used to improve the sentence is",
+    "options": { "A": "has", "B": "had", "C": "have", "D": "will have" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 23,
+    "question": "I have already published a novel and it was an unexpected success. I thought my ____. The sentence may be completed by using the phrase",
+    "options": { "A": "chances were good", "B": "lady luck was happy", "C": "fortune was made", "D": "work is over" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 24,
+    "question": "A group of wolves is called",
+    "options": { "A": "a pack", "B": "a herd", "C": "a school", "D": "a pride" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 25,
+    "question": "An anthology is",
+    "options": { "A": "a published collection of poems/essays", "B": "an unpublished article", "C": "a secret message", "D": "a file meant for official work" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 26,
+    "question": "A person travels from one place to another at 30 km/hour and returns at 120 km/hour. If the total time taken is 5 hours, then find the distance.",
+    "options": { "A": "120 km", "B": "100 km", "C": "140 km", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 27,
+    "question": "Bishal and Aditya have to travel from Guwahati to Lakhimpur in their respective cars. Bishal is driving at 60 km/hour while Aditya is driving at 90 km/hour. Find the time taken by Aditya to reach Lakhimpur if Bishal takes 9 hours.",
+    "options": { "A": "5 hours", "B": "6 hours", "C": "8 hours", "D": "9 hours" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 28,
+    "question": "Travelling at 3/4th of the original speed, a train is 10 minutes late. Find the usual time taken by the train to complete the journey.",
+    "options": { "A": "30 minutes", "B": "60 minutes", "C": "45 minutes", "D": "20 minutes" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 29,
+    "question": "A man is swimming in a stream which flows at the rate of 1.5 km/hour. In a given time he can swim twice the distance with the stream as compared to the distance he can swim against it. Then the speed of the man is",
+    "options": { "A": "2 km/hour", "B": "3 km/hour", "C": "1.5 km/hour", "D": "4.5 km/hour" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 30,
+    "question": "The distance between Delhi and Mumbai is 440 km. A train starts from Delhi with a speed of 60 km/hour and another train starts from Mumbai at the same time with a speed of 50 km/hour. After how much time the trains will meet?",
+    "options": { "A": "44 hours", "B": "4 hours", "C": "10 hours", "D": "8 hours" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 31,
+    "question": "What will come in place of question mark (?) in the following series? 17, 26, 37, 50, 65, ?, 101",
+    "options": { "A": "82", "B": "75", "C": "78", "D": "90" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 32,
+    "question": "Determine the missing term in the series: MTH, QRK, UPN, YNQ, ____",
+    "options": { "A": "CKT", "B": "CLT", "C": "ELT", "D": "EKT" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 33,
+    "question": "Choose the missing term in the following series: W-144, U-121, S-100, Q-81, ____",
+    "options": { "A": "P-64", "B": "U-122", "C": "O-64", "D": "V-128" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 34,
+    "question": "Find the missing number in the series: 8, 11, 15, 22, 33, 51, ____, 127, 203",
+    "options": { "A": "80", "B": "53", "C": "58", "D": "69" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 35,
+    "question": "Find the wrong item in the series: 1, 4, 8, 11, 22, 25, 50, 54, 106",
+    "options": { "A": "54", "B": "11", "C": "25", "D": "50" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 36,
+    "question": "Choose the set of numbers from the four alternative sets, that is similar to the given set {14, 23, 32}.",
+    "options": { "A": "{15, 23, 31}", "B": "{14, 19, 24}", "C": "{13, 21, 29}", "D": "{12, 21, 30}" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 37,
+    "question": "Direction: In each of the following questions from 37 to 41, there is some relationship between the two terms/numbers to the left of :: and the same relationship continues between the two terms/numbers to its right. Also in each question, one term either to the right of :: or to the left of it is missing. This term/number is given as one of the alternatives given below. Find out the missing term. HINDU : DCQAV :: KINGS : ____",
+    "options": { "A": "GCQDT", "B": "GCDQT", "C": "CGDQT", "D": "GCDET" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 38,
+    "question": "COW : ____ :: LION : CUB",
+    "options": { "A": "LIZARD", "B": "CALF", "C": "PUB", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 39,
+    "question": "27 : 3 :: 64 : ____",
+    "options": { "A": "6", "B": "4", "C": "7", "D": "3" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 40,
+    "question": "MUSLIM : MOSQUE :: SIKH : ____",
+    "options": { "A": "GOLDEN TEMPLE", "B": "MEDINA", "C": "FIRE TEMPLE", "D": "GURUDWARA" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 41,
+    "question": "PERMUTATION : TIONPERMUTA :: COMBINATION : ____",
+    "options": { "A": "RMUTATIONPE", "B": "MUTATIONPER", "C": "TIONCOMBINA", "D": "BINATIONCOM" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 42,
+    "question": "Seema wants to go to the Krishna market. She moved northwards and after covering some distance turned left and moved 4 km and reached a crossing. The road in front of her led to Jaynagar while the road on to her left led to Medical College and the road on to her right led to the Krishna market. In which direction the Krishna market is located with reference to the starting point?",
+    "options": { "A": "West", "B": "North-West", "C": "South-West", "D": "East" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 43,
+    "question": "One morning after sunrise, Nandita and Ravi were sitting in a lawn with their backs towards her left-hand side. Which direction was Ravi facing?",
+    "options": { "A": "East", "B": "West", "C": "North", "D": "South" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 44,
+    "question": "A clock is so placed that at 2:00 p.m., the minute hand points towards North-West. In which direction does the hour hand point at 6:00 p.m.?",
+    "options": { "A": "North-West", "B": "South-East", "C": "North-East", "D": "West" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Kishore started walking towards North. After walking 30 meters, he turned towards left and walked 40 meters. He then turned left and walked 30 meters. He again turned left and walked 50 meters. How far is he from his original position?",
+    "options": { "A": "50 meters", "B": "40 meters", "C": "30 meters", "D": "10 meters" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 46,
+    "question": "Kunal and Vikram start from a fixed point. Kunal moves 4 km to the South, then turns left and moves 3 km. Vikram moves 3 km towards West, then turns right and moves 4 km further. How far apart are they now?",
+    "options": { "A": "7 km", "B": "13 km", "C": "10 km", "D": "14 km" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 47,
+    "question": "Choose the word which is different from the rest.",
+    "options": { "A": "Parsley", "B": "Basil", "C": "Dill", "D": "Mayonnaise" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 48,
+    "question": "The sum of the ages of a son and father is 56 years. After four years, the ages of the father will be three times that of the son. Their ages respectively are",
+    "options": { "A": "12 years, 44 years", "B": "16 years, 48 years", "C": "16 years, 42 years", "D": "18 years, 36 years" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 49,
+    "question": "If P+Q means that P is the mother of Q, P÷Q means that P is the father of Q, P−Q means that P is the sister of Q, then which of the following relationships shows that M is the daughter of R?",
+    "options": { "A": "R÷M+N", "B": "R+N÷M", "C": "R−M+N", "D": "Data inadequate" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 50,
+    "question": "What is the number of straight lines in the following figure? [refers to a diagram]",
+    "options": { "A": "10", "B": "13", "C": "12", "D": "17" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 51,
+    "question": "The polygraph or 'lie detector' primarily measures which emotion component?",
+    "options": { "A": "Attribution", "B": "Emotional expression", "C": "Physiological arousal", "D": "Vocal modulation" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 52,
+    "question": "The higher the trait EI",
+    "options": { "A": "the higher the likelihood of personality disorder", "B": "the lower the likelihood of personality disorder", "C": "the higher the likelihood of self-harm", "D": "the higher the likelihood of harm others" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 53,
+    "question": "A DSM-5 defines ____ types of personality disorders.",
+    "options": { "A": "5", "B": "8", "C": "10", "D": "12" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 54,
+    "question": "EQ was popularized by",
+    "options": { "A": "Weiner", "B": "Gardner", "C": "Goleman", "D": "None of them" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 55,
+    "question": "How many components come under the Genos workplace model of emotional intelligence?",
+    "options": { "A": "6", "B": "3", "C": "5", "D": "8" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 56,
+    "question": "Which of the following is/are considered the main feature(s) of avoidant personality disorder?",
+    "options": { "A": "Persistent social inhibition", "B": "Feelings of inadequacy", "C": "Hypersensitivity to negative evaluation", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 57,
+    "question": "An individual with a narcissistic personality disorder will routinely overestimate their abilities and inflate their accomplishments, and this is characterized by which of the following?",
+    "options": { "A": "A pervasive need for admiration", "B": "An inability to monitor reality", "C": "Impulsive behaviour such as drug abuse", "D": "Unusual ideas of reference" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 58,
+    "question": "Which of the following is the characteristic feature of emotional development during adolescence?",
+    "options": { "A": "Jealousy towards brothers/sisters in the family and peers in the school", "B": "Conflicts in motivations", "C": "Showing curiosity towards environmental objects", "D": "Tendency to show worries in respect of school or personal matters" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 59,
+    "question": "Which condition is also on the spectrum of autism disorders?",
+    "options": { "A": "Obsessive-compulsive disorder", "B": "Epilepsy", "C": "Panic disorder", "D": "Asperger syndrome" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 60,
+    "question": "Reema felt cheerful and elated for most of the afternoon and into the evening. This experience would best be described as",
+    "options": { "A": "affective state", "B": "a mood", "C": "an emotion", "D": "a trait" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 61,
+    "question": "The ability to manage emotional reactions in order to achieve one's goal is called",
+    "options": { "A": "goal-directed behaviour", "B": "cognitive control", "C": "emotional regulation", "D": "empathy" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 62,
+    "question": "Which of the following is not one of Plutchik's basic emotions?",
+    "options": { "A": "Fear", "B": "Sadness", "C": "Surprise", "D": "Pain" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 63,
+    "question": "Which might be the best predictor of why some people do not excel in school but essentially succeed in their life and career choices?",
+    "options": { "A": "Cretinism", "B": "One's intelligence quotient", "C": "Phonemes", "D": "Emotional intelligence" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 64,
+    "question": "Which of the following is not a skill associated with emotional intelligence?",
+    "options": { "A": "Experiencing love", "B": "Negotiating conflict", "C": "Being sensitive to others", "D": "Expressing pride and anger" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 65,
+    "question": "Which of the following personality attributes is associated with vulnerability to obsessive-compulsive disorder?",
+    "options": { "A": "Believing thoughts are equivalent to actions", "B": "Being overly excitable", "C": "Having a pathological commitment to autonomy", "D": "Holding perfectionistic expectations about the self" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 66,
+    "question": "Emotional intelligence is different from other intelligences because",
+    "options": { "A": "it is a set of skills", "B": "it can be measured using tests easily", "C": "it is a new type of intelligence", "D": "the focus is on emotional reasoning, ability and knowledge" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 67,
+    "question": "Emotional intelligence can be studied through",
+    "options": { "A": "all of the following options", "B": "the abilities-focussed approach", "C": "the integrative model approach", "D": "the mixed model approach" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 68,
+    "question": "Which of the following is the best predictor of academic performance?",
+    "options": { "A": "Trait EI", "B": "IQ", "C": "Personality", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 69,
+    "question": "Mixed emotional intelligence models have",
+    "options": { "A": "no significant overlap with conscientiousness, extraversion, and self-efficacy", "B": "significant overlap with conscientiousness, extraversion, and self-efficacy", "C": "non-significant overlap with conscientiousness, extraversion, and self-efficacy", "D": "little overlap with conscientiousness, extraversion, and self-efficacy" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 70,
+    "question": "Colleen found herself attracted to her psychology instructor. She would frequently go by his office just to be near him. When he didn't respond to her advances, Colleen eventually told him that she had thoughts of killing herself so that he would spend time trying to counsel her. What personality disorder best describes Colleen's thinking and behaviour?",
+    "options": { "A": "Borderline personality disorder", "B": "Schizoid personality disorder", "C": "Schizotypal personality disorder", "D": "Antisocial personality disorder" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 71,
+    "question": "Rina is having a conversation with her best friend. She is revealing how she sees herself and includes her attributes, characteristic and qualities. Rina is revealing information about her",
+    "options": { "A": "self-definition", "B": "independent self", "C": "self-concept", "D": "interdependent self" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 72,
+    "question": "As per DSM-IV-TR classification, personality disorders with odd and eccentric behaviours are classified under",
+    "options": { "A": "Cluster A", "B": "Cluster B", "C": "Cluster C and Cluster E", "D": "Cluster E" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 73,
+    "question": "____ refers to the ability or competence to express one's feelings, needs or desires openly and directly but in a respectful manner or without hurting one's feelings.",
+    "options": { "A": "Assertiveness", "B": "Empathy", "C": "Communication skill", "D": "Sympathy" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 74,
+    "question": "The triad of social impairment for individuals with autism spectrum disorder includes all of the following, except",
+    "options": { "A": "a restrictive behavioural repertoire", "B": "difficulty in communicating with others", "C": "difficulty in interacting with others", "D": "mobility difficulties" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 75,
+    "question": "Emotional intelligence is linked to romantic relationship satisfaction because emotional intelligence may be linked to",
+    "options": { "A": "giving the person higher self-esteem", "B": "agreeing with the partner all the time", "C": "having a better understanding of the partner's emotions", "D": "getting what one wants out of the relationship" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 76,
+    "question": "Which country won the Men's Hockey World Cup 2023 in Bhubaneswar?",
+    "options": { "A": "France", "B": "Australia", "C": "Germany", "D": "Belgium" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 77,
+    "question": "What is the official slogan of the 2024 Paris Olympics?",
+    "options": { "A": "Citius, Altius, Fortius", "B": "Games Wide Open", "C": "Together for a Shared Future", "D": "United by Emotion" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 78,
+    "question": "Narain Karthikeyan is a",
+    "options": { "A": "Formula one champion", "B": "Chess champion", "C": "Karate champion", "D": "Carrom champion" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 79,
+    "question": "The launch date of Chandrayaan-3 mission is",
+    "options": { "A": "July 12, 2023", "B": "July 14, 2023", "C": "July 16, 2023", "D": "July 18, 2023" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 80,
+    "question": "Which country received the torch of startup 20 from India?",
+    "options": { "A": "Cyprus", "B": "New Zealand", "C": "Netherlands", "D": "Brazil" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 81,
+    "question": "Which country inaugurated the Pokhara Regional International Airport (PRIA), with the support of China?",
+    "options": { "A": "Sri Lanka", "B": "Pakistan", "C": "Nepal", "D": "Bangladesh" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 82,
+    "question": "The United Nations declared, 2023 as the International Year of",
+    "options": { "A": "Rice", "B": "Wheat", "C": "Millets", "D": "Maize" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 83,
+    "question": "The correct chronological order of India's highest civilian awards is",
+    "options": { "A": "Bharat Ratna, Padma Vibhushan, Padma Bhushan, Padma Shri", "B": "Padma Bhushan, Bharat Ratna, Padma Vibhushan, Padma Shri", "C": "Padma Vibhushan, Padma Bhushan, Padma Shri, Bharat Ratna", "D": "Padma Shri, Bharat Ratna, Padma Vibhushan, Padma Bhushan" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 84,
+    "question": "National Science Day is celebrated in honour of",
+    "options": { "A": "A. P. J. Abdul Kalam", "B": "C. V. Raman", "C": "Vikram Sarabhai", "D": "Ashok Sen" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 85,
+    "question": "The birth anniversary of Netaji Subhas Chandra Bose on January 2023 is observed as",
+    "options": { "A": "Shahid Diwas", "B": "Parakram Diwas", "C": "Kargil Vijay Diwas", "D": "Pravasi Bharatiya Diwas" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 86,
+    "question": "Pandit Vishwa Mohan Bhatt, who has won the prestigious 'Grammy Award', is an exponent in which of the following?",
+    "options": { "A": "Guitar", "B": "Violin", "C": "Sarod", "D": "Tabla" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 87,
+    "question": "Ms. Meera Sahib Fathima Beevi is distinguished as the first lady",
+    "options": { "A": "Prime Minister of Bangladesh", "B": "Judge of the Supreme Court", "C": "Judge in the High Court", "D": "Governor of a State" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 88,
+    "question": "Who has been reappointed as the Solicitor General of India?",
+    "options": { "A": "Rohinton Fali Nariman", "B": "Mohan Parasaran", "C": "Ranjit Kumar", "D": "Tushar Mehta" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 89,
+    "question": "What is the full form of NATO?",
+    "options": { "A": "North American Treaty Organization", "B": "North Atlantic Treaty Organization", "C": "North African Treaty Organization", "D": "North Asian Treaty Organization" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 90,
+    "question": "Which one of the following is not a novel written by R. K. Narayan?",
+    "options": { "A": "Such a Long Journey", "B": "Swami and Friends", "C": "The Bachelor of Arts", "D": "The English Teacher" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 91,
+    "question": "The 'Harry Potter Series' is authored by",
+    "options": { "A": "J. K. Rowling", "B": "Carolyn Keene", "C": "P.G. Wodehouse", "D": "Franklin W. Dixon" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 92,
+    "question": "What did J. B. Dunlop invent?",
+    "options": { "A": "Automobile wheel rim", "B": "Rubber boot", "C": "Pneumatic rubber tire", "D": "Model airplanes" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 93,
+    "question": "The computer was invented by",
+    "options": { "A": "Faraday", "B": "Babbage", "C": "Maxwell", "D": "Bill Gates" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 94,
+    "question": "What is the initial outlay of the National Green Hydrogen Mission?",
+    "options": { "A": "₹ 9,744 crore", "B": "₹ 39,744 crore", "C": "₹ 19,744 crore", "D": "₹ 29,744 crore" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 95,
+    "question": "What is 'Gomphonema Rajaguruii' which was discovered recently?",
+    "options": { "A": "Algae", "B": "Bacteria", "C": "Fungi", "D": "Virus" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 96,
+    "question": "Who is known as Iron Man of India?",
+    "options": { "A": "Govind Ballabh Pant", "B": "Jawaharlal Nehru", "C": "Subhas Chandra Bose", "D": "Sardar Vallabhbhai Patel" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 97,
+    "question": "What is the expansion of DPDP Bill which was cleared by the Cabinet recently?",
+    "options": { "A": "Digital Personal Data Protection Bill", "B": "Dual Personal Data Protection Bill", "C": "Direct Personal Data Protection Bill", "D": "Diplomatic Personal Data Protection Bill" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 98,
+    "question": "Which company has started exports of aviation gasoline for the first time in India?",
+    "options": { "A": "Indian Oil Corporation", "B": "Hindustan Petroleum", "C": "Oil and Natural Gas Corporation", "D": "Bharat Petroleum" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 99,
+    "question": "The Earth Day is celebrated on",
+    "options": { "A": "22nd April", "B": "22nd March", "C": "22nd February", "D": "22nd October" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 100,
+    "question": "Who produced the first automobile?",
+    "options": { "A": "Rudolf Diesel", "B": "Henry Ford", "C": "Karl Benz", "D": "Gottlieb Daimler" },
+    "correctAnswer": "C"
+  }
+]
