@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following features of OOP would indicate code reusability?",
+    "options": { "A": "Polymorphism", "B": "Abstraction", "C": "Inheritance", "D": "Encapsulation" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 2,
+    "question": "A constructor",
+    "options": { "A": "may consist of a return type", "B": "does not consist of any return type", "C": "has some return type", "D": "of a derived class has a return type" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is/are automatically added to every class, if we do not write our own?",
+    "options": { "A": "Copy constructor", "B": "Assignment operator", "C": "Constructor without any parameter", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 4,
+    "question": "The access specifier(s) that is/are the most secure during inheritance is/are",
+    "options": { "A": "protected", "B": "private", "C": "private and default", "D": "default" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 5,
+    "question": "Which language does not support polymorphism but supports classes?",
+    "options": { "A": "Ada", "B": "C++", "C": "Java", "D": "Smalltalk" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 6,
+    "question": "Prime attribute of a relation schema R is an attribute that appears",
+    "options": { "A": "in all candidate keys of R", "B": "in some candidate keys of R", "C": "in foreign key of R", "D": "only in the primary key of R" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is not a feature of DBMS?",
+    "options": { "A": "Minimum duplication and redundancy of data", "B": "High level of security", "C": "Single-user access only", "D": "Supports ACID property" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 8,
+    "question": "What is information about data called?",
+    "options": { "A": "Hyperdata", "B": "Teradata", "C": "Metadata", "D": "Relations" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 9,
+    "question": "Which one of the options given below refers to the degree (or arity) of relation in relational database system?",
+    "options": { "A": "Number of attributes of its relation schema", "B": "Number of tuples stored in the relation", "C": "Number of entries in the relation", "D": "Number of distinct domains of its relation schema" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 10,
+    "question": "For a database relation R (a, b, c, d) where the domains of a, b, c, d include only atomic values, only the following functional dependencies and those that can be inferred from them hold: a → c, b → d. The relation is in",
+    "options": { "A": "first normal form but not in second normal form", "B": "second normal form but not in third normal form", "C": "third normal form", "D": "All of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 11,
+    "question": "____ is a hardware component that is most important for the operation of a database management system.",
+    "options": { "A": "Microphone", "B": "High speed, large capacity disk to store data", "C": "High resolution video display", "D": "Printer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 12,
+    "question": "The DBMS acts as an interface between ____ and ____ of an enterprise-class system.",
+    "options": { "A": "data, DBMS", "B": "application, SQL", "C": "database application, database", "D": "user, software" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following commands is used to remove a relation from an SQL?",
+    "options": { "A": "Drop table", "B": "Delete", "C": "Purge", "D": "Remove" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following commands is correct to delete the values in the relation teaches?",
+    "options": { "A": "Delete from teaches;", "B": "Delete from teaches where Id = 'Null';", "C": "Remove table teaches;", "D": "Drop table teaches;" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 15,
+    "question": "Which one of the following statements possibly contains the error?",
+    "options": { "A": "Select * from emp where empid=10003;", "B": "Select empid from emp where empid=10006;", "C": "Select empid from emp;", "D": "Select empid where empid=1009 and Lastname = 'GELLER';" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 16,
+    "question": "In a strict two-phase locking protocol",
+    "options": { "A": "all the exclusive locks held by the transaction are released when the transaction is completed", "B": "all the shared locks held by the transaction are released when the transaction is completed", "C": "Both (A) and (B)", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 17,
+    "question": "Memory management technique in which a system stores and retrieves data from secondary storage for use in main memory is called",
+    "options": { "A": "fragmentation", "B": "paging", "C": "mapping", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 18,
+    "question": "____ operations do not preserve non-matched tuples.",
+    "options": { "A": "Left outer join", "B": "Inner join", "C": "Natural join", "D": "Right outer join" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 19,
+    "question": "Why is the following statement erroneous? SELECT dept_name, ID, avg(salary) FROM instructor GROUP BY dept_name;",
+    "options": { "A": "Dept_id should not be used in group by clause", "B": "Group by clause is not valid in this query", "C": "Avg(salary) should not be selected", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 20,
+    "question": "The ability to query data as well as insert, delete and alter tuples is offered by",
+    "options": { "A": "TCL (Transaction Control Language)", "B": "DCL (Data Control Language)", "C": "DDL (Data Definition Language)", "D": "DML (Data Manipulation Language)" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 21,
+    "question": "____ is a set of one or more attributes taken collectively to uniquely identify a record.",
+    "options": { "A": "Primary key", "B": "Foreign key", "C": "Superkey", "D": "Candidate key" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 22,
+    "question": "CPU fetches the instruction from memory according to the value of",
+    "options": { "A": "program counter", "B": "status register", "C": "instruction register", "D": "program status word" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 23,
+    "question": "In operating system, which of the following is/are CPU scheduling algorithm(s)?",
+    "options": { "A": "Priority", "B": "Round-robin", "C": "Shortest job first", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 24,
+    "question": "The FCFS algorithm is particularly troublesome for",
+    "options": { "A": "operating system", "B": "multiprocessor system", "C": "time-sharing system", "D": "multiprogramming system" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 25,
+    "question": "If a process fails, most operating systems write the error information to a/an",
+    "options": { "A": "new file", "B": "another running process", "C": "log file", "D": "None of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 26,
+    "question": "A computer system has a 36-bit virtual address space with a page size of 8 K, and 4 bytes per page table entry. How many pages are there in the virtual address space?",
+    "options": { "A": "2^8", "B": "2^(36−32)", "C": "2^(36+32)", "D": "None of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 27,
+    "question": "With round-robin scheduling algorithm in a time-shared system",
+    "options": { "A": "using very large time slices converts it into FCFS scheduling algorithm", "B": "using very small time slices converts it into FCFS scheduling algorithm", "C": "using extremely small time slices increases performance", "D": "using very small time slices converts it into shortest job first algorithm" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 28,
+    "question": "Which of the following statements is/are true? I. Shortest remaining time first scheduling may cause starvation. II. Preemptive scheduling may cause starvation. III. Round-robin is better than FCFS in terms of response time.",
+    "options": { "A": "I only", "B": "I and III only", "C": "II and III only", "D": "I, II and III" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 29,
+    "question": "The operating system and the other processes are protected from being modified by an already running process because",
+    "options": { "A": "every address generated by the CPU is being checked against the relocation and limit registers", "B": "they have a protection algorithm", "C": "they are in different memory spaces", "D": "they are in different logical addresses" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 30,
+    "question": "Which data structure is used for implementing recursion?",
+    "options": { "A": "Stack", "B": "Queue", "C": "List", "D": "Array" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 31,
+    "question": "Level of node is distance from root to that node. For example, level of root is 1 and level of left and right children of root is 2. The maximum number of nodes on level i of a binary tree is",
+    "options": { "A": "2^(i−1)", "B": "2^i", "C": "2^(i+1)", "D": "2^[(i+1)/2]" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 32,
+    "question": "Suppose we are sorting an array of eight integers using quicksort, and we have just finished the first partitioning with the array looking like: 2 5 1 7 9 12 11 10. Which of the following statements is correct?",
+    "options": { "A": "The pivot could be either the 7 or the 9.", "B": "The pivot could be the 7, but it is not the 9.", "C": "The pivot is not the 7, but it could be the 9.", "D": "Neither the 7 nor the 9 is the pivot." },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 33,
+    "question": "Which of the following sorting algorithms in its typical implementation gives best performance when applied on an array which is sorted or almost sorted (maximum one or two elements are misplaced)?",
+    "options": { "A": "Quicksort", "B": "Heapsort", "C": "Merge sort", "D": "Insertion sort" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 34,
+    "question": "Consider a B+ tree in which the maximum number of keys in a node is 5. What is the minimum number of keys in any non-root node?",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 35,
+    "question": "The data structure required to check whether an expression contains a balanced parenthesis is",
+    "options": { "A": "queue", "B": "stack", "C": "tree", "D": "array" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 36,
+    "question": "Which data structure is needed to convert infix notation to postfix notation?",
+    "options": { "A": "Tree", "B": "Branch", "C": "Stack", "D": "Queue" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 37,
+    "question": "What is the value of the postfix expression 6 3 2 4 + − *?",
+    "options": { "A": "74", "B": "−18", "C": "22", "D": "40" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 38,
+    "question": "Which type of data structure is a ternary heap?",
+    "options": { "A": "Hash", "B": "Array", "C": "Priority stack", "D": "Priority queue" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 39,
+    "question": "In simple chaining, what data structure is appropriate?",
+    "options": { "A": "Doubly linked list", "B": "Circular linked list", "C": "Singly linked list", "D": "Binary tree" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 40,
+    "question": "What are the outputs of the following Java code? public class array { public static void main (string args[]) { int[] arr = {1, 2, 3, 4, 5}; system.out.println(arr[2]); system.out.println(arr[4]); } }",
+    "options": { "A": "4 and 2", "B": "2 and 4", "C": "5 and 3", "D": "3 and 5" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 41,
+    "question": "What is the advantage of a hash table as a data structure?",
+    "options": { "A": "Easy to implement", "B": "Faster access of data", "C": "Exhibits good locality of reference", "D": "Very efficient for less number of entries" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 42,
+    "question": "Which of the following network devices store(s) the IP address?",
+    "options": { "A": "Router", "B": "Switch", "C": "Both (A) and (B)", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 43,
+    "question": "Which of the following allows a router to respond to an ARP request that is intended for a remote host?",
+    "options": { "A": "Gateway DP", "B": "Reverse ARP (RARP)", "C": "Proxy ARP", "D": "Inverse ARP (IARP)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 44,
+    "question": "If you use either Telnet or FTP, which is the highest layer you are using to transmit data?",
+    "options": { "A": "Application", "B": "Presentation", "C": "Session", "D": "Transport" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 45,
+    "question": "Which of the following network devices work(s) on the data link layer of an OSI model?",
+    "options": { "A": "Hub", "B": "Switch", "C": "Both (A) and (B)", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following is an example of Bluetooth?",
+    "options": { "A": "Wide area network", "B": "Virtual private network", "C": "Local area network", "D": "Personal area network" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 47,
+    "question": "How many layers are there in the ISO-OSI reference model?",
+    "options": { "A": "7", "B": "5", "C": "4", "D": "6" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 48,
+    "question": "Which one of the following is not a function of network layer?",
+    "options": { "A": "Congestion control", "B": "Error control", "C": "Routing", "D": "Internetworking" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 49,
+    "question": "Which layer provides the service to user?",
+    "options": { "A": "Physical layer", "B": "Presentation layer", "C": "Session layer", "D": "Application layer" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 50,
+    "question": "What is the term used for an endpoint of an inter-process communication flow across a computer network?",
+    "options": { "A": "Port", "B": "Machine", "C": "Socket", "D": "Pipe" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 51,
+    "question": "____ are the typical examples of static images.",
+    "options": { "A": "Photographs", "B": "Files", "C": "Jokes", "D": "Messages" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 52,
+    "question": "The process of transferring files from a web page on the Internet to your computer is called",
+    "options": { "A": "uploading", "B": "forwarding", "C": "transferring", "D": "downloading" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 53,
+    "question": "Verification of a login name and password is known as",
+    "options": { "A": "configuration", "B": "accessibility", "C": "authentication", "D": "logging in" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 54,
+    "question": "Which of the following protocols is used for WWW?",
+    "options": { "A": "FTP", "B": "SMTP", "C": "TCP", "D": "HTTP" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 55,
+    "question": "When we use single transistor we obtain which gate?",
+    "options": { "A": "NOR gate", "B": "OR gate", "C": "NOT gate", "D": "NAND gate" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 56,
+    "question": "In a bipolar transistor",
+    "options": { "A": "free electrons and holes are current carriers", "B": "free electrons are current carriers", "C": "holes are current carriers", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 57,
+    "question": "Rectifier is a device used to",
+    "options": { "A": "convert DC to AC", "B": "convert AC to DC", "C": "Both of the above", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 58,
+    "question": "With the help of ____, we reduce the memory access time.",
+    "options": { "A": "SDRAM", "B": "cache", "C": "heaps", "D": "high capacity RAMs" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 59,
+    "question": "The most common addressing technique employed by a CPU is",
+    "options": { "A": "direct", "B": "indirect", "C": "immediate", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 60,
+    "question": "Which of the following architectures is power efficient?",
+    "options": { "A": "RISC", "B": "ISA", "C": "IANA", "D": "CISC" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 61,
+    "question": "Which of the following bus structures is used to connect I/O devices?",
+    "options": { "A": "Star bus", "B": "RAM bus", "C": "Single bus", "D": "Multiple bus" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 62,
+    "question": "In the CPU, what is the functionality of the control unit?",
+    "options": { "A": "To decode program instruction", "B": "To perform logic operation", "C": "To store program instruction", "D": "To transfer data to primary storage" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 63,
+    "question": "What is a microprogram called that is written as the string of 1's and 0's?",
+    "options": { "A": "Symbolic microprogram", "B": "Symbolic microinstruction", "C": "Binary microinstruction", "D": "Binary microprogram" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 64,
+    "question": "Which of the following registers can interact with the secondary storage?",
+    "options": { "A": "IR", "B": "R0", "C": "MAR", "D": "PC" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 65,
+    "question": "What does the instruction → Add LOCA, R0 do?",
+    "options": { "A": "Adds the values of both LOCA and R0 and stores it in R0", "B": "Adds the value of LOCA with a value in accumulator and stores it in R0", "C": "Adds the value of LOCA to R0 and stores in the temp register", "D": "Adds the value of R0 to the address of LOCA" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 66,
+    "question": "The number of successful accesses to memory stated as a fraction is called as",
+    "options": { "A": "access rate", "B": "success rate", "C": "hit rate", "D": "miss rate" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 67,
+    "question": "Both the CISC and RISC architectures have been developed to reduce the",
+    "options": { "A": "time delay", "B": "semantic gap", "C": "cost", "D": "All of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 68,
+    "question": "Which number system has a base of 16?",
+    "options": { "A": "Decimal", "B": "Binary", "C": "Octal", "D": "Hexadecimal" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 69,
+    "question": "In absolute addressing mode",
+    "options": { "A": "the operand is inside the instruction", "B": "the address of the operand is inside the instruction", "C": "the register containing address of the operand is specified inside the instruction", "D": "the location of the operand is implicit" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 70,
+    "question": "In order to read multiple bytes of a row at the same time we make use of",
+    "options": { "A": "memory extension", "B": "cache", "C": "shift register", "D": "latch" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 71,
+    "question": "The bit used to signify that the cache location is updated is",
+    "options": { "A": "flag bit", "B": "reference bit", "C": "update bit", "D": "dirty bit" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 72,
+    "question": "During a write operation, if the required block is not present in the cache, then ____ occurs.",
+    "options": { "A": "write miss", "B": "write latency", "C": "write hit", "D": "write delay" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 73,
+    "question": "Which of the following gates is equivalent to an XOR gate followed by a NOT gate?",
+    "options": { "A": "NAND gate", "B": "NOR gate", "C": "XOR gate", "D": "XNOR gate" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 74,
+    "question": "Which of the following is an example of a flip-flop?",
+    "options": { "A": "AND gate", "B": "OR gate", "C": "XOR gate", "D": "None of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 75,
+    "question": "Whose operations are more faster among the following?",
+    "options": { "A": "Combinational circuits", "B": "Sequential circuits", "C": "Latches", "D": "Flip-flops" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 76,
+    "question": "The logic circuits whose outputs at any instant of time depend only on the present input but also on the past output are called",
+    "options": { "A": "combinational circuits", "B": "sequential circuits", "C": "latches", "D": "flip-flops" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 77,
+    "question": "Addition of pentavalent impurity to a semiconductor creates many",
+    "options": { "A": "free electrons", "B": "holes", "C": "valence electrons", "D": "bound electrons" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 78,
+    "question": "Which of the following statements is/are correct about the main memory of a computer?",
+    "options": { "A": "In main memory, data gets lost when power is switched off.", "B": "Main memory is faster than secondary memory but slower than registers.", "C": "They are made up of semiconductors.", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 79,
+    "question": "The Boolean expression X = (A + B)(C + D) represents",
+    "options": { "A": "two ORs ANDed together", "B": "two ANDs ORed together", "C": "a 4-input AND gate", "D": "a 4-input OR gate" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 80,
+    "question": "In which environment we can perform the Beta testing?",
+    "options": { "A": "User's and developer's end", "B": "Developer's end", "C": "User's end", "D": "None of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 81,
+    "question": "Which of the following is the first step in the software development lifecycle?",
+    "options": { "A": "System design", "B": "Coding", "C": "System testing", "D": "Preliminary investigation and analysis" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 82,
+    "question": "What does the study of an existing system refer to?",
+    "options": { "A": "Details of DFD", "B": "Feasibility study", "C": "System analysis", "D": "System planning" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 83,
+    "question": "What does RAD stand for?",
+    "options": { "A": "Rapid Application Document", "B": "Rapid Application Development", "C": "Relative Application Development", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 84,
+    "question": "During the boot process, the ____ looks for the system files.",
+    "options": { "A": "CD", "B": "BIOS", "C": "CPU", "D": "DVD" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 85,
+    "question": "The resolution of a monitor is measured in",
+    "options": { "A": "megabits", "B": "Hz", "C": "dots per inch (DPI)", "D": "inches (diagonal)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 86,
+    "question": "Which of the following components of CPU performs arithmetic operations such as addition, subtraction, division and multiplication, and logic operations such as AND, OR and NOT?",
+    "options": { "A": "CU", "B": "ALU", "C": "Both (A) and (B)", "D": "Register" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 87,
+    "question": "Which of the following components of CPU controls input/output devices, generates control signals to the other components of the computer such as read and write signals, and performs the execution of instruction?",
+    "options": { "A": "ALU", "B": "Accumulator", "C": "Control unit", "D": "Both (A) and (C)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 88,
+    "question": "Which one of the following errors will be handled by the operating system?",
+    "options": { "A": "Lack of paper in printer", "B": "Connection failure in the network", "C": "Power failure", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 89,
+    "question": "Suppose that a process is in a 'Blocked' state waiting for some I/O services. When the service is completed, it goes to the",
+    "options": { "A": "terminated state", "B": "suspended state", "C": "running state", "D": "ready state" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 90,
+    "question": "Which of the following is true about microprocessor?",
+    "options": { "A": "It has an internal memory", "B": "It has interfacing circuits", "C": "It contains ALU, CU and registers", "D": "It uses Harvard architecture" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 91,
+    "question": "What does the control unit generate to control other units?",
+    "options": { "A": "Transfer signals", "B": "Command signals", "C": "Control signals", "D": "Timing signals" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 92,
+    "question": "____ is a document commonly written in HyperText Markup Language (HTML) that is accessible through the Internet or other network using an Internet browser.",
+    "options": { "A": "Word", "B": "Web page", "C": "Website", "D": "Windows" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 93,
+    "question": "Which of the following devices forwards packets between networks by processing the routing information included in the packet?",
+    "options": { "A": "Firewall", "B": "Bridge", "C": "Hub", "D": "Router" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 94,
+    "question": "What is the full form of OSI?",
+    "options": { "A": "Optical Service Implementation", "B": "Open Service Internet", "C": "Open System Interconnection", "D": "Operating System Interface" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 95,
+    "question": "Which of the following is/are type(s) of microprocessor?",
+    "options": { "A": "CISC", "B": "RISC", "C": "EPIC", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 96,
+    "question": "When a collection of various computers appears as a single coherent system to its clients, what is this called?",
+    "options": { "A": "Mail system", "B": "Networking system", "C": "Computer network", "D": "Distributed system" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 97,
+    "question": "The chip can be disabled or cut off from an external connection using",
+    "options": { "A": "ACPT", "B": "RESET", "C": "LOCK", "D": "Chip select" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 98,
+    "question": "Which of the following tags is used to insert graphics on the web page?",
+    "options": { "A": "<IMAGE>", "B": "<IMAGES>", "C": "<IMG>", "D": "<GRAPHICS>" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 99,
+    "question": "Which of the following is used to specify the subscript of text using CSS?",
+    "options": { "A": "Vertical align : Sub", "B": "Vertical align : Super", "C": "Vertical align : Subscript", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 100,
+    "question": "Which of the following is true?",
+    "options": { "A": "Every instruction has two parts, i.e., opcode and operand", "B": "MOV B, C is a two-byte instruction", "C": "MVI A, 90H is a three-byte instruction", "D": "The maximum number of T-states possible for the execution of an instruction is 16" },
+    "correctAnswer": "A"
+  }
+]

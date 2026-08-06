@@ -1,0 +1,512 @@
+[
+  {
+    "id": 1,
+    "question": "Which keyword is used to define a class in C++?",
+    "options": { "A": "Class", "B": "Struct", "C": "Object", "D": "Typedef" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following OOP features allows for the reuse of previously written code?",
+    "options": { "A": "Encapsulation", "B": "Inheritance", "C": "Abstraction", "D": "Polymorphism" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 3,
+    "question": "To use the OOPs paradigm, which header file is required by the C++ programming language?",
+    "options": { "A": "iostream.h", "B": "stdio.h", "C": "stdlib.h", "D": "OOPs concepts can be implemented in C++ programs without a header file" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 4,
+    "question": "In C++, object uses ____ operator to access the members.",
+    "options": { "A": ".", "B": "*", "C": "::", "D": "→" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 5,
+    "question": "What will be the output of the following program? #include<iostream.h> using namespace std; int main(){ int i; char arr[30]; for(i=0; i<6; i++) *(arr+i) = 65+i; *(arr+i) = '\\0'; cout << arr; return(0); }",
+    "options": { "A": "AAAAAA", "B": "ABCDEF", "C": "Error", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following statements is/are false? Statement—I: In the object-oriented programming language, all function calls are resolved at compile time. Statement—II: In the procedural programming language, all function calls are resolved at compile time.",
+    "options": { "A": "Only I", "B": "Only II", "C": "Both I and II", "D": "Neither I nor II" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 7,
+    "question": "Identify the process of defining multiple functions with the same name but different parameters in a class.",
+    "options": { "A": "Function inheritance", "B": "Function encapsulation", "C": "Function overloading", "D": "Function overriding" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Identify the access specifier used to declare members that are accessible only within the class itself.",
+    "options": { "A": "Public", "B": "Private", "C": "Protected", "D": "Internal" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 9,
+    "question": "Identify the function that is automatically invoked when an object is created.",
+    "options": { "A": "Allocator", "B": "Initializer", "C": "Constructor", "D": "Destructor" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following statements is/are true? Statement—I: In DBMS, DDL is used to create and modify the structure of objects in a database. Statement—II: In DBMS, DCL is used for accessing and manipulating data in a database.",
+    "options": { "A": "Only I", "B": "Only II", "C": "Both I and II", "D": "Neither I nor II" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 11,
+    "question": "An attribute that has more than one value for a particular entity is",
+    "options": { "A": "composite attribute", "B": "key attribute", "C": "multivalued attribute", "D": "derived attribute" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 12,
+    "question": "The relation STUDENT_DETAILS has 8 attributes out of which Roll_No and Reg_No always take unique values. Therefore these two attributes are ____ keys as they both are candidates for ____ key.",
+    "options": { "A": "primary, candidate", "B": "composite, primary", "C": "candidate, composite", "D": "candidate, primary" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following factors must be considered while creating a table in SQL?",
+    "options": { "A": "Default value", "B": "Primary key", "C": "Data types", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 14,
+    "question": "Which type of join returns only the rows that have matching values in both tables being joined?",
+    "options": { "A": "Inner join", "B": "Outer join", "C": "Left join", "D": "Right join" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 15,
+    "question": "What is the process of combining tables based on a related column between them called?",
+    "options": { "A": "Aggregation", "B": "Normalization", "C": "Joins", "D": "Indexing" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 16,
+    "question": "Identify the process of reducing data redundancy in a database system.",
+    "options": { "A": "Normalization", "B": "Denormalization", "C": "Indexing", "D": "Partitioning" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 17,
+    "question": "Data in a database at a particular moment in time is called",
+    "options": { "A": "current set of occurring", "B": "database instance", "C": "snapshot", "D": "All of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 18,
+    "question": "The attribute which is not the part of any candidate key is called",
+    "options": { "A": "prime attribute", "B": "non-prime attribute", "C": "atomic attribute", "D": "composite attribute" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is an example of single-user single-tasking operating system?",
+    "options": { "A": "Windows", "B": "Linux", "C": "MS-DOS", "D": "macOS" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 20,
+    "question": "A page fault occurs due to",
+    "options": { "A": "the deadlock", "B": "the page present in memory", "C": "the page not present in memory", "D": "None of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 21,
+    "question": "Which of the following statements is true in terms of deadlock?",
+    "options": { "A": "A condition where each process is terminated and started again.", "B": "A condition where each process is blocked and waiting for others to release resources.", "C": "A condition where each process is blocked except the child process.", "D": "A condition where each process is ready to be executed one-by-one." },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 22,
+    "question": "There is a component of operating system (OS) which is responsible for managing memory resources. Identify it.",
+    "options": { "A": "Kernel", "B": "Scheduler", "C": "File system", "D": "Memory manager" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 23,
+    "question": "Which scheduling algorithm ensures that each process gets an equal amount of CPU time?",
+    "options": { "A": "Round Robin (RR)", "B": "First Come First Served (FCFS)", "C": "Shortest Job Next (SJN)", "D": "Shortest Remaining Time Next (SRTN)" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 24,
+    "question": "The purpose of using virtual memory in an operating system is",
+    "options": { "A": "to increase CPU speed", "B": "to expand the physical memory capacity", "C": "to protect the OS from malware", "D": "to manage peripheral devices" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 25,
+    "question": "What is the full form of FAT?",
+    "options": { "A": "File Attribute Table", "B": "File Allocation Table", "C": "Font Allocation Table", "D": "Format Allocation Table" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 26,
+    "question": "The size of virtual memory is based on",
+    "options": { "A": "CPU", "B": "RAM", "C": "address bus", "D": "data bus" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 27,
+    "question": "Which one of the following errors will be handled by an operating system?",
+    "options": { "A": "Lack of paper in printer", "B": "Connection failure in the network", "C": "Power failure", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 28,
+    "question": "Identify the data structure which follows the Last In First Out (LIFO) principle.",
+    "options": { "A": "Queue", "B": "Stack", "C": "Linked list", "D": "Tree" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 29,
+    "question": "Which of the following data structures allows deletion at both ends of the list but insertion at only one end?",
+    "options": { "A": "Circular queue", "B": "Priority queue", "C": "Output-restricted dequeue", "D": "Input-restricted dequeue" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 30,
+    "question": "Which of the following sorting algorithms is based on the divide-and-conquer strategy?",
+    "options": { "A": "Shell sort", "B": "Quicksort", "C": "Heap sort", "D": "Merge sort" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 31,
+    "question": "The worst-case time complexity of the linear search algorithm is",
+    "options": { "A": "O(1)", "B": "O(log n)", "C": "O(n)", "D": "O(n^2)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 32,
+    "question": "What happens if a POP operation is performed on an empty stack?",
+    "options": { "A": "Stack overflow error will occur", "B": "Stack underflow error will occur", "C": "The top element is removed and returned", "D": "The stack remains unchanged" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 33,
+    "question": "Find the data structure which represents a collection of elements with no particular order.",
+    "options": { "A": "Stack", "B": "Queue", "C": "Array", "D": "Set" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 34,
+    "question": "Which data structure type is used to represent a hierarchical structure with a set of connected nodes?",
+    "options": { "A": "Graph", "B": "Tree", "C": "Stack", "D": "Heap" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 35,
+    "question": "Identify the data structure which provides FIFO access to elements.",
+    "options": { "A": "Stack", "B": "Heap", "C": "Queue", "D": "Hash table" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 36,
+    "question": "Which data structure represents a collection of interconnected nodes with no specific starting point?",
+    "options": { "A": "Tree", "B": "Graph", "C": "Stack", "D": "Queue" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 37,
+    "question": "A microprocessor consists of",
+    "options": { "A": "ALU", "B": "control unit", "C": "register array", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 38,
+    "question": "The maximum number of different addresses that can be addressed by the address bus of 8085 is",
+    "options": { "A": "2^8", "B": "2^16", "C": "2^32", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 39,
+    "question": "The instruction JNC 16-bit refers to jump to a 16-bit address if",
+    "options": { "A": "carry flag is reset", "B": "carry flag is set", "C": "parity flag is reset", "D": "zero flag is set" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 40,
+    "question": "With reference to the 8085 microprocessor, which of the following statements are correct? Statement—I: INR is 1-byte instruction. Statement—II: OUT is 2-byte instruction. Statement—III: STA is 3-byte instruction.",
+    "options": { "A": "I and II only", "B": "II and III only", "C": "I and III only", "D": "I, II and III" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 41,
+    "question": "While a program is being executed in the 8085 microprocessor, the program counter (PC) of the microprocessor contains",
+    "options": { "A": "the memory address of the instruction that is being currently executed", "B": "the memory address of the instruction that is to be executed next", "C": "the number of instructions that have already been executed", "D": "the total number of instructions in the current program still to be executed" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 42,
+    "question": "Identify the addressing mode which is used when the operand is specified directly in the instruction.",
+    "options": { "A": "Immediate addressing", "B": "Direct addressing", "C": "Indirect addressing", "D": "Register addressing" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 43,
+    "question": "Which instruction is used to transfer control to a subroutine in assembly language?",
+    "options": { "A": "JMP", "B": "CALL", "C": "RET", "D": "LOOP" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 44,
+    "question": "Identify the addressing mode which is used when the operand is specified through a memory address stored in a register.",
+    "options": { "A": "Immediate addressing", "B": "Direct addressing", "C": "Indirect addressing", "D": "Register addressing" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 45,
+    "question": "Identify the instruction which is used to store a value from a register to memory in assembly language programming.",
+    "options": { "A": "MOV", "B": "LOAD", "C": "STORE", "D": "PUSH" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 46,
+    "question": "The role of a DNS server in computer networking is",
+    "options": { "A": "to provide wireless access to device on a network", "B": "to forward data packet between different networks", "C": "to convert domain name into IP address", "D": "to manage and assign IP addresses to devices on a network" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 47,
+    "question": "Which of the following is not a type of network topology?",
+    "options": { "A": "Circuit", "B": "Star", "C": "Mesh", "D": "Bus" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 48,
+    "question": "Which networking device operates at the physical layer of the OSI model?",
+    "options": { "A": "Switch", "B": "Router", "C": "Hub", "D": "Repeater" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 49,
+    "question": "Which of the following protocols is used for secure communication over the Internet?",
+    "options": { "A": "HTTP", "B": "FTP", "C": "HTTPS", "D": "SMTP" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 50,
+    "question": "The purpose of subnetting in computer networking is",
+    "options": { "A": "to extend the range of available IP address", "B": "to increase the security of a network", "C": "to manage and assign IP addresses to devices on a network", "D": "to split a large network into smaller networks" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 51,
+    "question": "Which layer of OSI model is responsible for ensuring reliable end-to-end communication between application on different hosts?",
+    "options": { "A": "Network layer", "B": "Transport layer", "C": "Presentation layer", "D": "Application layer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 52,
+    "question": "Which protocol is commonly used to retrieve e-mail from a mail server?",
+    "options": { "A": "SMTP", "B": "POP3", "C": "HTTP", "D": "FTP" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 53,
+    "question": "Find the layer of the OSI model that is responsible for the transmission of raw data between devices.",
+    "options": { "A": "Data-link layer", "B": "Network layer", "C": "Physical layer", "D": "Transport layer" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 54,
+    "question": "Which networking device operates at the data-link layer of the OSI model and forwards data based on MAC address?",
+    "options": { "A": "Router", "B": "Hub", "C": "Switch", "D": "Repeater" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 55,
+    "question": "Which device is used to amplify and regenerate network signals to extend the range of a network?",
+    "options": { "A": "Router", "B": "Hub", "C": "Repeater", "D": "Switch" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 56,
+    "question": "Which principle(s) is/are used in the digitization of multimedia content? I: Quantization; II: Sampling",
+    "options": { "A": "Only I", "B": "Only II", "C": "Both I and II", "D": "Neither I nor II" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 57,
+    "question": "What is the purpose of synchronization in multimedia presentation?",
+    "options": { "A": "To ensure proper coordination between audio and video elements", "B": "To enhance the visual quality of images and videos", "C": "To compress multimedia files for efficient storage", "D": "To convert multimedia data into different file formats" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 58,
+    "question": "AM stations are allowed carrier frequencies anywhere between",
+    "options": { "A": "55–150 kHz", "B": "350–1200 kHz", "C": "530–1700 kHz", "D": "750–2500 kHz" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 59,
+    "question": "If an image has a width of 4 inches and an aspect ratio of 3:2, then what is its height?",
+    "options": { "A": "16/3 inches", "B": "8/3 inches", "C": "2/3 inch", "D": "4/3 inches" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 60,
+    "question": "What small program can be embedded inside a GIF (Graphics Interchange Format) image?",
+    "options": { "A": "Web bug", "B": "Cookie", "C": "Spyware application", "D": "Spam" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 61,
+    "question": "Which of the following describes the quality of sound that distinguishes it from other sounds of the same pitch and loudness?",
+    "options": { "A": "Amplitude", "B": "Frequency", "C": "Timbre", "D": "Phase" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 62,
+    "question": "Which file format is commonly used for compressing and storing audio files?",
+    "options": { "A": "MP3", "B": "GIF", "C": "JPEG", "D": "WAV" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 63,
+    "question": "In an HTML document, the correct sequence of the tags for starting a Web page is",
+    "options": { "A": "HTML, Head, Title, Body", "B": "HTML, Title, Head, Body", "C": "Head, Title, HTML, Body", "D": "HTML, Body, Title, Head" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 64,
+    "question": "Which programming language is used to define the structure and presentation of Web content?",
+    "options": { "A": "JavaScript", "B": "HTML", "C": "CSS", "D": "PHP" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 65,
+    "question": "Identify the type of memory which is non-volatile and retains data even when the power is turned off.",
+    "options": { "A": "RAM", "B": "Cache memory", "C": "ROM", "D": "Register" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 66,
+    "question": "Which of the following uses a small set of simple instructions?",
+    "options": { "A": "RISC", "B": "CISC", "C": "MIPS", "D": "ARM" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 67,
+    "question": "Which component of a CPU is responsible for temporarily storing intermediate calculation results?",
+    "options": { "A": "Control unit", "B": "ALU", "C": "Register", "D": "Cache memory" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 68,
+    "question": "Identify the computer memory which has the fastest access time but the smallest storage capacity.",
+    "options": { "A": "ROM", "B": "RAM", "C": "Cache memory", "D": "Hard disk" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 69,
+    "question": "Computer address bus is",
+    "options": { "A": "unidirectional", "B": "bidirectional", "C": "multidirectional", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 70,
+    "question": "A combinational logic circuit that is used when it is desired to send data from two or more sources through a single transmission line is known as",
+    "options": { "A": "encoder", "B": "multiplexer", "C": "decoder", "D": "demultiplexer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 71,
+    "question": "Which of the following statements about memory and storage is correct?",
+    "options": { "A": "Memory is slow, storage is fast.", "B": "Memory is fast, storage is slow.", "C": "Memory is permanent, storage is temporary.", "D": "Memory is temporary, storage is permanent." },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 72,
+    "question": "Which of the following gates are known as universal gates?",
+    "options": { "A": "NAND, NOR", "B": "NOT, AND", "C": "NAND, NOR and AND", "D": "XOR, OR" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 73,
+    "question": "A 16-bit register consists of",
+    "options": { "A": "8 flip-flops", "B": "32 flip-flops", "C": "16 flip-flops", "D": "12 flip-flops" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 74,
+    "question": "Which memory organization scheme divides the main memory into fixed-size blocks and uses a page table for address translation?",
+    "options": { "A": "Segmentation", "B": "Paging", "C": "Virtual memory", "D": "Cache memory" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 75,
+    "question": "How many bits are required to represent a single hexadecimal digit?",
+    "options": { "A": "2 bits", "B": "4 bits", "C": "8 bits", "D": "16 bits" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 76,
+    "question": "What is the decimal equivalent of the octal number (575)8?",
+    "options": { "A": "(381)10", "B": "(454)10", "C": "(556)10", "D": "(55)10" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 77,
+    "question": "What is the hexadecimal equivalent of the binary number (101010)2?",
+    "options": { "A": "A", "B": "B", "C": "2A", "D": "32" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 78,
+    "question": "Which component on the motherboard stores the firmware and system settings of the computer?",
+    "options": { "A": "BIOS", "B": "RAM", "C": "CPU", "D": "GPU" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 79,
+    "question": "Which interface is commonly used for transmitting high quality audio and video signals between devices such as from a blue-ray player to a TV?",
+    "options": { "A": "USB", "B": "HDMI", "C": "VGA", "D": "Ethernet" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 80,
+    "question": "What is the purpose of defragmenting a hard drive?",
+    "options": { "A": "To optimize the file storage and improve system performance", "B": "To remove malware and viruses from the computer", "C": "To clean up temporary files and free up disk space", "D": "To update the device drivers for better compatibility" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 81,
+    "question": "What is the purpose of updating device drivers on a laptop?",
+    "options": { "A": "To extend the battery life of a laptop", "B": "To optimize the network connection speed", "C": "To improve the compatibility and performance of hardware devices", "D": "To remove unwanted software and toolbars from the browser" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 82,
+    "question": "When a peripheral device needs immediate attention from the operating system, it generates",
+    "options": { "A": "spool", "B": "page file", "C": "interrupt", "D": "stack" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 83,
+    "question": "____ is also called the visual or logical architecture as it tells us how the data are organized in a database.",
+    "options": { "A": "Data dictionary", "B": "Data instance", "C": "Data constraint", "D": "Data schema" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 84,
+    "question": "The purpose of inter-process communication (IPC) in an operating system is",
+    "options": { "A": "to enable the concurrent execution of multiple processes", "B": "to manage the execution of multiple threads within a process", "C": "to allocate resources fairly and effectively among processes", "D": "to facilitate communication and data sharing between processes" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 85,
+    "question": "Which architectural design enables the CPU to execute multiple threads concurrently within a single process?",
+    "options": { "A": "Pipelining", "B": "Superscalar", "C": "Multithreading", "D": "Multiprocessing" },
+    "correctAnswer": "C"
+  }
+]

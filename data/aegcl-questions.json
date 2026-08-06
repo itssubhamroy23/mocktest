@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "The 2023 Khelo India Senior Women National Kho Kho League was held from",
+    "options": { "A": "10th January to 12th January, 2023", "B": "10th January to 13th January, 2023", "C": "10th January to 15th January, 2023", "D": "10th January to 17th January, 2023" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "question": "The underlined words in the given sentence are used wrongly. Choose the correct words to complete the sentence: I am working on this job since last Monday.",
+    "options": { "A": "were to have worked", "B": "being worked", "C": "was working", "D": "have been working" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 3,
+    "question": "Swami Vivekananda's birth anniversary is celebrated as the",
+    "options": { "A": "National Yoga Day", "B": "National Philosophy Day", "C": "National Youth Day", "D": "National Fitness Day" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 4,
+    "question": "Complete the given sentence with suitable word: Mona hadn't eaten all day, and by the time she got home, she was",
+    "options": { "A": "shattered", "B": "delirious", "C": "ravenous", "D": "blissful" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 5,
+    "question": "The new Chief Technologist of NASA is",
+    "options": { "A": "A. C. Charania", "B": "Subrahmanyan Chandrasekhar", "C": "Raja Chari", "D": "Soumya Swaminathan" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 6,
+    "question": "Fill in the blank with correct option: I was shocked to learn that no one ____ where the files were kept.",
+    "options": { "A": "had been knowing", "B": "had been known", "C": "knew", "D": "was known" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 7,
+    "question": "Who is the current Governor of the Reserve Bank of India (RBI)?",
+    "options": { "A": "Jagdeep Dhankar", "B": "Shaktikanta Das", "C": "Om Birla", "D": "Manoj Soni" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 8,
+    "question": "The underlined words in the given sentence are used wrongly. Choose the correct words to complete the sentence: The moment they saw me, they were delight.",
+    "options": { "A": "are delighted", "B": "was delight", "C": "were delighted", "D": "had been delighted" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 9,
+    "question": "Who among the following became the first Indian woman to reach the summit of Mount Everest?",
+    "options": { "A": "Bachendri Pal", "B": "Malavath Purna", "C": "Anshu Jamsenpa", "D": "Arunima Sinha" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 10,
+    "question": "Fill in the blanks with correct option: In the present times of inflation, the cost of consumer goods is ____.",
+    "options": { "A": "ascending", "B": "soaring", "C": "climbing", "D": "raising" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 11,
+    "question": "Fill in the blanks with correct option: I am going to wear my ____ dress for the wedding.",
+    "options": { "A": "bright cotton blue", "B": "blue bright cotton", "C": "bright blue cotton", "D": "cotton bright blue" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 12,
+    "question": "Who among the following women became the first woman to fly to space?",
+    "options": { "A": "Valentina Tereshkova", "B": "Sunita Williams", "C": "Mae Jemison", "D": "Kalpana Chawla" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 13,
+    "question": "Arrange the following words in the right order: she / everyday / to work / goes",
+    "options": { "A": "She everyday goes to work", "B": "She goes to work everyday", "C": "Everyday she goes to work", "D": "To work she goes everyday" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following awards is not associated with the field of sports?",
+    "options": { "A": "Arjuna Award", "B": "Dronacharya Award", "C": "Dhyan Chand Award", "D": "Norman Borlaug Award" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 15,
+    "question": "The inaugural Asian Games were held in",
+    "options": { "A": "1951", "B": "1950", "C": "1953", "D": "1954" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 16,
+    "question": "Correct the following sentence: We caught a tiger with two cubs.",
+    "options": { "A": "We caught a tiger with two pups.", "B": "We caught a tigress with two pups.", "C": "We caught a tigress with two bunnies.", "D": "We caught a tigress with two cubs." },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 17,
+    "question": "The first female judge of the Supreme Court of India is",
+    "options": { "A": "Ruma Pal", "B": "Indu Malhotra", "C": "Fathima Beevi", "D": "B. V. Nagarathna" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 18,
+    "question": "Fill in the blank with correct option: Social media ____ popular among the young generation.",
+    "options": { "A": "became", "B": "are become", "C": "has become", "D": "are becoming" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 19,
+    "question": "The books, Gaban and Godaan were written by",
+    "options": { "A": "Amritlal Nagar", "B": "Munshi Premchand", "C": "Vrindavanlal Verma", "D": "Jaishankar Prasad" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 20,
+    "question": "Calligraphy is",
+    "options": { "A": "the art related to ornate, good handwriting", "B": "the art of taking good photographs", "C": "the art of dance", "D": "the art of cooking" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 21,
+    "question": "\"A bird in the hand is worth two in the bush.\" The meaning of this idiom is",
+    "options": { "A": "having something that is certainly much better than taking a risk for more because chances are you might lose everything", "B": "it is always better to have two birds in one hand", "C": "birds in the bush are of no use", "D": "it is better to have two birds in the bush and one in the hand" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 22,
+    "question": "The World Water Day is celebrated on",
+    "options": { "A": "22nd March", "B": "10th December", "C": "13th November", "D": "27th January" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 23,
+    "question": "The train is running late. The underlined words mean",
+    "options": { "A": "after time", "B": "behind time", "C": "off time", "D": "in time" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 24,
+    "question": "The name of the only Assamese to take part in the Round Table Conference at London in 1930 is",
+    "options": { "A": "Chandradhar Barua", "B": "Gopinath Bordoloi", "C": "Nabin Chandra Bordoloi", "D": "Bishnuram Medhi" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 25,
+    "question": "The velocity of light was first measured by",
+    "options": { "A": "Einstein", "B": "Newton", "C": "Ole Romer", "D": "Galileo" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 26,
+    "question": "Fill in the blank with correct option: You can always ____ them.",
+    "options": { "A": "be dependent with", "B": "be dependent on", "C": "depend", "D": "depend on" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 27,
+    "question": "Dr. V. Kurien is a distinguished person in the area of",
+    "options": { "A": "poultry farm", "B": "atomic energy", "C": "dairy development", "D": "economic reforms" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 28,
+    "question": "Choose the correct sentence.",
+    "options": { "A": "Columbus invented America", "B": "Columbus discovered America", "C": "Columbus found America", "D": "Columbus revealed America" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 29,
+    "question": "The name of the first National Security Advisor of India is",
+    "options": { "A": "Brajesh Mishra", "B": "M. K. Narayanan", "C": "Ajit Doval", "D": "Shivshankar Menon" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 30,
+    "question": "Sohan's land was parched while all the lands around his were filled with water. The underlined word means",
+    "options": { "A": "barren", "B": "flooded", "C": "dry", "D": "drenched" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 31,
+    "question": "The synonym of shabby is",
+    "options": { "A": "tidy", "B": "dilapidated", "C": "crisp", "D": "unsoiled" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 32,
+    "question": "The term 'butterfly stroke' is used in which sport?",
+    "options": { "A": "Wrestling", "B": "Volleyball", "C": "Tennis", "D": "Swimming" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 33,
+    "question": "\"Being upset for something that happened in the past.\" The correct idiom for the above sentence is",
+    "options": { "A": "a leopard can't change his spots", "B": "cry over spilled milk", "C": "actions speak, louder than words", "D": "a piece of cake" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 34,
+    "question": "Kartiki Gonsalves and Guneet Monga won the Best Documentary Short Prize at the 95th Academy Awards for",
+    "options": { "A": "The Whispering Elephant", "B": "The Whispers of the Elephant", "C": "The Elephant that Whispered", "D": "The Elephant Whisperers" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 35,
+    "question": "The patient required sophisticated surgery. The synonym of the underlined word is",
+    "options": { "A": "crude", "B": "underdeveloped", "C": "cumbersome", "D": "well-advanced" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 36,
+    "question": "'Leave no stone unturned' means",
+    "options": { "A": "leave the path halfway", "B": "not make enough efforts", "C": "try everything possible", "D": "turn everything upside down" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 37,
+    "question": "Who wrote the book, The Wealth of Nations?",
+    "options": { "A": "Raghuram Rajan", "B": "John Maynard Keynes", "C": "Adam Smith", "D": "Karl Marx" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 38,
+    "question": "'Reveal a secret.' The correct idiom for the above is",
+    "options": { "A": "spill the peas", "B": "spill the beans", "C": "spill the pulses", "D": "spill the water" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 39,
+    "question": "The first Indian to win the Nobel Prize was",
+    "options": { "A": "Arundhati Roy", "B": "C. V. Raman", "C": "Rabindranath Tagore", "D": "Amartya Sen" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 40,
+    "question": "Long Walk to Freedom is authored by",
+    "options": { "A": "Louis Fischer", "B": "Mao Tse-tung", "C": "Nelson Mandela", "D": "Aung San Suu Kyi" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 41,
+    "question": "The full form of ASEAN is",
+    "options": { "A": "Association of South Eastern Nations", "B": "Association of Sea and Air Navigation", "C": "Association of Social and Ethical Nations", "D": "Association of Southeast Asian Nations" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 42,
+    "question": "The 'World No Tobacco Day' is observed on",
+    "options": { "A": "1st May", "B": "11th May", "C": "21st May", "D": "31st May" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 43,
+    "question": "The first woman Governor of a State in free India was",
+    "options": { "A": "Indira Gandhi", "B": "Vijaya Lakshmi Pandit", "C": "Sarojini Naidu", "D": "Sucheta Kripalani" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 44,
+    "question": "'Black sheep' means",
+    "options": { "A": "a costly item", "B": "a dark, shiny object", "C": "a funny man", "D": "an unworthy person in the family or group" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 45,
+    "question": "Fill in the blank with correct option: Even after repeated warnings, he ____ to office on time.",
+    "options": { "A": "is never coming", "B": "never comes", "C": "never come", "D": "have never come" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 46,
+    "question": "The Father of the Indian Constitution is",
+    "options": { "A": "Dr. B. R. Ambedkar", "B": "Pandit Jawaharlal Nehru", "C": "Mahatma Gandhi", "D": "Sardar Patel" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 47,
+    "question": "8th September is celebrated as",
+    "options": { "A": "International Women's Day", "B": "International Literature Day", "C": "International Language Day", "D": "International Literacy Day" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 48,
+    "question": "The name of Seema Antil is associated with which sport?",
+    "options": { "A": "Discus throw", "B": "Chess", "C": "Cricket", "D": "Basketball" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 49,
+    "question": "The prize winning title of the book of Arundhati Roy for Booker Prize in 1997 was",
+    "options": { "A": "The Seven Moons of Maali Almeida", "B": "The God of Small Things", "C": "The French Lieutenant's Woman", "D": "Disgrace" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 50,
+    "question": "Who invented the vaccine for smallpox?",
+    "options": { "A": "Robert Koch", "B": "Edward Jenner", "C": "Robert Hooke", "D": "Louis Pasteur" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 51,
+    "question": "According to Goleman, the 'management of emotions' component of emotional intelligence includes I. handling feelings so that they are appropriate II. ability to soothe oneself III. ability to shake off rampant anxiety and irritability IV. recognising feelings as it happens. Choose the correct answer using the code given below.",
+    "options": { "A": "I and II only", "B": "III and IV only", "C": "II, III and IV only", "D": "I, II, III and IV" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 52,
+    "question": "Who first coined the term 'emotional intelligence'?",
+    "options": { "A": "Daniel Goleman", "B": "Peter Salovey", "C": "Martin Seligman", "D": "K. V. Patrides" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 53,
+    "question": "____ refers to the inability to understand and describe emotions, emotional blindness and dysfunctional emotional awareness, poor social attachment and interpersonal relations and lack of empathy.",
+    "options": { "A": "Alexithymia", "B": "Aphasia", "C": "Hypochondriasis", "D": "Dysthymia" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 54,
+    "question": "The components of the Bar-On model of emotional intelligence are",
+    "options": { "A": "perceive emotion — use emotion to facilitate thought — understand emotions — manage emotions", "B": "adaptability — achievement orientation — positive outlook — influence", "C": "intrapersonal skills — interpersonal skills — adaptability — stress management — general mood", "D": "empathy — conflict management — teamwork — organizational awareness" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 55,
+    "question": "The higher the trait emotional intelligence",
+    "options": { "A": "the higher the likelihood of personality disorder", "B": "the higher the trait of neuroticism", "C": "the higher the possibility of self-harm", "D": "the lower the possibility of personality disorder" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 56,
+    "question": "The ability to manage emotional reactions in order to achieve one's goal is called",
+    "options": { "A": "emotional reasoning", "B": "emotional regulation", "C": "goal-directed emotion", "D": "low neuroticism" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 57,
+    "question": "The three C's of assertive communication skills are",
+    "options": { "A": "clear, confident and controlled", "B": "confident, conscientious and controlled", "C": "clear, creditability and confident", "D": "confident, conscientious and caring" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 58,
+    "question": "What are the main domains of social emotional learning? I. Cognitive regulation II. Emotional processes III. Assertiveness IV. Interpersonal skills",
+    "options": { "A": "I only", "B": "I and II only", "C": "I, II and IV only", "D": "I, II, III and IV" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 59,
+    "question": "Statement-I: Assertive people tend to think only of their rights and wishes. Statement-II: Assertive people always disagree with others. Which of the above statements is/are correct?",
+    "options": { "A": "Only Statement-I", "B": "Only Statement-II", "C": "Both Statement-I and Statement-II", "D": "Neither Statement-I nor Statement-II" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 60,
+    "question": "Which assessment tool is based on the ability model of emotional intelligence?",
+    "options": { "A": "Mayer-Salovey-Caruso Emotional Intelligence Test (MSCEIT)", "B": "Trait Emotional Intelligence Questionnaire (TEIQue)", "C": "Genos Emotional Intelligence Inventory (Genos EI)", "D": "Swinburne University Emotional Intelligence Test (SUEIT)" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 61,
+    "question": "Who is the author of the book, Emotional Intelligence?",
+    "options": { "A": "Peter Salovey", "B": "Daniel Goleman", "C": "Ben Palmer", "D": "John Mayer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 62,
+    "question": "Match the central premises listed below with the theories that hold them. List-I: a. Emotional intelligence is essentially a personality characteristic; b. Emotional intelligence is not a trait; c. One aspect of emotional intelligence is personality; d. Emotional intelligence comprises learned competencies. List-II: 1. Performance model, 2. Trait model, 3. Ability model, 4. Mixed model.",
+    "options": { "A": "a-2, b-3, c-1, d-4", "B": "a-2, b-4, c-1, d-3", "C": "a-2, b-3, c-4, d-1", "D": "a-3, b-4, c-2, d-1" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 63,
+    "question": "____ refers to the understanding of emotions and feelings present in oneself and others.",
+    "options": { "A": "Self-awareness", "B": "Emotional awareness", "C": "Empathy", "D": "Assertiveness" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 64,
+    "question": "Cultural affordance relates to",
+    "options": { "A": "emotional intelligence", "B": "being sensitive to individuals from other cultural heritage", "C": "cultural variability is universal emotional experience", "D": "the ability of cultural settings to evoke political response" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 65,
+    "question": "The Display Rule Assessment Inventory (DRAI) measures",
+    "options": { "A": "emotional expression", "B": "facial muscle movement", "C": "behavioural response to emotional experience", "D": "cultural competence" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 66,
+    "question": "Ego-focused emotion relates to",
+    "options": { "A": "personal attributes, goals, wants and needs", "B": "other people's needs and wants", "C": "external traits and abilities", "D": "physical and social settings" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 67,
+    "question": "You have just become a member of an athletic team and experiencing a sense of belongingness and friendliness. You will most likely experience which type of emotion?",
+    "options": { "A": "Socially engaging negative emotions", "B": "Socially engaging positive emotions", "C": "Socially disengaging positive emotions", "D": "Socially disengaging negative emotions" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 68,
+    "question": "Which of the following is not a component of emotional competence? I. Self-awareness II. Motivation III. Social skills IV. Conscientiousness",
+    "options": { "A": "I", "B": "II only", "C": "II and III", "D": "IV" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 69,
+    "question": "Michaela is angry because she was not able to get tickets to her favourite reality show. Anger is which type of emotion?",
+    "options": { "A": "Socially engaging negative emotion", "B": "Socially engaging positive emotion", "C": "Ego-focused emotion", "D": "Other focused emotion" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 70,
+    "question": "As per DSM-IV-TR classification, personality disorders with odd and eccentric behaviour are classified under",
+    "options": { "A": "cluster A", "B": "cluster B", "C": "cluster C", "D": "cluster E" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 71,
+    "question": "Narcissistic personality disorder is characterized by",
+    "options": { "A": "callous unconcern for the feelings of others", "B": "self-dramatization and theatricality", "C": "ideas of grandiosity and inflated sense of self-importance", "D": "significant and persistent disturbance of the identity of self" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 72,
+    "question": "Which of the following is not a characteristic of individuals with paranoid personality disorder?",
+    "options": { "A": "Avoidance of close relationships", "B": "Avoidance of public spaces", "C": "Often spontaneously aggressive to others", "D": "Often feel that they have been deeply and irreversibly betrayed by others" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 73,
+    "question": "The DSM-5 defines ____ personality disorders.",
+    "options": { "A": "5", "B": "8", "C": "10", "D": "12" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 74,
+    "question": "The characteristics of individuals with autism may include the following, except",
+    "options": { "A": "resistance to change", "B": "above grade-level reading comprehension", "C": "unusual responses to sensory experiences", "D": "difficulties with social interactions" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 75,
+    "question": "A child with autism spectrum disorder might show ____ in the pre-linguistics stage when distressed.",
+    "options": { "A": "self-injurious behaviour", "B": "suicidality", "C": "uncommon factors", "D": "echolalia" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 76,
+    "question": "A car covers 1260 km in 40 hours. Calculate its average speed in metre per second.",
+    "options": { "A": "8.25 m/s", "B": "8 m/s", "C": "8.75 m/s", "D": "None of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 77,
+    "question": "An aeroplane covers a certain distance at a speed of 280 km/hr in 14 hours. To cover the same distance in 9 hours 48 minutes, it must travel at a speed of",
+    "options": { "A": "300 km/hr", "B": "400 km/hr", "C": "450 km/hr", "D": "500 km/hr" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 78,
+    "question": "A man travels from his home to office at 4 km/hr and reaches his office 20 minutes late. If the speed had been 6 km/hr, he would have reached 10 minutes early. Find the distance from his home to office.",
+    "options": { "A": "1.8 km", "B": "12 km", "C": "6 km", "D": "4.9 km" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 79,
+    "question": "The present age of Ram is 20 years and of his father is 40 years. How many years ago the age of his father was three times of his age?",
+    "options": { "A": "10 years", "B": "8 years", "C": "6 years", "D": "4 years" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 80,
+    "question": "A man can row at a speed of 6 km/hr in still water. It takes 3 hours more in upstream than downstream to cover the same distance. If the speed of the current is 2 km/hr, then find the distance.",
+    "options": { "A": "20 km", "B": "30 km", "C": "54 km", "D": "24 km" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 81,
+    "question": "A man completes a journey in 10 hours. He travels first-half of the journey at the rate of 21 km/hr and the second-half of the journey at the rate of 24 km/hr. Find the total journey in kilometre.",
+    "options": { "A": "222", "B": "224", "C": "230", "D": "228" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 82,
+    "question": "Determine the missing number in the following series: 5, 6, 9, 14, 21, ?",
+    "options": { "A": "30", "B": "28", "C": "27", "D": "29" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 83,
+    "question": "Find the missing number in the following series: 2, 8, 18, 32, ?",
+    "options": { "A": "62", "B": "60", "C": "50", "D": "46" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 84,
+    "question": "The word MAN is coded as NBO. Which of the following should be the code for SKY?",
+    "options": { "A": "ZLT", "B": "ANT", "C": "TLZ", "D": "LZT" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 85,
+    "question": "Select the pair out of four pairs of words that expresses the relationship most similar to that of the given pair. SCISSORS : CLOTH ::",
+    "options": { "A": "AXE : WOOD", "B": "STONE : GRINDER", "C": "KNIFE : STONE", "D": "GUN : HUNT" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 86,
+    "question": "Select the pair out of four pairs of words that expresses the relationship most similar to that of the given pair. CARDIOLOGY : HEART ::",
+    "options": { "A": "ZOOLOGY : ANIMAL", "B": "SCIENCE : INSECT", "C": "EGGS : CAT", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 87,
+    "question": "Select the pair out of four pairs of words that expresses the relationship most similar to that of the given pair. DOCTOR : HOSPITAL ::",
+    "options": { "A": "SPORTS FAN : STADIUM", "B": "COW : FARM", "C": "PROFESSOR : COLLEGE", "D": "CRIMINAL : JAIL" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 88,
+    "question": "Select the pair out of four pairs of words that expresses the relationship most similar to that of the given pair. BIRD : NEST ::",
+    "options": { "A": "DOG : DOGHOUSE", "B": "SQUIRREL : TREE", "C": "BEAVER : DAM", "D": "CAT : LITTER BOX" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 89,
+    "question": "Select the pair out of four pairs of words that expresses the relationship most similar to that of the given pair. TAILOR : SUIT ::",
+    "options": { "A": "SCHEME : AGENT", "B": "EDIT : MANUSCRIPT", "C": "REVISE : WRITER", "D": "ARCHITECT : BUILDING" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 90,
+    "question": "Select the pair out of four pairs of words that expresses the relationship most similar to that of the given pair. EGG : OMELETTE ::",
+    "options": { "A": "DAM : RIVER", "B": "STUDENT : CLASSROOM", "C": "CLAY : POTTERY", "D": "ONION : SALAD" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 91,
+    "question": "On a playground, Dev, Kumar, Nilesh, Ankur and Pintu are standing as described below facing the North: i. Kumar is 40 m to the right of Ankur; ii. Dev is 60 m to the South of Kumar; iii. Nilesh is 25 m to the West of Ankur; iv. Pintu is 90 m to the North of Dev. Who is to the North-East of the person left of Kumar?",
+    "options": { "A": "Nilesh", "B": "Ankur", "C": "Dev", "D": "Pintu" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 92,
+    "question": "Using the same playground arrangement (Dev, Kumar, Nilesh, Ankur, Pintu facing North), if a boy walks from Nilesh and meets Ankur followed by Kumar, Dev and then Pintu, how many metres has he walked if he has travelled the straight distance all through?",
+    "options": { "A": "215 m", "B": "155 m", "C": "245 m", "D": "185 m" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 93,
+    "question": "If the South-East becomes North and North-East becomes West and so on, what will West become?",
+    "options": { "A": "North", "B": "East", "C": "South-East", "D": "South-West" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 94,
+    "question": "Ashish went 15 km to the West from his house, then turned left and walked 20 km. Then he turned East and walked 25 km and finally turning left covered 20 km. How far is he now from his house?",
+    "options": { "A": "15 km", "B": "20 km", "C": "25 km", "D": "10 km" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 95,
+    "question": "A is to the South-East of C, B is to the East of C and North-East of A. If D is to the North of A and North-West of B, in which direction of C is D located?",
+    "options": { "A": "North-West", "B": "South-West", "C": "North-East", "D": "South-East" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 96,
+    "question": "A, B, C and D are playing cards. A and B are partners. D faces towards North. If A faces towards the West, then who faces towards the South?",
+    "options": { "A": "C", "B": "B", "C": "D", "D": "A" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 97,
+    "question": "Arrange the words given below in a meaningful sequence and find the correct answer: 1. Poverty 2. Population 3. Death 4. Unemployment 5. Disease",
+    "options": { "A": "2, 3, 4, 5, 1", "B": "3, 4, 2, 5, 1", "C": "2, 4, 1, 5, 3", "D": "1, 2, 3, 4, 5" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 98,
+    "question": "Arrange the words given below in a meaningful sequence and find the correct answer: 1. Presentation 2. Recommendation 3. Arrival 4. Discussion 5. Introduction",
+    "options": { "A": "3, 5, 1, 4, 2", "B": "5, 3, 4, 1, 2", "C": "3, 5, 4, 2, 1", "D": "5, 3, 1, 2, 4" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 99,
+    "question": "Choose the word which is different from the rest.",
+    "options": { "A": "Rigveda", "B": "Yajurveda", "C": "Ayurveda", "D": "Samveda" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 100,
+    "question": "Select the figure from amongst the four alternatives which when placed in the blank space of figure X would complete the pattern. [Diagram-based question — see AEGCL GS.pdf, page 14, Q.100 for the figures]",
+    "options": { "A": "Figure A", "B": "Figure B", "C": "Figure C", "D": "Figure D" },
+    "correctAnswer": "D"
+  }
+]

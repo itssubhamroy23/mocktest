@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "When a relation contains an atomic value, it is a ____ relation.",
+    "options": { "A": "1NF", "B": "2NF", "C": "3NF", "D": "BCNF" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 2,
+    "question": "In SQL, the statement \"Select * from R, S\" is equivalent to",
+    "options": { "A": "Select * from R natural join S", "B": "Select * from R cross join S", "C": "Select * from R union join S", "D": "Select * from R inner join S" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 3,
+    "question": "Assume transaction A holds a shared lock R. If a transaction B also requests for a shared lock on R",
+    "options": { "A": "it will occur in deadlock situation", "B": "it will immediately be granted", "C": "it will be rejected", "D": "it will be granted as soon as it will be released" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 4,
+    "question": "An advantage of views is",
+    "options": { "A": "data security", "B": "derived columns", "C": "hiding of complex queries", "D": "All of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 5,
+    "question": "System call used to create process is",
+    "options": { "A": "fork( )", "B": "signal( )", "C": "wait( )", "D": "return( )" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 6,
+    "question": "The scheduling policy that is most suitable for time-sharing operating system is",
+    "options": { "A": "FCFS", "B": "shortest job first", "C": "priority based", "D": "round-robin" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 7,
+    "question": "The major part of the time taken when accessing data on the disk is",
+    "options": { "A": "settle time", "B": "rotational latency", "C": "seek time", "D": "waiting time" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Banker's algorithm for resource allocation deals with",
+    "options": { "A": "deadlock prevention", "B": "deadlock avoidance", "C": "deadlock recovery", "D": "circular wait" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 9,
+    "question": "A page fault occurs when",
+    "options": { "A": "a page gives inconsistent data", "B": "a page cannot be accessed due to its absence from memory", "C": "a page is invisible", "D": "All of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 10,
+    "question": "Locality of reference implies that the page reference being made by a process",
+    "options": { "A": "will always be to the page used in the previous page reference", "B": "will always be one of the pages existing in memory", "C": "is likely to be one of the pages used in the last few page references", "D": "will always lead to page faults" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 11,
+    "question": "In LRU page replacement policy, LRU stands for",
+    "options": { "A": "Last Replaced Unit", "B": "Last Restored Unit", "C": "Least Recently Used", "D": "Least Required Unit" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 12,
+    "question": "A program in execution is called",
+    "options": { "A": "process", "B": "procedure", "C": "instruction", "D": "function" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 13,
+    "question": "Worst time complexity of binary search algorithm is",
+    "options": { "A": "O(n)", "B": "O(n^2)", "C": "O(log n)", "D": "O(n log n)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following algorithm design techniques is used in the quick-sort algorithm?",
+    "options": { "A": "Dynamic multiprogramming", "B": "Backtracking", "C": "Divide and conquer", "D": "Greedy method" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 15,
+    "question": "When ____ traversal is applied on binary search tree, it prints all the data of the binary tree in the ascending order.",
+    "options": { "A": "post-order", "B": "in-order", "C": "pre-order", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 16,
+    "question": "Consider the following operation performed on a stack of size 5: push(1); pop(); push(2); push(3); pop(); push(4); pop(); pop(); push(5); After the completion of all operations, the number of elements present in the stack is",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 17,
+    "question": "The post-order traversal of the following binary tree (root F; F's children B and G; B's children A and D; D's children C and E; G's child I; I's child H) is",
+    "options": { "A": "ABCDEFGHI", "B": "ACEDBHIGF", "C": "FBADCEGIH", "D": "FABCDEHIG" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 18,
+    "question": "Sorting algorithm to sort a random list in shortest time is",
+    "options": { "A": "insertion sort", "B": "quicksort", "C": "heapsort", "D": "merge sort" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 19,
+    "question": "A graph is a tree if and only if the graph",
+    "options": { "A": "is directed graph", "B": "contains no cycle", "C": "is planar", "D": "is completely connected" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 20,
+    "question": "The asymptotic time complexity to add a node at the end of singly linked list when the pointer is at the head of the list is",
+    "options": { "A": "O(1)", "B": "O(n)", "C": "θ(n)", "D": "θ(1)" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Suppose a complete binary tree has height h > 0. The minimum number of leaf nodes possible in terms of h is",
+    "options": { "A": "2^h − 1", "B": "2^(h−1) + 1", "C": "2^(h−1)", "D": "2^h + 1" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 22,
+    "question": "The size of registers of 8086 is",
+    "options": { "A": "8 bits", "B": "12 bits", "C": "16 bits", "D": "20 bits" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 23,
+    "question": "The direction flag is used with",
+    "options": { "A": "stack instructions", "B": "string instructions", "C": "arithmetic instructions", "D": "branch instructions" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 24,
+    "question": "Ready pin of a microprocessor is used to",
+    "options": { "A": "provide direct memory access", "B": "introduce wait states", "C": "indicate that the microprocessor is ready to receive inputs", "D": "indicate that the microprocessor is ready to receive outputs" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 25,
+    "question": "The DEN pin of Intel 8086 microprocessor is for",
+    "options": { "A": "direct enable", "B": "data entered", "C": "data enable", "D": "data encoding" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 26,
+    "question": "In 8086 microprocessor, which one of the following is not true?",
+    "options": { "A": "Coprocessor is interfaced in max mode", "B": "Coprocessor is interfaced in min mode", "C": "I/O can be interfaced in min/max mode", "D": "Supports pipelining" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 27,
+    "question": "Which flag of flag register is set to 1 when the result of arithmetic or logical operation is zero?",
+    "options": { "A": "Binary bit", "B": "Zero flag", "C": "Sign flag", "D": "Overflow flag" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 28,
+    "question": "AX, BX, CX and DX are known as",
+    "options": { "A": "segment registers", "B": "general-purpose registers", "C": "index registers", "D": "special-purpose registers" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 29,
+    "question": "In assembly language programming, DS stands for",
+    "options": { "A": "Direct Segment", "B": "Declare Segment", "C": "Divide Segment", "D": "Data Segment" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 30,
+    "question": "The alternate way of writing the instruction ADD#5, R1 is",
+    "options": { "A": "ADDI 5, R1", "B": "ADD [5], [R1]", "C": "ADDIME 5, [R1]", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 31,
+    "question": "The protocol primarily used for browsing data is",
+    "options": { "A": "FTB", "B": "HTTP", "C": "TCP", "D": "SMTP" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following layers of OSI model is not present in the TCP/IP model?",
+    "options": { "A": "Transport layer", "B": "Application layer", "C": "Session layer", "D": "Network layer" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 33,
+    "question": "The length of IPv4 address is",
+    "options": { "A": "16 bits", "B": "32 bits", "C": "64 bits", "D": "128 bits" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 34,
+    "question": "The device used to connect two dissimilar types of network is",
+    "options": { "A": "switch", "B": "bridge", "C": "gateway", "D": "modem" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 35,
+    "question": "BNC connector is generally used in",
+    "options": { "A": "ring topology", "B": "bus topology", "C": "tree topology", "D": "mesh topology" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 36,
+    "question": "The data link layer takes the packet from ____ and breaks it into frames.",
+    "options": { "A": "network layer", "B": "data link layer", "C": "application layer", "D": "transport layer" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 37,
+    "question": "Packet in the IP layer is called as",
+    "options": { "A": "datagram", "B": "segment", "C": "fragment", "D": "frame" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 38,
+    "question": "TCP/IP layer is equivalent to combined session, presentation and ____.",
+    "options": { "A": "network layer", "B": "application layer", "C": "transport layer", "D": "physical layer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 39,
+    "question": "Which of the following services use TCP? I. DHCP; II. SMTP; III. HTTP; IV. TFTP; V. FTP",
+    "options": { "A": "I and II", "B": "II, III and V", "C": "I, II and IV", "D": "I, III and IV" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 40,
+    "question": "The file format that uses a shorthand representation of musical notes and durations stored in numeric form is",
+    "options": { "A": "AIF", "B": "WAV", "C": "MIDI", "D": "TIFF" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 41,
+    "question": "Expand JPEG.",
+    "options": { "A": "Joint Photo Expert Gross", "B": "Joint Photographic Experts Group", "C": "Joint Processor Experts Group", "D": "Joint Photographic Expression Group" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 42,
+    "question": "A 4-bit color image can have ____ different colors.",
+    "options": { "A": "4", "B": "8", "C": "16", "D": "32" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 43,
+    "question": "The color model used for printing is",
+    "options": { "A": "CMYK", "B": "YUV", "C": "RGB", "D": "additive" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 44,
+    "question": "Dynamic web pages are not generated using",
+    "options": { "A": "CSS", "B": "PHP", "C": "JSP", "D": "ASP.NET" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 45,
+    "question": "There are ____ levels of heading in HTML.",
+    "options": { "A": "three", "B": "four", "C": "five", "D": "six" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 46,
+    "question": "HTML attribute used to define the inline styles is",
+    "options": { "A": "class", "B": "type", "C": "style", "D": "None of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 47,
+    "question": "Common gateway interface is used to",
+    "options": { "A": "generate web pages", "B": "generate executable files from web content", "C": "stream videos", "D": "download media files" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 48,
+    "question": "The HTML tags used to add rows in a table are",
+    "options": { "A": "<td> and </td>", "B": "<th> and </th>", "C": "<tr> and </tr>", "D": "<tb> and </tb>" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 49,
+    "question": "The decoded instructions are stored in the",
+    "options": { "A": "accumulator", "B": "memory address register", "C": "general-purpose register", "D": "instruction register" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 50,
+    "question": "Memory that requires to be refreshed many times per second is",
+    "options": { "A": "static RAM", "B": "dynamic RAM", "C": "ROM", "D": "EPROM" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 51,
+    "question": "Cache memory acts between",
+    "options": { "A": "ROM and RAM", "B": "CPU and ROM", "C": "CPU and RAM", "D": "CPU and hard disk" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 52,
+    "question": "Floating-point representation is used to store",
+    "options": { "A": "real integers", "B": "whole numbers", "C": "Boolean values", "D": "integers" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 53,
+    "question": "The circuit that converts binary data to decimal is",
+    "options": { "A": "encoder", "B": "multiplexer", "C": "decoder", "D": "code converter" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 54,
+    "question": "The I/O devices are connected to CPU by",
+    "options": { "A": "control circuit", "B": "BUS", "C": "signal", "D": "memory" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 55,
+    "question": "The operand is specified in the instruction itself in ____ mode of addressing.",
+    "options": { "A": "register", "B": "immediate", "C": "implied", "D": "indexed" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 56,
+    "question": "Convert 187(10) to binary.",
+    "options": { "A": "10111011(2)", "B": "11011101(2)", "C": "10111101(2)", "D": "10111100(2)" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 57,
+    "question": "The addressing mode of the instruction MOV CX, [BX + SI + 20 H] is",
+    "options": { "A": "immediate addressing mode", "B": "relative-based index addressing mode", "C": "implicit addressing mode", "D": "register relative addressing mode" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 58,
+    "question": "How many two-input AND and OR gates are required to realize Y = CD + EF + G?",
+    "options": { "A": "2, 2", "B": "2, 3", "C": "3, 3", "D": "3, 2" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 59,
+    "question": "If one of the inputs to a gate suddenly becomes low but still the output is high, the gate is",
+    "options": { "A": "AND", "B": "NAND", "C": "NOR", "D": "OR" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 60,
+    "question": "Boolean expression for the given logic circuit (inputs A, B through an OR gate; combined with C via AND; combined with D via OR; combined with E via AND) is",
+    "options": { "A": "(A + B * C)DE", "B": "C(A + B)DE", "C": "A + BCDE", "D": "ABCDE" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 61,
+    "question": "According to Boolean law, A + 1 =",
+    "options": { "A": "1", "B": "A", "C": "0", "D": "A'" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 62,
+    "question": "A D flip-flop is transparent when",
+    "options": { "A": "the output is low", "B": "the output follows clock", "C": "the output follows input", "D": "the output is high" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 63,
+    "question": "Logic family with minimum power dissipation is",
+    "options": { "A": "ECL", "B": "CMOS", "C": "TTL", "D": "JFET" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 64,
+    "question": "In a full-wave rectifier, the current in each diode flows",
+    "options": { "A": "for complete cycle of the input signal", "B": "for half-cycle of the input signal", "C": "for less than half of the input signal", "D": "only for the positive half-cycle of the input signal" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 65,
+    "question": "In a p-n-p transistor, the current carriers are",
+    "options": { "A": "acceptor ions", "B": "donor ions", "C": "free electrons", "D": "holes" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 66,
+    "question": "Which device is used to back up the data?",
+    "options": { "A": "Optical disc", "B": "Tape", "C": "Network drive", "D": "All of the above" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 67,
+    "question": "Which of the following is not correct model in software development paradigm?",
+    "options": { "A": "Waterfall model", "B": "P-model", "C": "Spiral model", "D": "V-model" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 68,
+    "question": "Which of the following is also known as 'behavioral' testing?",
+    "options": { "A": "Black-box testing", "B": "White-box testing", "C": "Grey-box testing", "D": "Green-box testing" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 69,
+    "question": "Alpha testing is done at",
+    "options": { "A": "developer's end", "B": "user's end", "C": "developer's and user's end", "D": "None of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 70,
+    "question": "Which of the following is not a phase of prototyping model?",
+    "options": { "A": "Quick design", "B": "Coding", "C": "Prototype refinement", "D": "User requirement" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 71,
+    "question": "Functional testing is also known as",
+    "options": { "A": "white-box testing", "B": "black-box testing", "C": "grey-box testing", "D": "glass-box testing" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 72,
+    "question": "Checking quality of software in both simulated and live environments is known as",
+    "options": { "A": "verification", "B": "correctness", "C": "validation", "D": "confirmation" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 73,
+    "question": "In the spiral model, 'risk analysis' is performed",
+    "options": { "A": "in the first loop", "B": "in the first and second loop", "C": "in every loop", "D": "It is performed before using spiral model" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 74,
+    "question": "Identify the term not related to testing.",
+    "options": { "A": "Failure", "B": "Error", "C": "Test case", "D": "Test bot" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 75,
+    "question": "Structure chart is a product of",
+    "options": { "A": "requirements gathering", "B": "requirements analysis", "C": "design", "D": "coding" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 76,
+    "question": "Identify which of these is/are not input device(s).",
+    "options": { "A": "OMR, OCR, MICR", "B": "Biometric sensor", "C": "Scanner, microphone", "D": "Projector, plotter" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 77,
+    "question": "VGA stands for",
+    "options": { "A": "Visual Graphics Adapter", "B": "Video Graphics Adapter", "C": "Video Graphics Array", "D": "Visual Graphics Array" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 78,
+    "question": "Hardware testing and loading of OS is known as",
+    "options": { "A": "self-testing", "B": "POST", "C": "booting", "D": "operation testing" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 79,
+    "question": "SMPS stands for",
+    "options": { "A": "Switched Mode Power Supply", "B": "Start Mode Power Supply", "C": "Store Mode Power Supply", "D": "Single Mode Power Supply" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 80,
+    "question": "A personal computer uses a number of chips mounted on a circuit board called",
+    "options": { "A": "microprocessor", "B": "system board", "C": "daughterboard", "D": "motherboard" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 81,
+    "question": "The example of an impact printer is",
+    "options": { "A": "dot-matrix printer", "B": "inkjet printer", "C": "laser printer", "D": "thermal printer" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 82,
+    "question": "RS-232 is a standard which applies for",
+    "options": { "A": "parallel port", "B": "serial port", "C": "network port", "D": "game port" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 83,
+    "question": "Valid I/O address for configuring a new network interface card is",
+    "options": { "A": "356", "B": "360", "C": "2F8", "D": "3F8" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 84,
+    "question": "Computer component that is environmentally recycled easily is",
+    "options": { "A": "CMOS battery", "B": "motherboard", "C": "cathode-ray tube", "D": "toner cartridge" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 85,
+    "question": "Operator overloading is an example of",
+    "options": { "A": "simple inheritance", "B": "compile-time polymorphism", "C": "run-time polymorphism", "D": "multiple inheritance" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 86,
+    "question": "The operator that cannot be overloaded in C++ is",
+    "options": { "A": "::", "B": "--", "C": "+", "D": "++" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 87,
+    "question": "The private and protected members of a class can be accessed by",
+    "options": { "A": "friend of a class", "B": "member function of a derived class", "C": "Both (A) and (B)", "D": "Neither (A) nor (B)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 88,
+    "question": "The destructor in inheritance of C++ is executed",
+    "options": { "A": "from base class to the derived class", "B": "from derived class to the base class", "C": "only in the base class", "D": "only in the derived class" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 89,
+    "question": "In C++, virtual function is used in",
+    "options": { "A": "function overloading", "B": "function overriding", "C": "constructor overloading", "D": "operator overloading" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 90,
+    "question": "The index number of the last element of an array with 9 elements is",
+    "options": { "A": "0", "B": "1", "C": "8", "D": "9" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 91,
+    "question": "A non-member function that can access the private data of a class is called",
+    "options": { "A": "pure member function", "B": "library function", "C": "static function", "D": "friend function" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 92,
+    "question": "In C++, the class variables are called as",
+    "options": { "A": "functions", "B": "constants", "C": "objects", "D": "methods" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 93,
+    "question": "Which of the following is the correct identifier?",
+    "options": { "A": "$var_name", "B": "VAR_123", "C": "varname@", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 94,
+    "question": "Identify the odd one out.",
+    "options": { "A": "Default constructor", "B": "Friend constructor", "C": "Parameterized constructor", "D": "Copy constructor" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 95,
+    "question": "Instance and schemas are parts of",
+    "options": { "A": "data definition", "B": "data manipulation", "C": "data models", "D": "data redundancy" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 96,
+    "question": "A foreign key is a/an",
+    "options": { "A": "primary key of a relation which is an attribute in another relation", "B": "superkey of a relation which is an attribute in more than one other relation", "C": "attribute of a relation that is a primary key of another relation", "D": "primary key of a relation that does not occur anywhere else in the schema" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 97,
+    "question": "____ is based on the concept of full functional dependency.",
+    "options": { "A": "1NF", "B": "2NF", "C": "3NF", "D": "BCNF" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 98,
+    "question": "Which of the following is an aggregate function in SQL?",
+    "options": { "A": "GROUP BY", "B": "UNION", "C": "COUNT", "D": "GRANT" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 99,
+    "question": "Transaction state that makes changes to the database is",
+    "options": { "A": "partially commit state", "B": "abort state", "C": "ready state", "D": "commit state" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 100,
+    "question": "Lost update and dirty read problems are associated with",
+    "options": { "A": "normalization", "B": "transaction processing", "C": "database recovery", "D": "concurrency control" },
+    "correctAnswer": "D"
+  }
+]

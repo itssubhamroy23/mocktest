@@ -3,10 +3,48 @@
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import questionsData from "@/data/questions.json";
+import aegclQuestionsData from "@/data/aegcl-questions.json";
+import apdclQuestionsData from "@/data/apdcl-questions.json";
+import apgclItQuestionsData from "@/data/apgcl-it-questions.json";
+import aegclItQuestionsData from "@/data/aegcl-it-questions.json";
+import apdclItQuestionsData from "@/data/apdcl-it-questions.json";
 import type { OptionKey, Question } from "@/lib/types";
 
 const DEFAULT_QUESTIONS = questionsData as Question[];
-const DEFAULT_SET_NAME = "APGCL JM — General Studies";
+const AEGCL_QUESTIONS = aegclQuestionsData as Question[];
+const APDCL_QUESTIONS = apdclQuestionsData as Question[];
+const APGCL_IT_QUESTIONS = apgclItQuestionsData as Question[];
+const AEGCL_IT_QUESTIONS = aegclItQuestionsData as Question[];
+const APDCL_IT_QUESTIONS = apdclItQuestionsData as Question[];
+
+// Built-in sets grouped by organization, each holding its available papers
+// (General Studies, Information Technology, ...). Add a new org or paper
+// here and it shows up on the start screen automatically.
+const BUILTIN_GROUPS: { org: string; papers: QuestionSet[] }[] = [
+  {
+    org: "APGCL",
+    papers: [
+      { name: "APGCL — General Studies", questions: DEFAULT_QUESTIONS },
+      { name: "APGCL — Information Technology", questions: APGCL_IT_QUESTIONS },
+    ],
+  },
+  {
+    org: "AEGCL",
+    papers: [
+      { name: "AEGCL — General Studies", questions: AEGCL_QUESTIONS },
+      { name: "AEGCL — Information Technology", questions: AEGCL_IT_QUESTIONS },
+    ],
+  },
+  {
+    org: "APDCL",
+    papers: [
+      { name: "APDCL — General Studies", questions: APDCL_QUESTIONS },
+      { name: "APDCL — Information Technology", questions: APDCL_IT_QUESTIONS },
+    ],
+  },
+];
+const BUILTIN_SETS: QuestionSet[] = BUILTIN_GROUPS.flatMap((g) => g.papers);
+const DEFAULT_SET_NAME = BUILTIN_GROUPS[0].papers[0].name;
 const STORAGE_KEY = "mocktest.customSets";
 const SAVED_STORAGE_KEY = "mocktest.savedQuestions";
 const SESSION_STORAGE_KEY = "mocktest.session";
@@ -88,7 +126,9 @@ function QuizApp() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const questions =
-    customSets.find((s) => s.name === selectedSetName)?.questions ?? DEFAULT_QUESTIONS;
+    customSets.find((s) => s.name === selectedSetName)?.questions ??
+    BUILTIN_SETS.find((s) => s.name === selectedSetName)?.questions ??
+    DEFAULT_QUESTIONS;
   const [activeQuestions, setActiveQuestions] = useState<Question[]>(questions);
 
   useEffect(() => {
@@ -150,7 +190,7 @@ function QuizApp() {
         const parsedQuestions = parseQuestionsFile(reader.result as string);
         let name = file.name.replace(/\.json$/i, "");
         const existingNames = new Set(customSets.map((s) => s.name));
-        existingNames.add(DEFAULT_SET_NAME);
+        BUILTIN_SETS.forEach((s) => existingNames.add(s.name));
         let suffix = 2;
         const base = name;
         while (existingNames.has(name)) {
@@ -336,8 +376,8 @@ function QuizApp() {
 
   if (phase === "start") {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-black px-4">
-        <div className="max-w-md w-full bg-white dark:bg-zinc-900 rounded-xl shadow p-8 text-center space-y-4">
+      <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-black px-4 py-10">
+        <div className="max-w-2xl w-full bg-white dark:bg-zinc-900 rounded-xl shadow p-8 text-center space-y-4">
           <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
             {selectedSetName}
           </h1>
@@ -349,17 +389,44 @@ function QuizApp() {
             <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
               Choose question set
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {BUILTIN_GROUPS.map((group) => (
+                <div
+                  key={group.org}
+                  className="rounded-lg border border-zinc-200 dark:border-zinc-700 p-3 space-y-2"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 dark:text-zinc-500">
+                    {group.org}
+                  </p>
+                  <div className="space-y-2">
+                    {group.papers.map((s) => (
+                      <button
+                        key={s.name}
+                        onClick={() => setSelectedSetName(s.name)}
+                        className={`w-full rounded-lg border px-3 py-2 text-sm text-left transition ${
+                          selectedSetName === s.name
+                            ? "border-zinc-900 dark:border-zinc-50 bg-zinc-100 dark:bg-zinc-800"
+                            : "border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
+                        }`}
+                      >
+                        <span className="text-zinc-900 dark:text-zinc-50">
+                          {s.name.replace(`${group.org} — `, "")}
+                        </span>
+                        <span className="block text-zinc-500 text-xs">
+                          {s.questions.length} questions
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            {customSets.length > 0 && (
+              <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 dark:text-zinc-500 pt-2">
+                Custom
+              </p>
+            )}
             <div className="space-y-2">
-              <button
-                onClick={() => setSelectedSetName(DEFAULT_SET_NAME)}
-                className={`w-full flex items-center justify-between rounded-lg border px-4 py-2 text-sm transition ${
-                  selectedSetName === DEFAULT_SET_NAME
-                    ? "border-zinc-900 dark:border-zinc-50 bg-zinc-100 dark:bg-zinc-800"
-                    : "border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
-                }`}
-              >
-                <span className="text-zinc-900 dark:text-zinc-50">{DEFAULT_SET_NAME}</span>
-              </button>
               {customSets.map((s) => (
                 <div
                   key={s.name}

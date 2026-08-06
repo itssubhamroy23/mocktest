@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "The meeting is ____ in ten minutes. The correct option to fill in the blank is",
+    "options": { "A": "beginning", "B": "begining", "C": "beggining", "D": "begginning" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 2,
+    "question": "Choose the correct statement.",
+    "options": { "A": "No sooner he received the letter from his father then he went out.", "B": "No sooner than he received the letter from his father than he went out.", "C": "No sooner had he received the letter from his father than he went out.", "D": "No sooner receiving the letter from his father he went out." },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct option to the underlined words: He borrowed five thousands rupees from me.",
+    "options": { "A": "five thousand rupees", "B": "five thousand rupee", "C": "five thousand ruppees", "D": "fives thousand rupees" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 4,
+    "question": "We purchase milk from a milkwoman. The underlined word means",
+    "options": { "A": "milk girl", "B": "milk-mother", "C": "milk lass", "D": "milkmaid" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 5,
+    "question": "Choose the correct option to the underlined words in the following sentence: What kinds of the book do you want?",
+    "options": { "A": "kind of books", "B": "kind of the books", "C": "kinds of book", "D": "kinds of the books" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 6,
+    "question": "He complained ____ the Principal against the new student. The correct preposition to fill in the blank is",
+    "options": { "A": "of", "B": "about", "C": "to", "D": "for" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 7,
+    "question": "Find the misspelt word.",
+    "options": { "A": "Renaissance", "B": "Occasion", "C": "Acomplish", "D": "Benefitted" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Choose the correct option to the underlined words in the following sentence: The prices of essential commodities has risen unprecedentedly, causing a lot of hardship to the common man.",
+    "options": { "A": "rose", "B": "has risen", "C": "have risen", "D": "have rose" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct joined sentence of the following sentences: This is done. This cannot be undone.",
+    "options": { "A": "This cannot be undone as it is done.", "B": "What is done cannot be undone.", "C": "This cannot be undone as it was done.", "D": "Done things cannot be undone." },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 10,
+    "question": "Choose the correct question tag to fill in the blank in the given sentence: You wanted to go out with your friend, ____?",
+    "options": { "A": "do you", "B": "you do", "C": "don't you", "D": "didn't you" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 11,
+    "question": "We should rely ____ our own efforts. The correct word to fill in the blank is",
+    "options": { "A": "by", "B": "to", "C": "on", "D": "of" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 12,
+    "question": "I was given a book by my mother on my birthday. The correct voice change of the above sentence is",
+    "options": { "A": "My mother gave me a book on my birthday.", "B": "I got a book on my birthday from my mother.", "C": "Mother gave me a book.", "D": "On my birthday, mother gave me a book." },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 13,
+    "question": "He went to foreign for higher education. The correct option for the underlined words is",
+    "options": { "A": "had gone to foreign", "B": "went abroad", "C": "went aboard", "D": "went to another country" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Tokyo is one of the highly populated city in the world. The underlined words can be replaced by",
+    "options": { "A": "populated cities", "B": "populated city", "C": "more populated city", "D": "most populated city" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 15,
+    "question": "He behaves as if he ____ a king. The correct option to fill in the blank is",
+    "options": { "A": "is", "B": "were", "C": "are", "D": "was" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 16,
+    "question": "Mary is a good singer but she cannot sing as well like her sister. The underlined words can be replaced by",
+    "options": { "A": "but she cannot sing as well as", "B": "but she cannot sing so well like", "C": "but she cannot sing well like", "D": "but she cannot sing well as" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 17,
+    "question": "The nearest meaning word or synonym of 'redeem' is",
+    "options": { "A": "fulfill", "B": "reconsider", "C": "recover", "D": "extend" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 18,
+    "question": "____ being a good painter, he is also a very good cook. The correct word to fill in the blank is",
+    "options": { "A": "Besides", "B": "Beside", "C": "Inspite", "D": "Despite" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 19,
+    "question": "Choose the word that does not add meaning to the given sentence: He feels his troubles are even more than they.",
+    "options": { "A": "feels", "B": "even", "C": "more", "D": "they" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 20,
+    "question": "Susan was ready to take on the world. ____ when she moved to Delhi she was apprehensive. ____ her fellow students seemed smarter and more confident. One day ____ browsing the Internet she came across an internship opportunity. ____ the concept was new to her, Susan wanted to apply for the same. The correct sequence of words to fill in the blanks is",
+    "options": { "A": "while, though, because, however", "B": "however, because, while, though", "C": "because, though, however, while", "D": "though, while, however, because" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 21,
+    "question": "He ____ in London since 1990. The correct option to fill in the blank is",
+    "options": { "A": "has been", "B": "was", "C": "had been", "D": "lived" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 22,
+    "question": "Spot the error in the following sentence: It was him who came running into the classroom.",
+    "options": { "A": "It was him", "B": "who came", "C": "running into", "D": "the classroom" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 23,
+    "question": "The workers are hell bent at getting what is due to them. Pick the correct option for the underlined words to improve the above sentence.",
+    "options": { "A": "hell bent on getting", "B": "hell bent for getting", "C": "hell bent upon getting", "D": "No improvement" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 24,
+    "question": "The boy keeps to himself. In the above sentence, the underlined words mean that the boy is",
+    "options": { "A": "an extrovert", "B": "an introvert", "C": "a hypocrite", "D": "an ambivert" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 25,
+    "question": "Despite her flaws, I love her. After transformation, the above sentence would read as",
+    "options": { "A": "She has no flaws, so I love her.", "B": "She has many flaws, but I love her.", "C": "She has flaws yet, I love her.", "D": "She has flaws, still I love her." },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 26,
+    "question": "There is no fun in doing that. The interrogative form of the above sentence is",
+    "options": { "A": "Is there any fun in doing that?", "B": "Are you having fun doing that?", "C": "Is doing that fun?", "D": "Did you have fun doing that?" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 27,
+    "question": "If somebody has worked for 'donkey's years', it means he has worked",
+    "options": { "A": "for donkeys", "B": "for a few years", "C": "for a long time", "D": "for a short time" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 28,
+    "question": "To murder in 'cold blood', it means to murder",
+    "options": { "A": "coolly", "B": "unfeelingly", "C": "thoughtlessly", "D": "deliberately" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 29,
+    "question": "Find the correctly spelt word.",
+    "options": { "A": "Ilegitimate", "B": "Illigetimate", "C": "Illegitimate", "D": "Illegitemate" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 30,
+    "question": "The practice of having many wives is",
+    "options": { "A": "polyandry", "B": "bigamy", "C": "polygamy", "D": "monogamy" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 31,
+    "question": "'City of Dead', a UNESCO World Heritage Site, is located in which country?",
+    "options": { "A": "Egypt", "B": "USA", "C": "Greece", "D": "Turkey" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 32,
+    "question": "The branch of Physics that deals with heat and temperature and their relation to energy and work is",
+    "options": { "A": "Geophysics", "B": "Mechanics", "C": "Atomic physics", "D": "Thermodynamics" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 33,
+    "question": "Which of the following languages are the official languages of the Olympic Charter?",
+    "options": { "A": "English and Spanish", "B": "English and French", "C": "English and German", "D": "English and Mandarin" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 34,
+    "question": "The person recognized as the first composer of the sonnet in Assamese poetry is",
+    "options": { "A": "Hemchandra Goswami", "B": "Chandra Kumar Agarwala", "C": "Hiren Bhattacharya", "D": "Binanda Chandra Barua" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 35,
+    "question": "The Boolean algebra was discovered by",
+    "options": { "A": "George Boole", "B": "Charles Babbage", "C": "Augusta Ada Byron", "D": "Herman Hollerith" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 36,
+    "question": "If a = 10 and d = 10, then the first four numbers will be",
+    "options": { "A": "10, 30, 50, 60", "B": "10, 20, 30, 40", "C": "10, 15, 20, 25", "D": "10, 18, 20, 30" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 37,
+    "question": "Identify the cricketer who broke the record of Mansur Ali Khan Pataudi to become the youngest test captain in cricket history.",
+    "options": { "A": "Shakib Al Hasan (Bangladesh)", "B": "Waqar Younis (Pakistan)", "C": "Tatenda Taibu (Zimbabwe)", "D": "Graeme Smith (South Africa)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 38,
+    "question": "The acronym MBBS PAIN denotes the member countries of SAARC. Which of the following countries is not a member of SAARC?",
+    "options": { "A": "Nepal", "B": "China", "C": "Maldives", "D": "Afghanistan" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 39,
+    "question": "Which medical college in Assam was inaugurated in October, 2022? How many medical colleges were there in Assam in 2000?",
+    "options": { "A": "Dhubri, 2 medical colleges", "B": "Kokrajhar, 3 medical colleges", "C": "Barpeta, 1 medical college", "D": "Diphu, 3 medical colleges" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 40,
+    "question": "The correct chronological order of the formation of Haryana, Sikkim, Arunachal Pradesh and Nagaland as full States of the Indian Union is",
+    "options": { "A": "Haryana, Sikkim, Arunachal Pradesh and Nagaland", "B": "Nagaland, Arunachal Pradesh, Haryana and Sikkim", "C": "Nagaland, Haryana, Arunachal Pradesh and Sikkim", "D": "Nagaland, Haryana, Sikkim and Arunachal Pradesh" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 41,
+    "question": "Bhagadatta, who sided with the Kauravas in the Mahabharata War, belonged to which legendary dynasty of Pragjyotisha?",
+    "options": { "A": "Danava", "B": "Bhauma", "C": "Asura", "D": "None of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 42,
+    "question": "Which of the following statements is/are correct? 1. The National Tiger Conservation Authority is a statutory authority with legal backing to ensure tiger conservation. 2. The Project Tiger has no statutory status.",
+    "options": { "A": "Only 1", "B": "Only 2", "C": "Both 1 and 2", "D": "Neither 1 nor 2" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 43,
+    "question": "The average temperature for Wednesday, Thursday and Friday was 40 degree celsius. The average temperature for Thursday, Friday and Saturday was 41 degree celsius. If the temperature on Saturday was 42 degree celsius, what was the temperature on Wednesday?",
+    "options": { "A": "39 °C", "B": "40 °C", "C": "25 °C", "D": "35 °C" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 44,
+    "question": "Examine the following statements and select the correct option from those given: 1. Atoms are made of molecules. 2. The word 'atom' comes from the word 'atmos'. 3. Molecules are made up of atoms. 4. Molecules can be seen by the naked eye by young children with 20-20 vision.",
+    "options": { "A": "1, 2 and 3 are correct", "B": "2 and 3 are correct", "C": "1, 3 and 4 are correct", "D": "1 and 2 are correct" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Which of the following statements on Meghalaya are true? 1. It comprises of 14 districts. 2. Total area is 22720 sq. km. 3. There are 3 autonomous district councils. 4. It is covered under the provisions of the Sixth Schedule of the Constitution of India.",
+    "options": { "A": "1, 2 and 3", "B": "1, 3 and 4", "C": "2, 3 and 4", "D": "2 and 4" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 46,
+    "question": "Which district has the highest percentage share of Assam's population?",
+    "options": { "A": "Nagaon", "B": "Kamrup (Metro)", "C": "Kamrup (Rural)", "D": "Cachar" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 47,
+    "question": "Submarines must",
+    "options": { "A": "be airtight", "B": "be powered by lithium batteries", "C": "have engines that use up air", "D": "sometimes have periscopes" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 48,
+    "question": "Select the correct match of the following: 1. Nohkalikai Falls — i. Imphal; 2. Loktak Lake — ii. Sohra; 3. Japfü Peak — iii. Kohima; 4. Rudrasagar Lake — iv. Tripura",
+    "options": { "A": "1-ii, 2-i, 3-iii, 4-iv", "B": "2-i, 1-ii, 3-iii, 4-iv", "C": "4-iii, 2-ii, 3-i, 1-iv", "D": "1-i, 2-iv, 3-ii, 4-iii" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 49,
+    "question": "Consider the following statements and select the correct option: 1. Neeraj Chopra is a 3000 m steeplechase specialist. 2. Avinash Sable is a javelin thrower. 3. Mira Chanu is an Olympic medalist wrestler. 4. Umran Malik is a fastbowler with a speed of 150 kmph.",
+    "options": { "A": "Only 1", "B": "Only 4", "C": "1, 2 and 3", "D": "1 and 2" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 50,
+    "question": "Which of the following is a Scheduled Tribe of Arunachal Pradesh? 1. Monpa; 2. Guite; 3. Nyishi; 4. Galo",
+    "options": { "A": "Only 1", "B": "1, 3 and 4", "C": "1, 2 and 3", "D": "1 and 2" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 51,
+    "question": "Select the correct option after reading the given statements: 1. Tally is an accounting software. 2. LibreOffice is a freely available open source software. 3. MS Word is a freely available open source software.",
+    "options": { "A": "1 and 3", "B": "1 and 2", "C": "2 and 3", "D": "All of the above" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 52,
+    "question": "Consider the following statements and select the correct option: 1. Coronations are centered around a solemn religious ceremony that has largely remained unchanged for over 10000 years. 2. The coronation of King Charles III took place on 6th May, 2023 at Westminster Abbey, London. 3. The Queen Camilla Rosemary Shand was born on 17th July, 1947. 4. The Queen Lady Diana Frances Spencer Princess of Wales was born on 1st July, 1961.",
+    "options": { "A": "1 and 2", "B": "2 and 3", "C": "2 and 4", "D": "1, 2 and 4" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 53,
+    "question": "Examine the following statements and choose the correct option: 1. Chakrashila Wildlife Sanctuary is located in Karbi Anglong. 2. It is situated partly in Karbi Anglong and partly in Dima Hasao districts. 3. It is situated partly in Kokrajhar. 4. It is situated partly in Dhubri.",
+    "options": { "A": "Only 1", "B": "3 and 4", "C": "1 and 3", "D": "Only 2" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 54,
+    "question": "Which of the following is a small-scale industry?",
+    "options": { "A": "Jute", "B": "Paper", "C": "Textile", "D": "Handloom" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 55,
+    "question": "DAGGER Computer model, an AI-based computer model, is used in",
+    "options": { "A": "cryptocurrency", "B": "geo-magnetics", "C": "geo-politics", "D": "sports" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 56,
+    "question": "Choose the correct option and complete the sentence: He doesn't deserve to fail after all the hard work, ____?",
+    "options": { "A": "is he", "B": "does he", "C": "did he", "D": "isn't it" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 57,
+    "question": "Fill in the blank with the correct alternative given below: These medicines are ____ for curing cold.",
+    "options": { "A": "not affective", "B": "capable", "C": "affective", "D": "effective" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 58,
+    "question": "Choose the appropriate single word to substitute the set of words: Intentional destruction of racial groups",
+    "options": { "A": "homicide", "B": "fratricide", "C": "genocide", "D": "patricide" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 59,
+    "question": "Find the misspelt word from the options given below.",
+    "options": { "A": "Perceive", "B": "Amature", "C": "Achieve", "D": "Discipline" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 60,
+    "question": "Transform the following sentence as directed: How beautiful is the scenary! (Turn into Assertive)",
+    "options": { "A": "How is the scenary so beautiful?", "B": "The scenery is beautiful, isn't it?", "C": "The scenery is very beautiful.", "D": "How beautiful the scenary is!" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 61,
+    "question": "Choose the correct sentence arrangement.",
+    "options": { "A": "Mythology is to the epic is not confined Indians.", "B": "Mythology is not confined Indian to the epic.", "C": "Indian mythology is not confined to the epic.", "D": "The Indian epic is not confined to mythology." },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 62,
+    "question": "Complete the sentence by choosing the correct option: You haven't eaten your pudding. ____ it?",
+    "options": { "A": "Are you no want", "B": "Do you no want", "C": "Don't want you", "D": "Don't you want" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 63,
+    "question": "Choose the correct idiom for the following sentence: He should take the bull ____.",
+    "options": { "A": "by the ears", "B": "by the tail", "C": "by the teeth", "D": "by the horns" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 64,
+    "question": "Choose the correct word to replace the underlined word: I have not seen Rita since six years.",
+    "options": { "A": "with", "B": "for", "C": "before", "D": "by" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 65,
+    "question": "Choose the correct word to complete the following sentence: They have been married for ____ years.",
+    "options": { "A": "fourty", "B": "forty", "C": "fourti", "D": "fourtee" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 66,
+    "question": "The antonym or opposite of the word 'pertinent' is",
+    "options": { "A": "indifferent", "B": "determined", "C": "irrelevant", "D": "detached" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 67,
+    "question": "Choose the correct meaning of the following idiom: To turn the tables",
+    "options": { "A": "To defeat", "B": "To create chaos", "C": "To oppose", "D": "Turning position of disadvantage into advantage" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 68,
+    "question": "Pick the correct alternative for the underlined words in the given sentence: He is used to wake up late in the morning.",
+    "options": { "A": "He is used to wake up lately in the morning.", "B": "He use to wake up lately in the morning.", "C": "No correction required", "D": "He is used to waking up late in the morning." },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 69,
+    "question": "Choose the appropriate preposition to complete the following sentence: He died ____ overwork.",
+    "options": { "A": "for", "B": "from", "C": "of", "D": "by" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 70,
+    "question": "Find out the word/words that does/do not make sense in the following sentence: I have eaten nothing from yesterday evening.",
+    "options": { "A": "have", "B": "eaten", "C": "from", "D": "yesterday evening" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 71,
+    "question": "The synonym of 'impeccable' is",
+    "options": { "A": "upright", "B": "harmless", "C": "inoffensive", "D": "flawless" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 72,
+    "question": "Choose the passive voice of the following sentence: Somebody was cleaning the room when I arrived.",
+    "options": { "A": "The room was being cleaned when I arrived.", "B": "The room was cleaned when I arrived.", "C": "When I arrived the room was cleaning.", "D": "I arrived when the room was being cleaned." },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 73,
+    "question": "Pick out the correct statement.",
+    "options": { "A": "We noticed every man and every boy busy with their work.", "B": "We observe all boys and men busy with their work.", "C": "We saw every man and every boy busy with their work.", "D": "Every boy and every man was seen busy with work." },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 74,
+    "question": "Choose the correct option to complete the sentence: We have finished this crossword puzzle. Do you want to start another ____?",
+    "options": { "A": "ones", "B": "one", "C": "item", "D": "puzzle" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 75,
+    "question": "The correct idiom for 'forget the past' is",
+    "options": { "A": "forget the ancient", "B": "forget the time", "C": "forget the other", "D": "let bygones be bygones" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 76,
+    "question": "Choose the correct alternative from the given options and complete the sentence: Having placed ____ proposals before you, I now ____ your decision.",
+    "options": { "A": "alternative, await", "B": "different, wait to", "C": "alternate, waited for", "D": "many, am waiting" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 77,
+    "question": "Choose the correct change of voice of the following sentence: The Principal refused him admission.",
+    "options": { "A": "He was refused admission by the Principal.", "B": "Admission was refused to him by the Principal.", "C": "Only (A) is correct", "D": "Both (A) and (B) are correct" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 78,
+    "question": "Arrange the words to form a meaningful sentence: best / is / hard / the / key / remember / to / work / investment / and / success.",
+    "options": { "A": "Hard work is key investment to remember the best success.", "B": "Success is the hard investment key to remember best success.", "C": "Best investment is key to the hard work and remember success.", "D": "Remember, hard work is the best investment and key to success." },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 79,
+    "question": "Choose the best alternative to the underlined words to improve the sentence: Since we are living in Mumbai for five years, we are reluctant to move to another city.",
+    "options": { "A": "Being that we are living", "B": "Since we were living", "C": "Being that we have been living", "D": "Since we have been living" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 80,
+    "question": "Choose the correct option to the underlined words in the given sentence: He enjoys to tell stories to children.",
+    "options": { "A": "to narrate stories", "B": "telling stories", "C": "to telling stories", "D": "No improvement required" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 81,
+    "question": "Spot the error and choose the right sentence.",
+    "options": { "A": "The commander-in-chiefs of the two countries are meeting today.", "B": "The commanders-in-chiefs of the two countries are meeting today.", "C": "The commanders-in-chief of the two countries are meeting today.", "D": "Two commanders-in-chief of the countries are meeting today." },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 82,
+    "question": "Choose the correct option for the underlined words: I saw many sheeps and deers.",
+    "options": { "A": "many sheep and deers", "B": "much sheep and deer", "C": "enough sheep and deer", "D": "many sheep and deer" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 83,
+    "question": "Choose the correct answer after joining the sentences: He studies hard. He wants to do well in the examination.",
+    "options": { "A": "He studies hard and wants to do well in the examination.", "B": "He studies hard because he wants to do well in the examination.", "C": "He studies hard to do well in the examination.", "D": "He studies hard and does well in the examination." },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 84,
+    "question": "Choose the correct option for the phrase in the underlined words of the following sentence: The moment they saw me, they were delight.",
+    "options": { "A": "they had delighted", "B": "they were delighted", "C": "they had been delighted", "D": "they would be delighted" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 85,
+    "question": "Choose the correct form of the following sentence: It is a news to me.",
+    "options": { "A": "It is the news to me.", "B": "It is a small news to me.", "C": "It is a new news to me.", "D": "It is news to me." },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 86,
+    "question": "Choose the correct passive voice of the following sentence: My pocket has been picked in the fair.",
+    "options": { "A": "He picked my pocket in the fair.", "B": "Someone has picked my pocket in the fair.", "C": "In the fair picked my pocket.", "D": "My pocket picked in the fair." },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 87,
+    "question": "Choose the superlative form of the following sentence: No other metal is as expensive as gold.",
+    "options": { "A": "No other metal except gold is expensive.", "B": "Gold is expensive of all the metals.", "C": "Any other metal is expensive as gold.", "D": "Gold is the most expensive of all metals." },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 88,
+    "question": "Join the following sentences without changing the meaning: The old man sells vegetables. In this way he earns a living.",
+    "options": { "A": "The old man sells vegetables and earned his living.", "B": "The old man sold vegetable for a living.", "C": "The old man earns his living by selling vegetables.", "D": "The old man sells vegetables for his earning." },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 89,
+    "question": "Choose the correct option for the underlined words in the following sentence: The recent natural calamities not only produced casualties, it also triggered emergency relief to save the affected people.",
+    "options": { "A": "and it also triggered", "B": "but it also triggered", "C": "but they also triggered", "D": "No correction required" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 90,
+    "question": "Choose the correct option to fill in the blank in the following sentence: The valley is known for its ____ growth of vegetation.",
+    "options": { "A": "luxurious", "B": "luxury", "C": "luxuriant", "D": "luxuriously" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 91,
+    "question": "The correct antonym of 'conspicuous' is",
+    "options": { "A": "hidden", "B": "kept", "C": "unseen", "D": "concealed" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 92,
+    "question": "The correct synonym of 'infirm' is",
+    "options": { "A": "nervous", "B": "timid", "C": "weak", "D": "steady" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 93,
+    "question": "Choose the correct word to complete the following sentence: Be careful when you walk ____ the road.",
+    "options": { "A": "accross", "B": "across", "C": "accros", "D": "acorse" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 94,
+    "question": "Choose the correct option to complete the given sentence: I prefer going abroad at Christmas time and my friends like to go ____ as well.",
+    "options": { "A": "then", "B": "now", "C": "often", "D": "at that time" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 95,
+    "question": "The idiom 'does not hold water' means",
+    "options": { "A": "does not contain water", "B": "does not catch water", "C": "does not absorb water", "D": "does not make sense" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 96,
+    "question": "____ eyewitnesses, the news reporter gave a graphic description of how the fire broke out. The correct option to complete the above sentence is",
+    "options": { "A": "Reporting", "B": "Seeing", "C": "Hearing", "D": "Quoting" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 97,
+    "question": "Choose the correct spelling.",
+    "options": { "A": "Blisfull", "B": "Blissful", "C": "Blisful", "D": "Blissfull" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 98,
+    "question": "The science of drawing maps is also known as",
+    "options": { "A": "cartography", "B": "calligraphy", "C": "epigraphy", "D": "hagiography" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 99,
+    "question": "The correct arrangement of the following words is: now / till / never / here / be / what / and / put / down / can / off / tomorrow",
+    "options": { "A": "Never here be what till put off now can be done tomorrow.", "B": "Never put off till tomorrow what can be done now and here.", "C": "What can be put off till now here never be done tomorrow.", "D": "Here can be done off what never be put now till tomorrow." },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 100,
+    "question": "Choose the correct meaning of the idiom in the following sentence: The Headmaster was called on the carpet for the poor performance of the students in the HSLC examination.",
+    "options": { "A": "chastised or rebuked", "B": "punished", "C": "questioned", "D": "criticized" },
+    "correctAnswer": "A"
+  }
+]
