@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "A relation is in 2NF but not in 3NF if it has",
+    "options": { "A": "a partial dependency", "B": "a transitive dependency", "C": "a multivalued dependency", "D": "no dependency" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "question": "Which SQL command is used to remove a table structure along with its data from the database?",
+    "options": { "A": "DELETE", "B": "TRUNCATE", "C": "DROP", "D": "REMOVE" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 3,
+    "question": "In SQL, which join returns all rows from both tables, with NULLs where there is no match?",
+    "options": { "A": "Inner join", "B": "Left join", "C": "Right join", "D": "Full outer join" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 4,
+    "question": "A foreign key in a relational database is used to",
+    "options": { "A": "uniquely identify a row in its own table", "B": "establish a link between two tables", "C": "index a table for faster search", "D": "encrypt sensitive columns" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is NOT a valid transaction state?",
+    "options": { "A": "Active", "B": "Partially committed", "C": "Failed", "D": "Suspended" },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 6,
+    "question": "The concept of storing the same data at multiple places, leading to inconsistency, is called",
+    "options": { "A": "Normalization", "B": "Data redundancy", "C": "Indexing", "D": "Data integrity" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 7,
+    "question": "Which SQL clause is used to filter groups after using GROUP BY?",
+    "options": { "A": "WHERE", "B": "HAVING", "C": "FILTER", "D": "ORDER BY" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 8,
+    "question": "A schedule is said to be serializable if it is equivalent to",
+    "options": { "A": "some serial schedule", "B": "a concurrent schedule", "C": "a deadlocked schedule", "D": "none of the above" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 9,
+    "question": "In an ER diagram, a diamond shape represents",
+    "options": { "A": "an entity", "B": "an attribute", "C": "a relationship", "D": "a key" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is used to enforce referential integrity in SQL?",
+    "options": { "A": "Primary key", "B": "Foreign key", "C": "Unique key", "D": "Composite key" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 11,
+    "question": "In C++, which operator is used to allocate memory dynamically?",
+    "options": { "A": "malloc", "B": "alloc", "C": "new", "D": "create" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 12,
+    "question": "Which operator is used in C++ to access the value pointed to by a pointer?",
+    "options": { "A": "&", "B": "*", "C": "->", "D": "%" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 13,
+    "question": "In C++, the operator used to obtain the address of a variable is",
+    "options": { "A": "*", "B": "&", "C": "@", "D": "#" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Which C++ function is used to determine the length of a C-style string?",
+    "options": { "A": "length()", "B": "size()", "C": "strlen()", "D": "strcount()" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 15,
+    "question": "A pointer that does not point to any valid memory location is called a",
+    "options": { "A": "null pointer", "B": "void pointer", "C": "wild pointer", "D": "dangling pointer" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 16,
+    "question": "A pointer that points to a memory location that has already been freed is called a",
+    "options": { "A": "null pointer", "B": "dangling pointer", "C": "void pointer", "D": "smart pointer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 17,
+    "question": "In C++, an array name essentially acts as a",
+    "options": { "A": "constant pointer to its first element", "B": "variable pointer", "C": "reference to the last element", "D": "structure" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 18,
+    "question": "Which C++ keyword is used to prevent a function from modifying the object it is called on?",
+    "options": { "A": "static", "B": "const", "C": "final", "D": "volatile" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following correctly declares a pointer to an integer in C++?",
+    "options": { "A": "int ptr;", "B": "int &ptr;", "C": "int *ptr;", "D": "ptr int;" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 20,
+    "question": "In C++, a virtual function is resolved at",
+    "options": { "A": "compile time", "B": "run time", "C": "link time", "D": "load time" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Which of the following best describes encapsulation in OOP?",
+    "options": { "A": "Hiding implementation details and binding data with methods", "B": "Ability of a function to take many forms", "C": "Acquiring properties of another class", "D": "Reusability of code" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 22,
+    "question": "A pure virtual function in C++ is declared by",
+    "options": { "A": "assigning it a value of 1", "B": "assigning it a value of 0", "C": "using the keyword 'pure'", "D": "using the keyword 'abstract'" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 23,
+    "question": "Which type of inheritance involves a derived class inheriting from more than one base class?",
+    "options": { "A": "Single inheritance", "B": "Multiple inheritance", "C": "Multilevel inheritance", "D": "Hierarchical inheritance" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 24,
+    "question": "The scheduling algorithm that can lead to the 'convoy effect' is",
+    "options": { "A": "Round Robin", "B": "FCFS", "C": "Priority scheduling", "D": "SJF" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 25,
+    "question": "Thrashing in an operating system occurs due to",
+    "options": { "A": "excessive paging activity", "B": "CPU overheating", "C": "disk fragmentation", "D": "network congestion" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 26,
+    "question": "Which of the following is a necessary condition for deadlock to occur?",
+    "options": { "A": "Mutual exclusion", "B": "Preemption", "C": "Sequential access", "D": "Multitasking" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 27,
+    "question": "Which file allocation method suffers most from external fragmentation?",
+    "options": { "A": "Linked allocation", "B": "Indexed allocation", "C": "Contiguous allocation", "D": "None of the above" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 28,
+    "question": "In operating systems, access control lists (ACLs) are primarily used for",
+    "options": { "A": "process scheduling", "B": "file and resource protection", "C": "memory allocation", "D": "CPU pipelining" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 29,
+    "question": "The technique of dividing a process's address space into fixed-size blocks is called",
+    "options": { "A": "Segmentation", "B": "Paging", "C": "Swapping", "D": "Fragmentation" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 30,
+    "question": "Which scheduling algorithm gives preference to the process with the smallest burst time?",
+    "options": { "A": "FCFS", "B": "Round Robin", "C": "SJF", "D": "Priority" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 31,
+    "question": "In operating systems, a semaphore is primarily used for",
+    "options": { "A": "process synchronization", "B": "memory compaction", "C": "file indexing", "D": "CPU scheduling" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 32,
+    "question": "Which directory structure allows a file to appear in multiple directories?",
+    "options": { "A": "Single-level directory", "B": "Two-level directory", "C": "Acyclic-graph directory", "D": "Tree-structured directory" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 33,
+    "question": "The time taken to bring a page from disk into memory during a page fault is called",
+    "options": { "A": "seek time", "B": "page fault service time", "C": "rotational latency", "D": "access time" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 34,
+    "question": "Belady's anomaly is associated with which page replacement algorithm?",
+    "options": { "A": "LRU", "B": "Optimal", "C": "FIFO", "D": "LFU" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 35,
+    "question": "The maximum depth of recursion a program can achieve is limited by the size of the",
+    "options": { "A": "heap", "B": "stack", "C": "data segment", "D": "code segment" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 36,
+    "question": "Breadth First Search (BFS) traversal of a graph uses which data structure?",
+    "options": { "A": "Stack", "B": "Queue", "C": "Tree", "D": "Heap" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 37,
+    "question": "Depth First Search (DFS) traversal of a graph uses which data structure?",
+    "options": { "A": "Queue", "B": "Stack", "C": "Array", "D": "Hash table" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 38,
+    "question": "In a doubly linked list, each node contains",
+    "options": { "A": "only a pointer to the next node", "B": "only a pointer to the previous node", "C": "pointers to both next and previous nodes", "D": "no pointers" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 39,
+    "question": "A linked list in which the last node points back to the first node is called a",
+    "options": { "A": "singly linked list", "B": "doubly linked list", "C": "circular linked list", "D": "header linked list" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 40,
+    "question": "The technique used to resolve collisions in a hash table by storing multiple elements at the same index using a linked list is called",
+    "options": { "A": "Open addressing", "B": "Chaining", "C": "Linear probing", "D": "Rehashing" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 41,
+    "question": "The average time complexity of searching in a well-implemented hash table is",
+    "options": { "A": "O(n)", "B": "O(log n)", "C": "O(1)", "D": "O(n^2)" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 42,
+    "question": "Which sorting algorithm has the best worst-case time complexity of O(n log n)?",
+    "options": { "A": "Bubble sort", "B": "Insertion sort", "C": "Merge sort", "D": "Selection sort" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 43,
+    "question": "A complete binary tree with n nodes has a height of approximately",
+    "options": { "A": "O(n)", "B": "O(log n)", "C": "O(n log n)", "D": "O(n^2)" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 44,
+    "question": "In a min-heap, the smallest element is always located at the",
+    "options": { "A": "leaf node", "B": "root node", "C": "middle node", "D": "rightmost node" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Which data structure is used to implement priority queues most efficiently?",
+    "options": { "A": "Array", "B": "Linked list", "C": "Heap", "D": "Stack" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 46,
+    "question": "DMA stands for",
+    "options": { "A": "Direct Memory Access", "B": "Dynamic Memory Allocation", "C": "Data Movement Address", "D": "Direct Module Access" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 47,
+    "question": "DMA is primarily used to",
+    "options": { "A": "increase CPU clock speed", "B": "transfer data between I/O devices and memory without CPU intervention", "C": "manage virtual memory", "D": "compile programs faster" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 48,
+    "question": "During a DMA transfer, the technique in which the DMA controller and CPU take turns using the memory bus is called",
+    "options": { "A": "Burst mode", "B": "Cycle stealing", "C": "Interrupt mode", "D": "Programmed I/O" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 49,
+    "question": "Which of the following is the slowest method of I/O data transfer?",
+    "options": { "A": "DMA", "B": "Interrupt-driven I/O", "C": "Programmed I/O", "D": "Memory-mapped I/O" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 50,
+    "question": "In DMA, the CPU is interrupted by the DMA controller only",
+    "options": { "A": "before the transfer starts", "B": "after the entire block of data has been transferred", "C": "for every byte transferred", "D": "continuously during transfer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 51,
+    "question": "Which addressing mode uses a register to hold the address of the operand?",
+    "options": { "A": "Immediate addressing", "B": "Direct addressing", "C": "Register indirect addressing", "D": "Register addressing" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 52,
+    "question": "In a CPU, the component responsible for decoding and executing instructions is the",
+    "options": { "A": "ALU", "B": "Control Unit", "C": "Cache", "D": "Register file" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 53,
+    "question": "Memory-mapped I/O means that",
+    "options": { "A": "I/O devices are assigned addresses in the same address space as memory", "B": "memory is stored on I/O devices", "C": "I/O devices have their own separate CPU", "D": "memory access requires an I/O request" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 54,
+    "question": "The instruction cycle consists mainly of",
+    "options": { "A": "fetch, decode, execute", "B": "compile, link, load", "C": "read, write, erase", "D": "encode, transmit, decode" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 55,
+    "question": "Which of the following memory types is fastest but most expensive per bit?",
+    "options": { "A": "Cache memory", "B": "RAM", "C": "Hard disk", "D": "ROM" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 56,
+    "question": "Which register holds the address of the next instruction to be executed?",
+    "options": { "A": "Accumulator", "B": "Program Counter", "C": "Instruction Register", "D": "Stack Pointer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 57,
+    "question": "The 8085 microprocessor is a",
+    "options": { "A": "4-bit processor", "B": "8-bit processor", "C": "16-bit processor", "D": "32-bit processor" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 58,
+    "question": "Which flag in the 8085 microprocessor is set when there is a carry out of the most significant bit?",
+    "options": { "A": "Zero flag", "B": "Carry flag", "C": "Sign flag", "D": "Parity flag" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 59,
+    "question": "The number of address lines in the 8085 microprocessor is",
+    "options": { "A": "8", "B": "12", "C": "16", "D": "20" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 60,
+    "question": "In assembly language, the instruction that transfers control unconditionally to a specified address is",
+    "options": { "A": "CALL", "B": "JMP", "C": "RET", "D": "NOP" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 61,
+    "question": "Which of the following instructions is used to halt the execution of a program in 8085?",
+    "options": { "A": "STOP", "B": "END", "C": "HLT", "D": "EXIT" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 62,
+    "question": "The number of registers directly accessible in the 8085 microprocessor's general-purpose set is",
+    "options": { "A": "4", "B": "6", "C": "8", "D": "16" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 63,
+    "question": "Twisted pair cable is most susceptible to which type of interference?",
+    "options": { "A": "Electromagnetic interference", "B": "Light interference", "C": "Sound interference", "D": "Radioactive interference" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 64,
+    "question": "Which transmission medium offers the highest bandwidth and immunity to electromagnetic interference?",
+    "options": { "A": "Coaxial cable", "B": "Twisted pair cable", "C": "Fiber optic cable", "D": "Microwave" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 65,
+    "question": "Which network topology requires the most cabling and offers the highest redundancy?",
+    "options": { "A": "Bus topology", "B": "Star topology", "C": "Mesh topology", "D": "Ring topology" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 66,
+    "question": "In a star topology, if the central hub fails, then",
+    "options": { "A": "only one node is affected", "B": "the entire network goes down", "C": "the network automatically reconfigures", "D": "nothing happens" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 67,
+    "question": "Which protocol is used to dynamically assign IP addresses to devices on a network?",
+    "options": { "A": "DNS", "B": "DHCP", "C": "ARP", "D": "SNMP" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 68,
+    "question": "Which layer of the OSI model is responsible for routing packets between different networks?",
+    "options": { "A": "Data link layer", "B": "Network layer", "C": "Transport layer", "D": "Session layer" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 69,
+    "question": "Which protocol resolves an IP address to a MAC address?",
+    "options": { "A": "RARP", "B": "ARP", "C": "DHCP", "D": "ICMP" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 70,
+    "question": "The default port number used by HTTP is",
+    "options": { "A": "21", "B": "25", "C": "80", "D": "443" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 71,
+    "question": "The default port number used by HTTPS is",
+    "options": { "A": "80", "B": "21", "C": "443", "D": "23" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 72,
+    "question": "Which protocol is used to send email from a client to a server?",
+    "options": { "A": "POP3", "B": "IMAP", "C": "SMTP", "D": "FTP" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 73,
+    "question": "A network of computers spread across a large geographical area, such as a country, is called a",
+    "options": { "A": "LAN", "B": "MAN", "C": "WAN", "D": "PAN" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 74,
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": { "A": "<ol>", "B": "<ul>", "C": "<list>", "D": "<dl>" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 75,
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": { "A": "<link>", "B": "<a>", "C": "<href>", "D": "<hlink>" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 76,
+    "question": "In CSS, which property is used to change the text color of an element?",
+    "options": { "A": "font-color", "B": "text-color", "C": "color", "D": "fg-color" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 77,
+    "question": "Which CSS selector is used to select an element with a specific id?",
+    "options": { "A": ".", "B": "#", "C": "*", "D": "@" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 78,
+    "question": "The process of reducing the size of an audio or video file by removing redundant data is called",
+    "options": { "A": "Sampling", "B": "Quantization", "C": "Compression", "D": "Rendering" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 79,
+    "question": "Sampling rate in digital audio refers to",
+    "options": { "A": "the number of bits used per sample", "B": "the number of samples taken per second", "C": "the volume level of audio", "D": "the compression ratio" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 80,
+    "question": "Which of the following image file formats supports lossless compression?",
+    "options": { "A": "JPEG", "B": "PNG", "C": "BMP raw", "D": "MPEG" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 81,
+    "question": "Which of the following is a lossy compression format commonly used for photographs?",
+    "options": { "A": "PNG", "B": "JPEG", "C": "BMP", "D": "GIF" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 82,
+    "question": "Which of the following software testing methods focuses on the internal structure and code of a program?",
+    "options": { "A": "Black-box testing", "B": "White-box testing", "C": "Grey-box testing", "D": "Acceptance testing" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 83,
+    "question": "Which of the following is an example of a non-functional requirement?",
+    "options": { "A": "The system shall calculate payroll", "B": "The system shall respond within 2 seconds", "C": "The system shall generate a report", "D": "The system shall allow login" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 84,
+    "question": "In the waterfall model, which phase comes immediately after requirement analysis?",
+    "options": { "A": "Coding", "B": "System design", "C": "Testing", "D": "Maintenance" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 85,
+    "question": "Which testing level is performed to check if individual modules of software work correctly in isolation?",
+    "options": { "A": "System testing", "B": "Integration testing", "C": "Unit testing", "D": "Acceptance testing" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 86,
+    "question": "Which type of testing checks that different modules work together correctly after being combined?",
+    "options": { "A": "Unit testing", "B": "Integration testing", "C": "Regression testing", "D": "Stress testing" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 87,
+    "question": "Which motherboard component stores the BIOS settings and system clock information even when the computer is powered off?",
+    "options": { "A": "RAM", "B": "CMOS battery", "C": "Chipset", "D": "CPU socket" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 88,
+    "question": "Which of the following storage devices provides the fastest data access due to having no moving parts?",
+    "options": { "A": "HDD", "B": "SSD", "C": "CD-ROM", "D": "Magnetic tape" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 89,
+    "question": "Which port/interface is commonly used to connect a keyboard or mouse to a modern computer?",
+    "options": { "A": "VGA", "B": "USB", "C": "Ethernet", "D": "SATA" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 90,
+    "question": "SATA is primarily used to connect which type of device to the motherboard?",
+    "options": { "A": "Monitor", "B": "Storage drives (HDD/SSD)", "C": "Keyboard", "D": "Speaker" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 91,
+    "question": "SMPS in a computer is responsible for",
+    "options": { "A": "converting AC to regulated DC power", "B": "cooling the CPU", "C": "storing data permanently", "D": "processing graphics" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 92,
+    "question": "The process of checking hardware components and loading the operating system at startup is called",
+    "options": { "A": "Formatting", "B": "Booting", "C": "Partitioning", "D": "Compiling" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 93,
+    "question": "POST in computer systems stands for",
+    "options": { "A": "Power-On Self Test", "B": "Program Output Self Test", "C": "Post Operating System Test", "D": "Primary Output Signal Transfer" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 94,
+    "question": "Which of the following is a common troubleshooting step when a computer does not boot?",
+    "options": { "A": "Check power cable and connections", "B": "Reinstall the browser", "C": "Change the desktop wallpaper", "D": "Update the antivirus" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 95,
+    "question": "Which number system uses digits 0 and 1 only?",
+    "options": { "A": "Decimal", "B": "Octal", "C": "Binary", "D": "Hexadecimal" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 96,
+    "question": "The 1's complement of the binary number 1010 is",
+    "options": { "A": "0101", "B": "1011", "C": "0110", "D": "1010" },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 97,
+    "question": "The 2's complement of the binary number 1010 is",
+    "options": { "A": "0101", "B": "0110", "C": "1011", "D": "1001" },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 98,
+    "question": "In Boolean algebra, the expression A.A' equals",
+    "options": { "A": "1", "B": "A", "C": "0", "D": "A'" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 99,
+    "question": "Which logic gate produces a HIGH output only when both inputs are different?",
+    "options": { "A": "AND", "B": "OR", "C": "XOR", "D": "NAND" },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 100,
+    "question": "A JK flip-flop enters a toggle state when",
+    "options": { "A": "J=0, K=0", "B": "J=0, K=1", "C": "J=1, K=0", "D": "J=1, K=1" },
+    "correctAnswer": "D"
+  }
+]

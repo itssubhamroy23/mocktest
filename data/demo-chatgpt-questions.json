@@ -1,0 +1,1113 @@
+[
+  {
+    "id": 1,
+    "question": "Which OOP principle provides data hiding?",
+    "options": {
+      "A": "Inheritance",
+      "B": "Encapsulation",
+      "C": "Polymorphism",
+      "D": "Abstraction"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "question": "Which function has no return type?",
+    "options": {
+      "A": "Constructor",
+      "B": "main()",
+      "C": "Virtual function",
+      "D": "Friend function"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 3,
+    "question": "Function overloading is an example of",
+    "options": {
+      "A": "Runtime polymorphism",
+      "B": "Compile-time polymorphism",
+      "C": "Inheritance",
+      "D": "Abstraction"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 4,
+    "question": "Which operator is used to access members through pointers?",
+    "options": {
+      "A": "::",
+      "B": ".",
+      "C": "->",
+      "D": "*"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 5,
+    "question": "Which keyword creates an object dynamically in C++?",
+    "options": {
+      "A": "malloc",
+      "B": "alloc",
+      "C": "new",
+      "D": "create"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 6,
+    "question": "Which cannot be overloaded in C++?",
+    "options": {
+      "A": "sizeof",
+      "B": "+=",
+      "C": "[]",
+      "D": "()"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 7,
+    "question": "Virtual functions provide",
+    "options": {
+      "A": "Compile-time polymorphism",
+      "B": "Runtime polymorphism",
+      "C": "Encapsulation",
+      "D": "Abstraction"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 8,
+    "question": "Destructor is called",
+    "options": {
+      "A": "When object is created",
+      "B": "When object is destroyed",
+      "C": "When inherited",
+      "D": "When copied"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 9,
+    "question": "Which access specifier makes members accessible only inside the class?",
+    "options": {
+      "A": "public",
+      "B": "protected",
+      "C": "private",
+      "D": "friend"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 10,
+    "question": "Friend function is",
+    "options": {
+      "A": "Member function",
+      "B": "Outside function with special access",
+      "C": "Virtual function",
+      "D": "Static function"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 11,
+    "question": "Metadata means",
+    "options": {
+      "A": "Data about data",
+      "B": "Duplicate data",
+      "C": "Backup data",
+      "D": "Temporary data"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 12,
+    "question": "Which normal form removes partial dependency?",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "BCNF"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 13,
+    "question": "Which normal form removes transitive dependency?",
+    "options": {
+      "A": "2NF",
+      "B": "3NF",
+      "C": "BCNF",
+      "D": "4NF"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Which SQL command removes a table permanently?",
+    "options": {
+      "A": "DELETE",
+      "B": "DROP",
+      "C": "TRUNCATE",
+      "D": "REMOVE"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 15,
+    "question": "DELETE command removes",
+    "options": {
+      "A": "Database",
+      "B": "Rows",
+      "C": "Columns",
+      "D": "Schema"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 16,
+    "question": "TRUNCATE is",
+    "options": {
+      "A": "DDL",
+      "B": "DML",
+      "C": "DCL",
+      "D": "TCL"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 17,
+    "question": "Primary key cannot contain",
+    "options": {
+      "A": "Unique values",
+      "B": "NULL values",
+      "C": "Integers",
+      "D": "Strings"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 18,
+    "question": "Foreign key references",
+    "options": {
+      "A": "Candidate key",
+      "B": "Primary key",
+      "C": "Composite key",
+      "D": "Alternate key"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 19,
+    "question": "ACID property A stands for",
+    "options": {
+      "A": "Atomicity",
+      "B": "Accuracy",
+      "C": "Availability",
+      "D": "Association"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 20,
+    "question": "Banker's algorithm is used for",
+    "options": {
+      "A": "Deadlock prevention",
+      "B": "Deadlock avoidance",
+      "C": "Scheduling",
+      "D": "Paging"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Best CPU scheduling for minimum average waiting time",
+    "options": {
+      "A": "FCFS",
+      "B": "Round Robin",
+      "C": "SJF",
+      "D": "Priority"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 22,
+    "question": "Round Robin scheduling uses",
+    "options": {
+      "A": "Semaphore",
+      "B": "Time quantum",
+      "C": "Mutex",
+      "D": "Priority"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 23,
+    "question": "A page fault occurs when",
+    "options": {
+      "A": "CPU crashes",
+      "B": "Page not in memory",
+      "C": "Disk fails",
+      "D": "Cache misses"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 24,
+    "question": "LRU stands for",
+    "options": {
+      "A": "Least Recently Used",
+      "B": "Last Required Unit",
+      "C": "Least Required Unit",
+      "D": "Latest Recent Usage"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 25,
+    "question": "Thrashing is caused by",
+    "options": {
+      "A": "High paging",
+      "B": "High cache hit",
+      "C": "Large CPU",
+      "D": "Deadlock"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 26,
+    "question": "Semaphore is used for",
+    "options": {
+      "A": "Compilation",
+      "B": "Process synchronization",
+      "C": "Memory allocation",
+      "D": "Encryption"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 27,
+    "question": "Virtual memory uses",
+    "options": {
+      "A": "ROM",
+      "B": "Disk as RAM extension",
+      "C": "Cache",
+      "D": "Registers"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 28,
+    "question": "FIFO stands for",
+    "options": {
+      "A": "First In First Out",
+      "B": "Fast In Fast Out",
+      "C": "First Into File",
+      "D": "File In File Out"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 29,
+    "question": "LIFO is followed by",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Tree",
+      "D": "Graph"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 30,
+    "question": "Worst case time of binary search",
+    "options": {
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(n log n)",
+      "D": "O(1)"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 31,
+    "question": "Inorder traversal is",
+    "options": {
+      "A": "Root Left Right",
+      "B": "Left Root Right",
+      "C": "Left Right Root",
+      "D": "Right Root Left"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 32,
+    "question": "Postorder traversal is",
+    "options": {
+      "A": "Left Right Root",
+      "B": "Root Left Right",
+      "C": "Right Left Root",
+      "D": "Root Right Left"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 33,
+    "question": "Merge sort uses",
+    "options": {
+      "A": "Greedy",
+      "B": "Divide and Conquer",
+      "C": "Backtracking",
+      "D": "DP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 34,
+    "question": "Hashing provides",
+    "options": {
+      "A": "Fast search",
+      "B": "Sorting",
+      "C": "Traversal",
+      "D": "Compression"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 35,
+    "question": "Tree with no cycles and connected graph is",
+    "options": {
+      "A": "DAG",
+      "B": "Tree",
+      "C": "Heap",
+      "D": "Forest"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 36,
+    "question": "OSI model has",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 37,
+    "question": "Router works at",
+    "options": {
+      "A": "Data Link",
+      "B": "Network",
+      "C": "Transport",
+      "D": "Physical"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 38,
+    "question": "Switch works at",
+    "options": {
+      "A": "Network",
+      "B": "Data Link",
+      "C": "Transport",
+      "D": "Application"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 39,
+    "question": "IPv4 address length",
+    "options": {
+      "A": "16",
+      "B": "32",
+      "C": "64",
+      "D": "128"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 40,
+    "question": "Protocol for email sending",
+    "options": {
+      "A": "POP3",
+      "B": "SMTP",
+      "C": "HTTP",
+      "D": "FTP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 41,
+    "question": "Protocol for web browsing",
+    "options": {
+      "A": "FTP",
+      "B": "HTTP",
+      "C": "SMTP",
+      "D": "SNMP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 42,
+    "question": "ARP is used to map",
+    "options": {
+      "A": "IP to MAC",
+      "B": "MAC to IP",
+      "C": "Port to IP",
+      "D": "Host to DNS"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 43,
+    "question": "HTTPS default port",
+    "options": {
+      "A": "21",
+      "B": "80",
+      "C": "443",
+      "D": "25"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 44,
+    "question": "FTP default port",
+    "options": {
+      "A": "20/21",
+      "B": "22",
+      "C": "23",
+      "D": "53"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 45,
+    "question": "8086 is a",
+    "options": {
+      "A": "8-bit",
+      "B": "16-bit",
+      "C": "32-bit",
+      "D": "64-bit"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 46,
+    "question": "AX register is",
+    "options": {
+      "A": "Segment",
+      "B": "General purpose",
+      "C": "Index",
+      "D": "Flag"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 47,
+    "question": "CALL instruction",
+    "options": {
+      "A": "Returns",
+      "B": "Calls subroutine",
+      "C": "Loads data",
+      "D": "Stops CPU"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 48,
+    "question": "RET instruction",
+    "options": {
+      "A": "Calls function",
+      "B": "Returns from subroutine",
+      "C": "Pushes stack",
+      "D": "Adds numbers"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 49,
+    "question": "Immediate addressing means",
+    "options": {
+      "A": "Operand in instruction",
+      "B": "Operand in memory",
+      "C": "Operand in register",
+      "D": "Indirect operand"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 50,
+    "question": "Cache memory is between",
+    "options": {
+      "A": "CPU-ROM",
+      "B": "CPU-RAM",
+      "C": "RAM-Disk",
+      "D": "CPU-Disk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 51,
+    "question": "DMA stands for",
+    "options": {
+      "A": "Direct Memory Access",
+      "B": "Dynamic Memory Allocation",
+      "C": "Dual Memory Access",
+      "D": "Data Memory Area"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 52,
+    "question": "MAR stores",
+    "options": {
+      "A": "Instruction",
+      "B": "Memory address",
+      "C": "Data",
+      "D": "Opcode"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 53,
+    "question": "Instruction Register stores",
+    "options": {
+      "A": "Current instruction",
+      "B": "Address",
+      "C": "Data",
+      "D": "Flags"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 54,
+    "question": "CMOS is known for",
+    "options": {
+      "A": "High power",
+      "B": "Low power",
+      "C": "No memory",
+      "D": "Slow speed"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 55,
+    "question": "Universal gate is",
+    "options": {
+      "A": "AND",
+      "B": "OR",
+      "C": "NAND",
+      "D": "XOR"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 56,
+    "question": "A+1 equals",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "A",
+      "D": "A'"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 57,
+    "question": "JK flip-flop removes",
+    "options": {
+      "A": "Race",
+      "B": "Invalid state",
+      "C": "Glitch",
+      "D": "Noise"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 58,
+    "question": "Binary of decimal 10",
+    "options": {
+      "A": "1000",
+      "B": "1010",
+      "C": "1110",
+      "D": "1100"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 59,
+    "question": "Hexadecimal A equals",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "11"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 60,
+    "question": "Black box testing is",
+    "options": {
+      "A": "Structural",
+      "B": "Functional",
+      "C": "Unit",
+      "D": "Regression"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 61,
+    "question": "White box testing is",
+    "options": {
+      "A": "Functional",
+      "B": "Structural",
+      "C": "Acceptance",
+      "D": "Alpha"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 62,
+    "question": "Alpha testing is done by",
+    "options": {
+      "A": "Customers",
+      "B": "Developers",
+      "C": "Auditors",
+      "D": "Vendors"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 63,
+    "question": "Beta testing is done by",
+    "options": {
+      "A": "Developers",
+      "B": "End users",
+      "C": "Managers",
+      "D": "Designers"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 64,
+    "question": "RAD stands for",
+    "options": {
+      "A": "Rapid Application Development",
+      "B": "Remote App Design",
+      "C": "Rapid Agile Deployment",
+      "D": "Random App Development"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 65,
+    "question": "HTML largest heading tag",
+    "options": {
+      "A": "<h6>",
+      "B": "<head>",
+      "C": "<h1>",
+      "D": "<title>"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 66,
+    "question": "Inline CSS uses",
+    "options": {
+      "A": "class",
+      "B": "style",
+      "C": "id",
+      "D": "css"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 67,
+    "question": "Image tag in HTML",
+    "options": {
+      "A": "<image>",
+      "B": "<img>",
+      "C": "<picture>",
+      "D": "<src>"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 68,
+    "question": "CSS stands for",
+    "options": {
+      "A": "Creative Style Sheets",
+      "B": "Cascading Style Sheets",
+      "C": "Computer Style Sheets",
+      "D": "Color Style Sheets"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 69,
+    "question": "POST stands for",
+    "options": {
+      "A": "Power On Self Test",
+      "B": "Primary OS Test",
+      "C": "Power OS Start",
+      "D": "Process Test"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 70,
+    "question": "SMPS stands for",
+    "options": {
+      "A": "Switched Mode Power Supply",
+      "B": "Simple Mode Power Supply",
+      "C": "System Main Power Supply",
+      "D": "Standard Mode Power Supply"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 71,
+    "question": "BIOS is stored in",
+    "options": {
+      "A": "RAM",
+      "B": "ROM",
+      "C": "Cache",
+      "D": "Register"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 72,
+    "question": "RAM is",
+    "options": {
+      "A": "Volatile",
+      "B": "Non-volatile",
+      "C": "Permanent",
+      "D": "Optical"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 73,
+    "question": "ROM is",
+    "options": {
+      "A": "Volatile",
+      "B": "Temporary",
+      "C": "Non-volatile",
+      "D": "Cache"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 74,
+    "question": "Heap is mainly used for",
+    "options": {
+      "A": "Static allocation",
+      "B": "Dynamic allocation",
+      "C": "Sorting",
+      "D": "Networking"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 75,
+    "question": "Queue follows",
+    "options": {
+      "A": "LIFO",
+      "B": "FIFO",
+      "C": "Random",
+      "D": "Priority only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 76,
+    "question": "DFS commonly uses",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Heap",
+      "D": "Array"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 77,
+    "question": "BFS commonly uses",
+    "options": {
+      "A": "Stack",
+      "B": "Queue",
+      "C": "Heap",
+      "D": "Graph"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 78,
+    "question": "Which sort is stable?",
+    "options": {
+      "A": "Quick",
+      "B": "Merge",
+      "C": "Heap",
+      "D": "Selection"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 79,
+    "question": "Quick sort average complexity",
+    "options": {
+      "A": "O(n\u00b2)",
+      "B": "O(log n)",
+      "C": "O(n log n)",
+      "D": "O(n)"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 80,
+    "question": "Binary tree maximum children",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "Unlimited"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 81,
+    "question": "Graph without cycles is",
+    "options": {
+      "A": "Tree",
+      "B": "Forest",
+      "C": "Acyclic graph",
+      "D": "Heap"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 82,
+    "question": "TCP is",
+    "options": {
+      "A": "Connectionless",
+      "B": "Connection-oriented",
+      "C": "Broadcast",
+      "D": "Routing protocol"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 83,
+    "question": "UDP is",
+    "options": {
+      "A": "Reliable",
+      "B": "Connectionless",
+      "C": "Circuit switched",
+      "D": "Encrypted"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 84,
+    "question": "DNS resolves",
+    "options": {
+      "A": "MAC",
+      "B": "IP to MAC",
+      "C": "Domain to IP",
+      "D": "Email"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 85,
+    "question": "Ping uses",
+    "options": {
+      "A": "HTTP",
+      "B": "ICMP",
+      "C": "TCP",
+      "D": "FTP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 86,
+    "question": "Process is",
+    "options": {
+      "A": "Program in execution",
+      "B": "Compiled file",
+      "C": "CPU",
+      "D": "Thread"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 87,
+    "question": "Deadlock requires",
+    "options": {
+      "A": "4 conditions",
+      "B": "2 conditions",
+      "C": "1 condition",
+      "D": "5 conditions"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 88,
+    "question": "Belady's anomaly occurs in",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "Clock"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 89,
+    "question": "BCNF is stronger than",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "4NF"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 90,
+    "question": "Candidate key is",
+    "options": {
+      "A": "Always primary",
+      "B": "Minimal super key",
+      "C": "Foreign key",
+      "D": "Composite key"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 91,
+    "question": "Super key",
+    "options": {
+      "A": "Uniquely identifies tuple",
+      "B": "Stores metadata",
+      "C": "Is always foreign",
+      "D": "Allows NULL"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 92,
+    "question": "DCL command example",
+    "options": {
+      "A": "SELECT",
+      "B": "GRANT",
+      "C": "UPDATE",
+      "D": "DELETE"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 93,
+    "question": "TCL command example",
+    "options": {
+      "A": "COMMIT",
+      "B": "CREATE",
+      "C": "ALTER",
+      "D": "DROP"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 94,
+    "question": "Normalization reduces",
+    "options": {
+      "A": "Redundancy",
+      "B": "Speed",
+      "C": "Storage only",
+      "D": "Security"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 95,
+    "question": "HTTP is",
+    "options": {
+      "A": "Stateful",
+      "B": "Stateless",
+      "C": "Connectionless only",
+      "D": "Encrypted"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 96,
+    "question": "Compiler converts",
+    "options": {
+      "A": "Machine to source",
+      "B": "Source to machine",
+      "C": "Binary to decimal",
+      "D": "Assembly to C"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 97,
+    "question": "Recursion uses",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Heap",
+      "D": "Graph"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 98,
+    "question": "8086 address bus",
+    "options": {
+      "A": "16-bit",
+      "B": "20-bit",
+      "C": "32-bit",
+      "D": "8-bit"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 99,
+    "question": "Boolean expression A+A",
+    "options": {
+      "A": "0",
+      "B": "A",
+      "C": "1",
+      "D": "A'"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 100,
+    "question": "Primary memory includes",
+    "options": {
+      "A": "RAM",
+      "B": "Hard disk",
+      "C": "SSD",
+      "D": "DVD"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 101,
+    "question": "Motherboard connects",
+    "options": {
+      "A": "Only CPU",
+      "B": "All major components",
+      "C": "Only RAM",
+      "D": "Only storage"
+    },
+    "correctAnswer": "B"
+  }
+]

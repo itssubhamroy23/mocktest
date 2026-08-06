@@ -8,6 +8,9 @@ import apdclQuestionsData from "@/data/apdcl-questions.json";
 import apgclItQuestionsData from "@/data/apgcl-it-questions.json";
 import aegclItQuestionsData from "@/data/aegcl-it-questions.json";
 import apdclItQuestionsData from "@/data/apdcl-it-questions.json";
+import demoClaudeQuestionsData from "@/data/demo-claude-questions.json";
+import demoChatgptQuestionsData from "@/data/demo-chatgpt-questions.json";
+import demoGeminiQuestionsData from "@/data/demo-gemini-questions.json";
 import type { OptionKey, Question } from "@/lib/types";
 
 const DEFAULT_QUESTIONS = questionsData as Question[];
@@ -16,6 +19,9 @@ const APDCL_QUESTIONS = apdclQuestionsData as Question[];
 const APGCL_IT_QUESTIONS = apgclItQuestionsData as Question[];
 const AEGCL_IT_QUESTIONS = aegclItQuestionsData as Question[];
 const APDCL_IT_QUESTIONS = apdclItQuestionsData as Question[];
+const DEMO_CLAUDE_QUESTIONS = demoClaudeQuestionsData as Question[];
+const DEMO_CHATGPT_QUESTIONS = demoChatgptQuestionsData as Question[];
+const DEMO_GEMINI_QUESTIONS = demoGeminiQuestionsData as Question[];
 
 // Built-in sets grouped by organization, each holding its available papers
 // (General Studies, Information Technology, ...). Add a new org or paper
@@ -40,6 +46,14 @@ const BUILTIN_GROUPS: { org: string; papers: QuestionSet[] }[] = [
     papers: [
       { name: "APDCL — General Studies", questions: APDCL_QUESTIONS },
       { name: "APDCL — Information Technology", questions: APDCL_IT_QUESTIONS },
+    ],
+  },
+  {
+    org: "AI Demo",
+    papers: [
+      { name: "AI Demo — Claude", questions: DEMO_CLAUDE_QUESTIONS },
+      { name: "AI Demo — ChatGPT", questions: DEMO_CHATGPT_QUESTIONS },
+      { name: "AI Demo — Gemini", questions: DEMO_GEMINI_QUESTIONS },
     ],
   },
 ];
@@ -377,7 +391,7 @@ function QuizApp() {
   if (phase === "start") {
     return (
       <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-black px-4 py-10">
-        <div className="max-w-2xl w-full bg-white dark:bg-zinc-900 rounded-xl shadow p-8 text-center space-y-4">
+        <div className="max-w-3xl w-full bg-white dark:bg-zinc-900 rounded-xl shadow p-8 text-center space-y-4">
           <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
             {selectedSetName}
           </h1>
@@ -389,7 +403,7 @@ function QuizApp() {
             <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
               Choose question set
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {BUILTIN_GROUPS.map((group) => (
                 <div
                   key={group.org}

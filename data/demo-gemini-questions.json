@@ -1,0 +1,1102 @@
+[
+   {
+      "id": 1,
+      "question": "Which of the following Object-Oriented Programming concepts promotes code reusability?",
+      "options": {
+         "A": "Polymorphism",
+         "B": "Inheritance",
+         "C": "Encapsulation",
+         "D": "Abstraction"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 2,
+      "question": "In C++, what is the return type of a constructor?",
+      "options": {
+         "A": "void",
+         "B": "int",
+         "C": "class type",
+         "D": "No return type"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 3,
+      "question": "Function overloading is an example of which type of polymorphism in C++?",
+      "options": {
+         "A": "Compile-time polymorphism",
+         "B": "Run-time polymorphism",
+         "C": "Dynamic binding",
+         "D": "Message passing"
+      },
+      "correctAnswer": "A"
+   },
+   {
+      "id": 4,
+      "question": "What is the default access specifier for members of a class in C++?",
+      "options": {
+         "A": "public",
+         "B": "protected",
+         "C": "private",
+         "D": "internal"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 5,
+      "question": "Which operator is used to access members of a class through an object pointer in C++?",
+      "options": {
+         "A": ".",
+         "B": "::",
+         "C": "->",
+         "D": "&"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 6,
+      "question": "In what order are destructors executed in a C++ inheritance hierarchy?",
+      "options": {
+         "A": "Base class to Derived class",
+         "B": "Derived class to Base class",
+         "C": "Random order",
+         "D": "Only the base class destructor is executed"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 7,
+      "question": "Which keyword is used in C++ for dynamic memory allocation?",
+      "options": {
+         "A": "malloc",
+         "B": "alloc",
+         "C": "new",
+         "D": "create"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 8,
+      "question": "A class that contains at least one pure virtual function is called a/an:",
+      "options": {
+         "A": "Concrete class",
+         "B": "Base class",
+         "C": "Derived class",
+         "D": "Abstract class"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 9,
+      "question": "Which of the following functions can access the private data of a class without being a member of that class?",
+      "options": {
+         "A": "Static function",
+         "B": "Virtual function",
+         "C": "Friend function",
+         "D": "Inline function"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 10,
+      "question": "Which operator is known as the scope resolution operator in C++?",
+      "options": {
+         "A": "::",
+         "B": ":",
+         "C": "->",
+         "D": "."
+      },
+      "correctAnswer": "A"
+   },
+   {
+      "id": 11,
+      "question": "Information about data in a database is called:",
+      "options": {
+         "A": "Hyperdata",
+         "B": "Metadata",
+         "C": "Teradata",
+         "D": "Relations"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 12,
+      "question": "Which attribute uniquely identifies a record in a database table?",
+      "options": {
+         "A": "Foreign key",
+         "B": "Superkey",
+         "C": "Primary key",
+         "D": "Composite key"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 13,
+      "question": "Which normal form is strictly based on the concept of full functional dependency?",
+      "options": {
+         "A": "1NF",
+         "B": "2NF",
+         "C": "3NF",
+         "D": "BCNF"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 14,
+      "question": "Which of the following is a Data Manipulation Language (DML) command in SQL?",
+      "options": {
+         "A": "CREATE",
+         "B": "ALTER",
+         "C": "DROP",
+         "D": "UPDATE"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 15,
+      "question": "Which ACID property guarantees that once a transaction is committed, it remains permanently in the database?",
+      "options": {
+         "A": "Atomicity",
+         "B": "Consistency",
+         "C": "Isolation",
+         "D": "Durability"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 16,
+      "question": "Which type of SQL join returns all rows from the left table and the matched rows from the right table?",
+      "options": {
+         "A": "Inner Join",
+         "B": "Left Outer Join",
+         "C": "Right Outer Join",
+         "D": "Full Outer Join"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 17,
+      "question": "Which command completely removes a relation (table) and its structure from an SQL database?",
+      "options": {
+         "A": "DELETE",
+         "B": "TRUNCATE",
+         "C": "DROP",
+         "D": "REMOVE"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 18,
+      "question": "In a strict two-phase locking protocol, when are the exclusive locks released?",
+      "options": {
+         "A": "Immediately after the transaction starts",
+         "B": "After reading the data",
+         "C": "When the transaction is completed",
+         "D": "Before the transaction commits"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 19,
+      "question": "What does a diamond shape represent in an Entity-Relationship (ER) diagram?",
+      "options": {
+         "A": "Entity",
+         "B": "Attribute",
+         "C": "Relationship",
+         "D": "Weak Entity"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 20,
+      "question": "Which SQL clause is used to filter records after the GROUP BY clause has been applied?",
+      "options": {
+         "A": "WHERE",
+         "B": "HAVING",
+         "C": "ORDER BY",
+         "D": "FILTER"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 21,
+      "question": "A program currently in execution is officially called a:",
+      "options": {
+         "A": "Procedure",
+         "B": "Thread",
+         "C": "Process",
+         "D": "Function"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 22,
+      "question": "Which CPU scheduling algorithm is most appropriate for a time-sharing operating system?",
+      "options": {
+         "A": "Shortest Job First (SJF)",
+         "B": "First Come First Serve (FCFS)",
+         "C": "Round Robin",
+         "D": "Priority Scheduling"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 23,
+      "question": "Which of the following is NOT a necessary condition for a deadlock to occur?",
+      "options": {
+         "A": "Mutual Exclusion",
+         "B": "Hold and Wait",
+         "C": "Preemption",
+         "D": "Circular Wait"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 24,
+      "question": "What happens when a page fault occurs?",
+      "options": {
+         "A": "The requested page is corrupted",
+         "B": "The requested page is currently absent from the main memory",
+         "C": "The program enters an infinite loop",
+         "D": "The CPU encounters a fatal error"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 25,
+      "question": "The primary problem solved by implementing virtual memory is:",
+      "options": {
+         "A": "CPU thrashing",
+         "B": "Expanding physical memory limits via secondary storage",
+         "C": "Increasing cache hit rates",
+         "D": "Reducing context switch time"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 26,
+      "question": "Which algorithm is commonly used for deadlock avoidance in operating systems?",
+      "options": {
+         "A": "Peterson's Algorithm",
+         "B": "Elevator Algorithm",
+         "C": "Banker's Algorithm",
+         "D": "Dekker's Algorithm"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 27,
+      "question": "In operating systems, a 'thread' is also commonly known as a:",
+      "options": {
+         "A": "Heavyweight process",
+         "B": "Child process",
+         "C": "Lightweight process",
+         "D": "Daemon"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 28,
+      "question": "A memory management technique that suffers heavily from internal fragmentation is:",
+      "options": {
+         "A": "Segmentation",
+         "B": "Paging",
+         "C": "Dynamic Partitioning",
+         "D": "Demand Segmentation"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 29,
+      "question": "What is the term for a situation where a system spends more time paging than executing processes?",
+      "options": {
+         "A": "Spooling",
+         "B": "Deadlock",
+         "C": "Thrashing",
+         "D": "Starvation"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 30,
+      "question": "Which of the following errors is typically handled by the operating system?",
+      "options": {
+         "A": "Lack of paper in the printer",
+         "B": "Power failure",
+         "C": "Network connection loss",
+         "D": "All of the above"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 31,
+      "question": "Which data structure fundamentally follows the Last In First Out (LIFO) principle?",
+      "options": {
+         "A": "Queue",
+         "B": "Array",
+         "C": "Linked List",
+         "D": "Stack"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 32,
+      "question": "Which data structure is required to efficiently convert an infix notation expression into a postfix notation?",
+      "options": {
+         "A": "Queue",
+         "B": "Tree",
+         "C": "Stack",
+         "D": "Graph"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 33,
+      "question": "What is the worst-case time complexity of the standard Quicksort algorithm?",
+      "options": {
+         "A": "O(log n)",
+         "B": "O(n)",
+         "C": "O(n log n)",
+         "D": "O(n^2)"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 34,
+      "question": "Which tree traversal method prints the values of a Binary Search Tree (BST) in ascending order?",
+      "options": {
+         "A": "Pre-order",
+         "B": "In-order",
+         "C": "Post-order",
+         "D": "Level-order"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 35,
+      "question": "Which sorting algorithm performs best when applied to an array that is already almost completely sorted?",
+      "options": {
+         "A": "Quicksort",
+         "B": "Heapsort",
+         "C": "Insertion Sort",
+         "D": "Merge Sort"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 36,
+      "question": "What happens if a POP operation is performed on an empty stack?",
+      "options": {
+         "A": "Stack overflow",
+         "B": "Stack underflow",
+         "C": "Memory leak",
+         "D": "Null return"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 37,
+      "question": "Which data structure provides First In First Out (FIFO) data access?",
+      "options": {
+         "A": "Stack",
+         "B": "Hash Table",
+         "C": "Heap",
+         "D": "Queue"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 38,
+      "question": "In a simple chaining mechanism for resolving hash collisions, which data structure is most appropriate to use?",
+      "options": {
+         "A": "Binary Tree",
+         "B": "Queue",
+         "C": "Singly Linked List",
+         "D": "Stack"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 39,
+      "question": "What is the maximum number of nodes possible at level 'i' of a binary tree (assuming the root is at level 1)?",
+      "options": {
+         "A": "2^i",
+         "B": "2^(i-1)",
+         "C": "2^(i+1)",
+         "D": "i^2"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 40,
+      "question": "Which of the following data structures is non-linear?",
+      "options": {
+         "A": "Array",
+         "B": "Linked List",
+         "C": "Queue",
+         "D": "Graph"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 41,
+      "question": "What is the primary function of the Program Counter (PC) in a microprocessor?",
+      "options": {
+         "A": "Store the current instruction",
+         "B": "Keep track of loop iterations",
+         "C": "Hold the memory address of the next instruction to be executed",
+         "D": "Store arithmetic results"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 42,
+      "question": "What is the size of the address bus in the 8085 microprocessor?",
+      "options": {
+         "A": "8 bits",
+         "B": "16 bits",
+         "C": "20 bits",
+         "D": "32 bits"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 43,
+      "question": "Which of the following is an example of an immediate addressing mode instruction?",
+      "options": {
+         "A": "MOV A, B",
+         "B": "MVI A, 25H",
+         "C": "LDA 2000H",
+         "D": "ADD M"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 44,
+      "question": "In an 8086 microprocessor, how large are the general-purpose registers (like AX, BX)?",
+      "options": {
+         "A": "8 bits",
+         "B": "16 bits",
+         "C": "20 bits",
+         "D": "32 bits"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 45,
+      "question": "What does the instruction JNC mean in 8085 assembly language?",
+      "options": {
+         "A": "Jump if No Carry",
+         "B": "Jump Next Cycle",
+         "C": "Jump if Not Continuous",
+         "D": "Jump if No Condition"
+      },
+      "correctAnswer": "A"
+   },
+   {
+      "id": 46,
+      "question": "Which flag is set to 1 when the result of an arithmetic or logical operation is strictly zero?",
+      "options": {
+         "A": "Carry Flag",
+         "B": "Sign Flag",
+         "C": "Zero Flag",
+         "D": "Parity Flag"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 47,
+      "question": "What is the purpose of the READY pin on a microprocessor?",
+      "options": {
+         "A": "Provide Direct Memory Access",
+         "B": "Indicate readiness to receive input from a slow peripheral",
+         "C": "Reset the system clock",
+         "D": "Halt the processor"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 48,
+      "question": "In the instruction 'MOV CX, [BX+SI+20H]', which addressing mode is being used?",
+      "options": {
+         "A": "Direct Addressing",
+         "B": "Immediate Addressing",
+         "C": "Register Relative Addressing",
+         "D": "Relative-Based Index Addressing"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 49,
+      "question": "How many bytes does the instruction 'STA 2050H' occupy in 8085 memory?",
+      "options": {
+         "A": "1 byte",
+         "B": "2 bytes",
+         "C": "3 bytes",
+         "D": "4 bytes"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 50,
+      "question": "Which 8085 interrupt has the highest priority?",
+      "options": {
+         "A": "RST 7.5",
+         "B": "TRAP",
+         "C": "INTR",
+         "D": "RST 6.5"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 51,
+      "question": "Which layer of the OSI model is responsible for routing data packets from a source to a destination network?",
+      "options": {
+         "A": "Data Link Layer",
+         "B": "Transport Layer",
+         "C": "Network Layer",
+         "D": "Application Layer"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 52,
+      "question": "Which protocol is commonly used to send outgoing email to a mail server?",
+      "options": {
+         "A": "POP3",
+         "B": "IMAP",
+         "C": "FTP",
+         "D": "SMTP"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 53,
+      "question": "What is the length of an IPv4 address?",
+      "options": {
+         "A": "16 bits",
+         "B": "32 bits",
+         "C": "48 bits",
+         "D": "128 bits"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 54,
+      "question": "Which network device operates at the Data Link layer and forwards frames based on MAC addresses?",
+      "options": {
+         "A": "Hub",
+         "B": "Repeater",
+         "C": "Router",
+         "D": "Switch"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 55,
+      "question": "What is the primary role of a DNS server?",
+      "options": {
+         "A": "Assign dynamic IP addresses",
+         "B": "Convert human-readable domain names into IP addresses",
+         "C": "Secure the network from attacks",
+         "D": "Route packets between different networks"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 56,
+      "question": "Which layer of the OSI model is responsible for ensuring reliable end-to-end communication and error recovery?",
+      "options": {
+         "A": "Network Layer",
+         "B": "Physical Layer",
+         "C": "Transport Layer",
+         "D": "Session Layer"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 57,
+      "question": "Which topology relies on a single central cable to which all network devices are connected?",
+      "options": {
+         "A": "Star Topology",
+         "B": "Mesh Topology",
+         "C": "Ring Topology",
+         "D": "Bus Topology"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 58,
+      "question": "Which protocol is utilized for secure, encrypted communication over the World Wide Web?",
+      "options": {
+         "A": "HTTP",
+         "B": "HTTPS",
+         "C": "FTP",
+         "D": "Telnet"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 59,
+      "question": "What is the purpose of subnetting a network?",
+      "options": {
+         "A": "To increase the total number of available IPs",
+         "B": "To split a large network into smaller, manageable networks",
+         "C": "To encrypt network traffic",
+         "D": "To replace the router"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 60,
+      "question": "Which physical layer device amplifies and regenerates signals to extend network range?",
+      "options": {
+         "A": "Switch",
+         "B": "Router",
+         "C": "Gateway",
+         "D": "Repeater"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 61,
+      "question": "How many levels of headings are available in standard HTML?",
+      "options": {
+         "A": "4",
+         "B": "5",
+         "C": "6",
+         "D": "7"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 62,
+      "question": "Which color model is primarily used for commercial printing applications?",
+      "options": {
+         "A": "RGB",
+         "B": "CMYK",
+         "C": "YUV",
+         "D": "HSL"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 63,
+      "question": "Which HTML tag is used to add a new row to a table?",
+      "options": {
+         "A": "<td>",
+         "B": "<th>",
+         "C": "<tb>",
+         "D": "<tr>"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 64,
+      "question": "Which of the following principles is used in the digitization of multimedia audio content?",
+      "options": {
+         "A": "Rasterization",
+         "B": "Sampling and Quantization",
+         "C": "Vectorization",
+         "D": "Ray tracing"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 65,
+      "question": "What file format is generally used to store shorthand representation of musical notes and durations in numeric form?",
+      "options": {
+         "A": "WAV",
+         "B": "MP3",
+         "C": "MIDI",
+         "D": "TIFF"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 66,
+      "question": "What is the correct sequence of fundamental HTML tags to start a webpage?",
+      "options": {
+         "A": "HTML, Head, Title, Body",
+         "B": "HTML, Title, Head, Body",
+         "C": "Head, Title, HTML, Body",
+         "D": "HTML, Body, Head, Title"
+      },
+      "correctAnswer": "A"
+   },
+   {
+      "id": 67,
+      "question": "Which language is heavily used to style the presentation and layout of web content?",
+      "options": {
+         "A": "HTML",
+         "B": "JavaScript",
+         "C": "PHP",
+         "D": "CSS"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 68,
+      "question": "Which of the following is NOT used for generating server-side dynamic web pages?",
+      "options": {
+         "A": "PHP",
+         "B": "ASP.NET",
+         "C": "JSP",
+         "D": "CSS"
+      },
+      "correctAnswer": "D"
+   },
+   {
+      "id": 69,
+      "question": "What does JPEG stand for?",
+      "options": {
+         "A": "Joint Photo Expert Group",
+         "B": "Joint Photographic Experts Group",
+         "C": "Java Programming Execution Guide",
+         "D": "Joint Processor Experts Group"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 70,
+      "question": "In CSS, which property is used to define inline styles directly within an HTML element?",
+      "options": {
+         "A": "class",
+         "B": "type",
+         "C": "style",
+         "D": "format"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 71,
+      "question": "Which CPU component performs arithmetic and logical operations?",
+      "options": {
+         "A": "Control Unit",
+         "B": "ALU",
+         "C": "Registers",
+         "D": "Buses"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 72,
+      "question": "Which computer memory typically has the fastest access time?",
+      "options": {
+         "A": "Cache memory",
+         "B": "Registers",
+         "C": "Main Memory (RAM)",
+         "D": "Magnetic Disk"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 73,
+      "question": "Cache memory acts as a high-speed buffer directly between the:",
+      "options": {
+         "A": "RAM and ROM",
+         "B": "CPU and Hard Disk",
+         "C": "CPU and Main Memory",
+         "D": "Operating System and Applications"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 74,
+      "question": "What architecture utilizes a small, highly optimized set of simple instructions?",
+      "options": {
+         "A": "CISC",
+         "B": "RISC",
+         "C": "VLIW",
+         "D": "EPIC"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 75,
+      "question": "In absolute addressing mode, the memory address of the operand is:",
+      "options": {
+         "A": "Computed at runtime",
+         "B": "Specified explicitly inside the instruction",
+         "C": "Stored in a separate register",
+         "D": "Implicitly defined"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 76,
+      "question": "The number of successful accesses to cache memory stated as a fraction is known as the:",
+      "options": {
+         "A": "Miss rate",
+         "B": "Hit rate",
+         "C": "Latency ratio",
+         "D": "Access speed"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 77,
+      "question": "A bit used to signify whether a cache block has been modified since being loaded from memory is the:",
+      "options": {
+         "A": "Valid bit",
+         "B": "Reference bit",
+         "C": "Dirty bit",
+         "D": "Tag bit"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 78,
+      "question": "Floating-point representation is utilized in computer architecture to effectively store:",
+      "options": {
+         "A": "Boolean values",
+         "B": "Real numbers",
+         "C": "Alphanumeric characters",
+         "D": "Whole integers only"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 79,
+      "question": "In the CPU, the Instruction Register (IR) holds:",
+      "options": {
+         "A": "The address of the next instruction",
+         "B": "The currently executing instruction",
+         "C": "The status flags",
+         "D": "The result of the ALU operation"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 80,
+      "question": "Which mechanism enables high-speed data transfer directly between I/O devices and memory without continuous CPU intervention?",
+      "options": {
+         "A": "Programmed I/O",
+         "B": "Interrupt-driven I/O",
+         "C": "Direct Memory Access (DMA)",
+         "D": "Polling"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 81,
+      "question": "Which of the following logic gates are universally known as 'Universal Gates'?",
+      "options": {
+         "A": "AND and OR",
+         "B": "NAND and NOR",
+         "C": "XOR and XNOR",
+         "D": "NOT and AND"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 82,
+      "question": "According to Boolean algebra rules, the expression A + 1 equals:",
+      "options": {
+         "A": "A",
+         "B": "0",
+         "C": "1",
+         "D": "A'"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 83,
+      "question": "A combinational logic circuit used to select one of multiple input data lines and route it to a single output line is a:",
+      "options": {
+         "A": "Decoder",
+         "B": "Encoder",
+         "C": "Multiplexer",
+         "D": "Demultiplexer"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 84,
+      "question": "What is the decimal equivalent of the binary number (1011)2?",
+      "options": {
+         "A": "9",
+         "B": "10",
+         "C": "11",
+         "D": "12"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 85,
+      "question": "How many bits are required to represent a single hexadecimal digit?",
+      "options": {
+         "A": "2 bits",
+         "B": "4 bits",
+         "C": "8 bits",
+         "D": "16 bits"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 86,
+      "question": "The logic circuit whose output depends not only on the present inputs but also on the past sequence of inputs is called a:",
+      "options": {
+         "A": "Combinational circuit",
+         "B": "Sequential circuit",
+         "C": "Asynchronous loop",
+         "D": "Multiplexer"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 87,
+      "question": "A D flip-flop is said to be 'transparent' when:",
+      "options": {
+         "A": "The output is fixed low",
+         "B": "The output follows the input while the clock is active",
+         "C": "The output follows the clock signal",
+         "D": "The output toggles constantly"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 88,
+      "question": "A device designed to convert an alternating current (AC) signal into a direct current (DC) signal is a:",
+      "options": {
+         "A": "Transformer",
+         "B": "Oscillator",
+         "C": "Rectifier",
+         "D": "Amplifier"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 89,
+      "question": "The addition of pentavalent impurities (doping) to a pure semiconductor directly creates many:",
+      "options": {
+         "A": "Holes",
+         "B": "Free electrons",
+         "C": "Valence band gaps",
+         "D": "Protons"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 90,
+      "question": "Which logic family is characterized by having the minimum power dissipation?",
+      "options": {
+         "A": "TTL",
+         "B": "ECL",
+         "C": "CMOS",
+         "D": "DTL"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 91,
+      "question": "Which software development life cycle (SDLC) model prominently features 'Risk Analysis' in every iterative loop?",
+      "options": {
+         "A": "Waterfall Model",
+         "B": "V-Model",
+         "C": "Spiral Model",
+         "D": "Agile Model"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 92,
+      "question": "Testing performed at the developer's end to ensure initial stability before software release is called:",
+      "options": {
+         "A": "Beta testing",
+         "B": "Alpha testing",
+         "C": "Integration testing",
+         "D": "Acceptance testing"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 93,
+      "question": "Which testing methodology is also known as 'Behavioral Testing' or specification-based testing?",
+      "options": {
+         "A": "White-box testing",
+         "B": "Black-box testing",
+         "C": "Glass-box testing",
+         "D": "Structural testing"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 94,
+      "question": "In hardware maintenance, SMPS stands for:",
+      "options": {
+         "A": "Switched Mode Power Supply",
+         "B": "Start Mode Power Supply",
+         "C": "Static Memory Processing System",
+         "D": "Single Mode Power Supply"
+      },
+      "correctAnswer": "A"
+   },
+   {
+      "id": 95,
+      "question": "During the initial boot process, which component is executed to perform hardware checks and load the OS?",
+      "options": {
+         "A": "CMOS",
+         "B": "ALU",
+         "C": "BIOS (POST)",
+         "D": "Virtual Memory"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 96,
+      "question": "The main circuit board of a personal computer, where the CPU and RAM are mounted, is the:",
+      "options": {
+         "A": "Daughterboard",
+         "B": "Motherboard",
+         "C": "Breadboard",
+         "D": "Control plane"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 97,
+      "question": "Which common interface is used to transmit high-quality, uncompressed digital audio and video signals?",
+      "options": {
+         "A": "VGA",
+         "B": "HDMI",
+         "C": "USB",
+         "D": "RS-232"
+      },
+      "correctAnswer": "B"
+   },
+   {
+      "id": 98,
+      "question": "What is the primary purpose of defragmenting a hard drive?",
+      "options": {
+         "A": "To remove malware",
+         "B": "To update hardware drivers",
+         "C": "To optimize file storage layout and improve read/write performance",
+         "D": "To permanently delete temporary files"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 99,
+      "question": "When a peripheral device needs urgent attention from the operating system, it generates a/an:",
+      "options": {
+         "A": "Exception",
+         "B": "Spool",
+         "C": "Interrupt",
+         "D": "Thread"
+      },
+      "correctAnswer": "C"
+   },
+   {
+      "id": 100,
+      "question": "The very first phase of the standard Software Development Life Cycle (SDLC) is:",
+      "options": {
+         "A": "System Design",
+         "B": "Coding",
+         "C": "Preliminary Investigation and Requirement Analysis",
+         "D": "Deployment"
+      },
+      "correctAnswer": "C"
+   }
+]
