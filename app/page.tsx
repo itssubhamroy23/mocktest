@@ -136,6 +136,7 @@ function QuizApp() {
   const [answers, setAnswers] = useState<Record<number, OptionKey>>({});
   const [markedForReview, setMarkedForReview] = useState<Set<number>>(new Set());
   const [timeLeft, setTimeLeft] = useState(TIME_ALLOWED_SECONDS);
+  const [paused, setPaused] = useState(false);
   const [customSets, setCustomSets] = useState<QuestionSet[]>([]);
   const [selectedSetName, setSelectedSetName] = useState<string>(DEFAULT_SET_NAME);
   const [uploadError, setUploadError] = useState<string | null>(null);
@@ -332,9 +333,10 @@ function QuizApp() {
       setPhase("results");
       return;
     }
+    if (paused) return;
     const t = setTimeout(() => setTimeLeft((s) => s - 1), 1000);
     return () => clearTimeout(t);
-  }, [phase, timeLeft]);
+  }, [phase, timeLeft, paused]);
 
   const score = useMemo(() => {
     let correct = 0;
@@ -356,6 +358,7 @@ function QuizApp() {
     setMarkedForReview(new Set());
     setCurrent(0);
     setTimeLeft(TIME_ALLOWED_SECONDS);
+    setPaused(false);
     setPhase("quiz");
   }
 
@@ -550,6 +553,12 @@ function QuizApp() {
             >
               {formatTime(timeLeft)}
             </span>
+            <button
+              onClick={() => setPaused((p) => !p)}
+              className="rounded-full border border-zinc-300 dark:border-zinc-700 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+            >
+              {paused ? "Resume" : "Pause"}
+            </button>
             <button
               onClick={submitQuiz}
               className="rounded-full bg-green-600 text-white text-sm font-medium px-3 py-1.5"
