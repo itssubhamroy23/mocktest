@@ -140,6 +140,7 @@ function QuizApp() {
   const [selectedSetName, setSelectedSetName] = useState<string>(DEFAULT_SET_NAME);
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [savedQuestions, setSavedQuestions] = useState<SavedQuestion[]>([]);
+  const [copiedQ, setCopiedQ] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const questions =
@@ -370,6 +371,16 @@ function QuizApp() {
     });
   }
 
+  function copyQuestion(q: Question) {
+    navigator.clipboard?.writeText(q.question).then(
+      () => {
+        setCopiedQ(true);
+        setTimeout(() => setCopiedQ(false), 1500);
+      },
+      () => {}
+    );
+  }
+
   function toggleMarkForReview(qId: number) {
     setMarkedForReview((prev) => {
       const next = new Set(prev);
@@ -550,34 +561,58 @@ function QuizApp() {
 
         <div className="flex-1 flex flex-col lg:flex-row max-w-5xl mx-auto w-full gap-6 p-4">
           <div className="flex-1 bg-white dark:bg-zinc-900 rounded-xl shadow p-6">
-            <p className="text-lg text-zinc-900 dark:text-zinc-50 mb-6">
-              {q.question}
-            </p>
+            <div className="flex items-start justify-between gap-3 mb-6">
+              <p className="text-lg text-zinc-900 dark:text-zinc-50">
+                {q.question}
+              </p>
+              <button
+                onClick={() => copyQuestion(q)}
+                aria-label="Copy question"
+                className="shrink-0 rounded-full border border-zinc-300 dark:border-zinc-700 px-3 py-1.5 text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+              >
+                {copiedQ ? "Copied ✓" : "Copy"}
+              </button>
+            </div>
             <div className="space-y-3">
-              {(Object.keys(q.options) as OptionKey[]).map((key) => (
-                <label
-                  key={key}
-                  className={`flex items-center gap-3 rounded-lg border px-4 py-3 cursor-pointer transition ${
-                    answers[q.id] === key
-                      ? "border-zinc-900 dark:border-zinc-50 bg-zinc-100 dark:bg-zinc-800"
-                      : "border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
-                  }`}
-                >
-                  <input
-                    type="radio"
-                    name={`q-${q.id}`}
-                    checked={answers[q.id] === key}
-                    onChange={() => selectOption(q.id, key)}
-                    className="accent-zinc-900 dark:accent-zinc-50"
-                  />
-                  <span className="font-semibold text-zinc-500 dark:text-zinc-400">
-                    ({key})
-                  </span>
-                  <span className="text-zinc-900 dark:text-zinc-50">
-                    {q.options[key]}
-                  </span>
-                </label>
-              ))}
+              {(Object.keys(q.options) as OptionKey[]).map((key) => {
+                const answered = answers[q.id] !== undefined;
+                const isChosen = answers[q.id] === key;
+                const isCorrect = q.correctAnswer === key;
+                let cls =
+                  "border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/50";
+                if (answered) {
+                  if (isCorrect) cls = "border-green-600 bg-green-50 dark:bg-green-900/20";
+                  else if (isChosen) cls = "border-red-600 bg-red-50 dark:bg-red-900/20";
+                } else if (isChosen) {
+                  cls = "border-zinc-900 dark:border-zinc-50 bg-zinc-100 dark:bg-zinc-800";
+                }
+                return (
+                  <label
+                    key={key}
+                    className={`flex items-center gap-3 rounded-lg border px-4 py-3 cursor-pointer transition ${cls}`}
+                  >
+                    <input
+                      type="radio"
+                      name={`q-${q.id}`}
+                      checked={isChosen}
+                      onChange={() => selectOption(q.id, key)}
+                      className="accent-zinc-900 dark:accent-zinc-50"
+                    />
+                    <span className="font-semibold text-zinc-500 dark:text-zinc-400">
+                      ({key})
+                    </span>
+                    <span className="text-zinc-900 dark:text-zinc-50">
+                      {q.options[key]}
+                    </span>
+                    {answered && isCorrect && (
+                      <span className="ml-auto text-green-600 font-semibold">✓</span>
+                    )}
+                    {answered && isChosen && !isCorrect && (
+                      <span className="ml-auto text-red-600 font-semibold">✗</span>
+                    )}
+                  </label>
+                );
+              })}
             </div>
 
             <div className="flex flex-wrap gap-3 mt-4">
