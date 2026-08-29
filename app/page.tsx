@@ -10,6 +10,7 @@ import aegclItQuestionsData from "@/data/aegcl-it-questions.json";
 import apdclItQuestionsData from "@/data/apdcl-it-questions.json";
 import demoClaudeQuestionsData from "@/data/demo-claude-questions.json";
 import demoChatgptQuestionsData from "@/data/demo-chatgpt-questions.json";
+import demoChatgptMock2QuestionsData from "@/data/demo-chatgpt-mock2-questions.json";
 import demoGeminiQuestionsData from "@/data/demo-gemini-questions.json";
 import type { OptionKey, Question } from "@/lib/types";
 
@@ -21,6 +22,7 @@ const AEGCL_IT_QUESTIONS = aegclItQuestionsData as Question[];
 const APDCL_IT_QUESTIONS = apdclItQuestionsData as Question[];
 const DEMO_CLAUDE_QUESTIONS = demoClaudeQuestionsData as Question[];
 const DEMO_CHATGPT_QUESTIONS = demoChatgptQuestionsData as Question[];
+const DEMO_CHATGPT_MOCK2_QUESTIONS = demoChatgptMock2QuestionsData as Question[];
 const DEMO_GEMINI_QUESTIONS = demoGeminiQuestionsData as Question[];
 
 // Built-in sets grouped by organization, each holding its available papers
@@ -53,6 +55,7 @@ const BUILTIN_GROUPS: { org: string; papers: QuestionSet[] }[] = [
     papers: [
       { name: "AI Demo — Claude", questions: DEMO_CLAUDE_QUESTIONS },
       { name: "AI Demo — ChatGPT", questions: DEMO_CHATGPT_QUESTIONS },
+      { name: "AI Demo — ChatGPT Mock 2", questions: DEMO_CHATGPT_MOCK2_QUESTIONS },
       { name: "AI Demo — Gemini", questions: DEMO_GEMINI_QUESTIONS },
     ],
   },

@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 1,
+    "question": "Which OOP principle binds data and the functions operating on that data into a single unit while controlling access to the data?",
+    "options": {
+      "A": "Inheritance",
+      "B": "Encapsulation",
+      "C": "Polymorphism",
+      "D": "Abstraction"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "question": "In C++, if no access specifier is explicitly specified inside a class, its members are by default:",
+    "options": {
+      "A": "Public",
+      "B": "Protected",
+      "C": "Private",
+      "D": "Static"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 3,
+    "question": "Which member function is automatically invoked when an object of a class is created?",
+    "options": {
+      "A": "Destructor",
+      "B": "Constructor",
+      "C": "Friend function",
+      "D": "Virtual function"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 4,
+    "question": "Which statement about a C++ constructor is correct?",
+    "options": {
+      "A": "It must have an integer return type",
+      "B": "It must have the same name as the class",
+      "C": "It must be declared static",
+      "D": "It cannot be overloaded"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 5,
+    "question": "Which special member function is called when an object goes out of scope?",
+    "options": {
+      "A": "Constructor",
+      "B": "Destructor",
+      "C": "Copy constructor only",
+      "D": "Main function"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 6,
+    "question": "Which type of inheritance allows a derived class to inherit from more than one base class?",
+    "options": {
+      "A": "Single inheritance",
+      "B": "Multilevel inheritance",
+      "C": "Multiple inheritance",
+      "D": "Hierarchical inheritance"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 7,
+    "question": "Function overloading in C++ is primarily an example of:",
+    "options": {
+      "A": "Runtime polymorphism",
+      "B": "Compile-time polymorphism",
+      "C": "Data hiding",
+      "D": "Inheritance"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 8,
+    "question": "Which feature enables a base-class pointer to invoke an overridden derived-class function at runtime?",
+    "options": {
+      "A": "Static binding",
+      "B": "Virtual function",
+      "C": "Function overloading",
+      "D": "Friend function"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 9,
+    "question": "What does the expression *p represent when p is a valid pointer to an integer?",
+    "options": {
+      "A": "Address stored in p",
+      "B": "Size of p",
+      "C": "Value stored at the address held by p",
+      "D": "Address of p itself"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 10,
+    "question": "If int a[]={10,20,30,40}; and int *p=a;, what is *(p+2)?",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "40"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 11,
+    "question": "Which inheritance relationship represents an 'is-a' relationship?",
+    "options": {
+      "A": "Composition",
+      "B": "Aggregation",
+      "C": "Inheritance",
+      "D": "Association only"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following cannot be virtual in C++?",
+    "options": {
+      "A": "Member function",
+      "B": "Destructor",
+      "C": "Constructor",
+      "D": "Pure virtual function"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 13,
+    "question": "A class containing at least one pure virtual function is generally called:",
+    "options": {
+      "A": "Friend class",
+      "B": "Abstract class",
+      "C": "Static class",
+      "D": "Derived class"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Which symbol is used to declare a pure virtual function in C++?",
+    "options": {
+      "A": "=>0",
+      "B": "=0",
+      "C": "==0",
+      "D": ":=0"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 15,
+    "question": "Which operator is used to access members through an object pointer?",
+    "options": {
+      "A": ".",
+      "B": "::",
+      "C": "->",
+      "D": "&"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 16,
+    "question": "Which operator is used for scope resolution in C++?",
+    "options": {
+      "A": "->",
+      "B": "::",
+      "C": ".",
+      "D": "=>"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 17,
+    "question": "Which function is invoked when an object is initialized from another object of the same class?",
+    "options": {
+      "A": "Destructor",
+      "B": "Copy constructor",
+      "C": "Default constructor only",
+      "D": "Virtual constructor"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is NOT a characteristic of a destructor?",
+    "options": {
+      "A": "It has the same name as the class preceded by ~",
+      "B": "It has no return type",
+      "C": "It can take parameters",
+      "D": "It is called when an object is destroyed"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 19,
+    "question": "What is the output of int x=10; int *p=&x; *p=25; with respect to x?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "25",
+      "D": "Undefined"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 20,
+    "question": "Which OOP concept allows one interface to be used for different underlying implementations?",
+    "options": {
+      "A": "Polymorphism",
+      "B": "Encapsulation",
+      "C": "Composition",
+      "D": "Data hiding"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 21,
+    "question": "Which level of database architecture describes the overall logical structure of the entire database?",
+    "options": {
+      "A": "External level",
+      "B": "Conceptual level",
+      "C": "Internal level",
+      "D": "Physical device level"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 22,
+    "question": "A relation in the relational model is represented as a:",
+    "options": {
+      "A": "Tree",
+      "B": "Graph",
+      "C": "Table",
+      "D": "Pointer"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 23,
+    "question": "A candidate key is a:",
+    "options": {
+      "A": "Superkey with no proper subset that is a superkey",
+      "B": "Foreign key only",
+      "C": "Key containing duplicate values",
+      "D": "Non-unique attribute"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 24,
+    "question": "Which normal form primarily removes partial dependency on a composite candidate key?",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "BCNF only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 25,
+    "question": "Which normal form removes transitive dependency of non-key attributes on a candidate key?",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "4NF"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 26,
+    "question": "A foreign key is primarily used to enforce:",
+    "options": {
+      "A": "Domain integrity",
+      "B": "Referential integrity",
+      "C": "Entity naming",
+      "D": "Physical independence"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 27,
+    "question": "Which SQL clause is used to filter groups after GROUP BY?",
+    "options": {
+      "A": "WHERE",
+      "B": "HAVING",
+      "C": "ORDER BY",
+      "D": "DISTINCT"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 28,
+    "question": "Which SQL operation returns rows common to two compatible query results?",
+    "options": {
+      "A": "UNION",
+      "B": "INTERSECT",
+      "C": "EXCEPT",
+      "D": "CROSS JOIN"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 29,
+    "question": "Which join returns every row from the left relation and matching rows from the right relation?",
+    "options": {
+      "A": "INNER JOIN",
+      "B": "RIGHT JOIN",
+      "C": "LEFT OUTER JOIN",
+      "D": "CROSS JOIN"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 30,
+    "question": "In an ER diagram, a weak entity is typically identified using:",
+    "options": {
+      "A": "A double rectangle",
+      "B": "A single ellipse",
+      "C": "A diamond only",
+      "D": "A single rectangle"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 31,
+    "question": "Which property of a transaction means that either all operations are performed or none are?",
+    "options": {
+      "A": "Consistency",
+      "B": "Isolation",
+      "C": "Atomicity",
+      "D": "Durability"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 32,
+    "question": "Which ACID property ensures that committed changes survive subsequent failures?",
+    "options": {
+      "A": "Atomicity",
+      "B": "Consistency",
+      "C": "Isolation",
+      "D": "Durability"
+    },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 33,
+    "question": "A schedule is conflict-serializable if it is conflict equivalent to:",
+    "options": {
+      "A": "Any concurrent schedule",
+      "B": "A serial schedule",
+      "C": "A recoverable schedule only",
+      "D": "A strict schedule only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 34,
+    "question": "In two-phase locking, the growing phase permits a transaction to:",
+    "options": {
+      "A": "Release locks only",
+      "B": "Acquire locks but not release them",
+      "C": "Acquire and release locks arbitrarily",
+      "D": "Commit only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 35,
+    "question": "Which lock permits multiple transactions to read a data item simultaneously but prevents conflicting writes?",
+    "options": {
+      "A": "Exclusive lock",
+      "B": "Shared lock",
+      "C": "Update lock only",
+      "D": "Intent-exclusive lock only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 36,
+    "question": "Which SQL command removes a table definition along with its data?",
+    "options": {
+      "A": "DELETE",
+      "B": "REMOVE",
+      "C": "DROP",
+      "D": "TRUNCATE ROW"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 37,
+    "question": "Which command removes selected rows based on a condition while retaining the table structure?",
+    "options": {
+      "A": "DROP",
+      "B": "DELETE",
+      "C": "ALTER",
+      "D": "RENAME"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 38,
+    "question": "Which database model organizes data primarily as records connected through parent-child relationships?",
+    "options": {
+      "A": "Relational",
+      "B": "Hierarchical",
+      "C": "Object-relational",
+      "D": "Document only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 39,
+    "question": "Which anomaly can occur when a relation is poorly normalized and a fact must be repeated in several rows?",
+    "options": {
+      "A": "Update anomaly",
+      "B": "Compilation anomaly",
+      "C": "Scheduling anomaly",
+      "D": "Parsing anomaly"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 40,
+    "question": "Which SQL keyword eliminates duplicate rows from a SELECT result?",
+    "options": {
+      "A": "UNIQUE",
+      "B": "DISTINCT",
+      "C": "REMOVE",
+      "D": "FILTER"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 41,
+    "question": "The primary role of an operating system is to:",
+    "options": {
+      "A": "Compile every program",
+      "B": "Act as an intermediary between users/applications and hardware",
+      "C": "Replace the CPU",
+      "D": "Store only user files"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 42,
+    "question": "A program in execution is called a:",
+    "options": {
+      "A": "Thread only",
+      "B": "Process",
+      "C": "Module",
+      "D": "File descriptor"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 43,
+    "question": "Which data structure contains information about the state and resources of a process?",
+    "options": {
+      "A": "Page table",
+      "B": "PCB",
+      "C": "Inode",
+      "D": "Stack frame only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 44,
+    "question": "Which transition is normally caused by the CPU scheduler selecting a process from the ready queue?",
+    "options": {
+      "A": "Running to Ready",
+      "B": "Ready to Running",
+      "C": "Waiting to Terminated",
+      "D": "New to Waiting"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Which scheduling algorithm selects the process with the smallest next CPU burst in its basic non-preemptive form?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF",
+      "C": "Round Robin",
+      "D": "Priority with aging"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 46,
+    "question": "Which scheduling algorithm is specifically preemptive and always chooses the process with the shortest remaining CPU time?",
+    "options": {
+      "A": "FCFS",
+      "B": "SJF",
+      "C": "SRTF",
+      "D": "FIFO"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 47,
+    "question": "A very large time quantum in Round Robin makes its behavior approach:",
+    "options": {
+      "A": "SRTF",
+      "B": "FCFS",
+      "C": "Preemptive Priority",
+      "D": "Optimal scheduling"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 48,
+    "question": "Which technique is commonly used to reduce starvation in priority scheduling?",
+    "options": {
+      "A": "Paging",
+      "B": "Aging",
+      "C": "Spooling",
+      "D": "Thrashing"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 49,
+    "question": "The time between submission of a process and its completion is called:",
+    "options": {
+      "A": "Waiting time",
+      "B": "Response time",
+      "C": "Turnaround time",
+      "D": "Burst time"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 50,
+    "question": "Which scheduling measure is the amount of time from submission until the first response is produced?",
+    "options": {
+      "A": "Response time",
+      "B": "Turnaround time",
+      "C": "Waiting time",
+      "D": "Throughput"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 51,
+    "question": "In paging, a physical memory block corresponding to a page is called a:",
+    "options": {
+      "A": "Segment",
+      "B": "Frame",
+      "C": "Sector",
+      "D": "Cluster"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 52,
+    "question": "A page fault occurs when:",
+    "options": {
+      "A": "A page is present in cache",
+      "B": "A referenced page is not currently in main memory",
+      "C": "A process terminates",
+      "D": "A frame becomes empty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 53,
+    "question": "Which page replacement algorithm is theoretically optimal but generally impractical because it requires future reference knowledge?",
+    "options": {
+      "A": "FIFO",
+      "B": "LRU",
+      "C": "Optimal",
+      "D": "Second Chance"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 54,
+    "question": "Belady's anomaly is most closely associated with:",
+    "options": {
+      "A": "LRU",
+      "B": "FIFO page replacement",
+      "C": "Optimal replacement",
+      "D": "Segmentation"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 55,
+    "question": "Which register contains the starting address of the page table for the current process?",
+    "options": {
+      "A": "Program Counter",
+      "B": "Page Table Base Register",
+      "C": "Instruction Register",
+      "D": "Stack Pointer"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 56,
+    "question": "Which OS technique allows a process to use an address space larger than the available physical memory?",
+    "options": {
+      "A": "Virtual memory",
+      "B": "Spooling",
+      "C": "Buffering",
+      "D": "Caching only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 57,
+    "question": "Which file allocation method stores a file's blocks in consecutive disk locations?",
+    "options": {
+      "A": "Linked allocation",
+      "B": "Indexed allocation",
+      "C": "Contiguous allocation",
+      "D": "Hashed allocation"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 58,
+    "question": "Which OS component is primarily responsible for managing input/output devices?",
+    "options": {
+      "A": "I/O management subsystem",
+      "B": "Linker",
+      "C": "Compiler",
+      "D": "Loader only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 59,
+    "question": "A context switch involves:",
+    "options": {
+      "A": "Changing only the disk partition",
+      "B": "Saving the state of one process and restoring another process's state",
+      "C": "Changing source code",
+      "D": "Replacing RAM physically"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 60,
+    "question": "Which condition is NOT one of the four Coffman conditions for deadlock?",
+    "options": {
+      "A": "Mutual exclusion",
+      "B": "Hold and wait",
+      "C": "Circular wait",
+      "D": "Preemption of resources"
+    },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 61,
+    "question": "Which data structure follows the LIFO principle?",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Priority queue only",
+      "D": "Linked list"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 62,
+    "question": "Which data structure is most directly used to implement recursion?",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Heap",
+      "D": "Hash table"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 63,
+    "question": "In a circular queue, the next position after the last array index is generally:",
+    "options": {
+      "A": "Always invalid",
+      "B": "The first array position",
+      "C": "The previous position",
+      "D": "The queue front only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 64,
+    "question": "Which linked list allows traversal in both forward and backward directions?",
+    "options": {
+      "A": "Singly linked list",
+      "B": "Doubly linked list",
+      "C": "Circular singly linked list",
+      "D": "Header-only list"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 65,
+    "question": "What is the worst-case time complexity of binary search on a sorted array?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 66,
+    "question": "Binary search requires the input sequence to be:",
+    "options": {
+      "A": "Randomly arranged",
+      "B": "Sorted",
+      "C": "Circular",
+      "D": "Hashed"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 67,
+    "question": "Which sorting algorithm has worst-case time complexity O(n^2) but can have O(n log n) average behavior depending on pivot selection?",
+    "options": {
+      "A": "Merge sort",
+      "B": "Quick sort",
+      "C": "Heap sort",
+      "D": "Counting sort"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 68,
+    "question": "Which sorting algorithm guarantees O(n log n) worst-case time and is based on divide-and-conquer?",
+    "options": {
+      "A": "Bubble sort",
+      "B": "Merge sort",
+      "C": "Insertion sort",
+      "D": "Selection sort"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 69,
+    "question": "Which sorting algorithm is generally stable and has O(n^2) worst-case time but performs well on nearly sorted data?",
+    "options": {
+      "A": "Insertion sort",
+      "B": "Heap sort",
+      "C": "Quick sort",
+      "D": "Selection sort"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 70,
+    "question": "In a binary search tree, which traversal produces keys in nondecreasing order?",
+    "options": {
+      "A": "Preorder",
+      "B": "Postorder",
+      "C": "Inorder",
+      "D": "Level order only"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 71,
+    "question": "A binary tree in which every level except possibly the last is completely filled and the last level is filled from left to right is called:",
+    "options": {
+      "A": "Full binary tree",
+      "B": "Complete binary tree",
+      "C": "Strict binary tree",
+      "D": "Skewed tree"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 72,
+    "question": "Which traversal visits the root between the left and right subtrees?",
+    "options": {
+      "A": "Preorder",
+      "B": "Inorder",
+      "C": "Postorder",
+      "D": "Level order"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 73,
+    "question": "Which traversal order is Root-Left-Right?",
+    "options": {
+      "A": "Inorder",
+      "B": "Preorder",
+      "C": "Postorder",
+      "D": "Level order"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 74,
+    "question": "Which traversal order is Left-Right-Root?",
+    "options": {
+      "A": "Preorder",
+      "B": "Inorder",
+      "C": "Postorder",
+      "D": "Breadth-first"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 75,
+    "question": "Breadth-first traversal of a graph typically uses a:",
+    "options": {
+      "A": "Stack",
+      "B": "Queue",
+      "C": "Heap",
+      "D": "Binary search tree"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 76,
+    "question": "Depth-first traversal of a graph can be implemented naturally using a:",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Hash table only",
+      "D": "Priority queue only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 77,
+    "question": "In hashing, a collision occurs when:",
+    "options": {
+      "A": "Two keys are equal",
+      "B": "Two different keys map to the same hash location",
+      "C": "A table is empty",
+      "D": "A key is deleted"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 78,
+    "question": "Which technique resolves hash collisions by storing colliding elements in linked structures associated with table positions?",
+    "options": {
+      "A": "Separate chaining",
+      "B": "Binary search",
+      "C": "Heapification",
+      "D": "Tree rotation"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 79,
+    "question": "What is the average-case search complexity in a well-designed hash table with a good hash function?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 80,
+    "question": "Which algorithm is commonly used to find the shortest paths from a source in a graph with non-negative edge weights?",
+    "options": {
+      "A": "Dijkstra's algorithm",
+      "B": "Kruskal's algorithm",
+      "C": "DFS",
+      "D": "Topological sort"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 81,
+    "question": "The 8086 is classified as a:",
+    "options": {
+      "A": "8-bit microprocessor",
+      "B": "16-bit microprocessor",
+      "C": "32-bit microprocessor",
+      "D": "64-bit microprocessor"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 82,
+    "question": "The 8086 has an address bus capable of addressing:",
+    "options": {
+      "A": "64 KB",
+      "B": "256 KB",
+      "C": "1 MB",
+      "D": "16 MB"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 83,
+    "question": "The physical address in 8086 is calculated as:",
+    "options": {
+      "A": "Segment + Offset",
+      "B": "Segment × 16 + Offset",
+      "C": "Segment × 8 + Offset",
+      "D": "Offset ÷ 16 + Segment"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 84,
+    "question": "Which 8086 register holds the offset of the next instruction to be executed?",
+    "options": {
+      "A": "SP",
+      "B": "IP",
+      "C": "BP",
+      "D": "SI"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 85,
+    "question": "Which unit of 8086 is responsible for fetching instructions and forming physical addresses?",
+    "options": {
+      "A": "Execution Unit",
+      "B": "Bus Interface Unit",
+      "C": "Arithmetic Logic Unit only",
+      "D": "Control Register Unit"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 86,
+    "question": "Which instruction transfers control to a target address without saving a return address?",
+    "options": {
+      "A": "CALL",
+      "B": "JMP",
+      "C": "RET",
+      "D": "INT"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 87,
+    "question": "Which instruction is used to invoke a procedure in assembly language?",
+    "options": {
+      "A": "CALL",
+      "B": "JMP",
+      "C": "LOOP",
+      "D": "NOP"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 88,
+    "question": "Which instruction returns control from a procedure to its caller?",
+    "options": {
+      "A": "RETURN",
+      "B": "RET",
+      "C": "BACK",
+      "D": "JMPF"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 89,
+    "question": "Which addressing mode uses a register to contain the operand's address?",
+    "options": {
+      "A": "Immediate",
+      "B": "Register indirect",
+      "C": "Direct",
+      "D": "Implied"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 90,
+    "question": "In immediate addressing, the operand is:",
+    "options": {
+      "A": "Stored in a register only",
+      "B": "Part of the instruction itself",
+      "C": "Always stored in memory",
+      "D": "Always an I/O port"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 91,
+    "question": "Which 8086 register is commonly used as the stack pointer?",
+    "options": {
+      "A": "SP",
+      "B": "SI",
+      "C": "DI",
+      "D": "IP"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 92,
+    "question": "Which register pair conceptually identifies the beginning of the current code segment in 8086?",
+    "options": {
+      "A": "CS",
+      "B": "DS",
+      "C": "SS",
+      "D": "ES"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 93,
+    "question": "Which instruction increments a destination operand by one?",
+    "options": {
+      "A": "DEC",
+      "B": "INC",
+      "C": "ADD1",
+      "D": "INCR"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 94,
+    "question": "Which flag is set when the result of an arithmetic operation is zero?",
+    "options": {
+      "A": "Carry Flag",
+      "B": "Zero Flag",
+      "C": "Sign Flag",
+      "D": "Overflow Flag"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 95,
+    "question": "Which assembly instruction is commonly used to compare two operands by performing a subtraction without storing the result?",
+    "options": {
+      "A": "CMP",
+      "B": "TEST",
+      "C": "XCHG",
+      "D": "LEA"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 96,
+    "question": "Which OSI layer is responsible for end-to-end reliable delivery and flow control?",
+    "options": {
+      "A": "Network",
+      "B": "Transport",
+      "C": "Session",
+      "D": "Data Link"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 97,
+    "question": "Which OSI layer is primarily responsible for routing packets between networks?",
+    "options": {
+      "A": "Physical",
+      "B": "Data Link",
+      "C": "Network",
+      "D": "Transport"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 98,
+    "question": "Which OSI layer is responsible for framing and MAC addressing?",
+    "options": {
+      "A": "Data Link",
+      "B": "Network",
+      "C": "Transport",
+      "D": "Physical"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 99,
+    "question": "Which device primarily operates at the network layer and forwards packets between different networks?",
+    "options": {
+      "A": "Hub",
+      "B": "Repeater",
+      "C": "Router",
+      "D": "Switch only"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 100,
+    "question": "Which device typically forwards Ethernet frames based on MAC addresses?",
+    "options": {
+      "A": "Router",
+      "B": "Switch",
+      "C": "Modem only",
+      "D": "Gateway only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 101,
+    "question": "Which topology connects all devices to a central connecting device?",
+    "options": {
+      "A": "Bus",
+      "B": "Ring",
+      "C": "Star",
+      "D": "Mesh"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 102,
+    "question": "Which topology provides a direct point-to-point link between every pair of devices?",
+    "options": {
+      "A": "Star",
+      "B": "Bus",
+      "C": "Full mesh",
+      "D": "Ring"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 103,
+    "question": "Which transmission medium provides the highest immunity to electromagnetic interference among the following?",
+    "options": {
+      "A": "Twisted pair",
+      "B": "Coaxial cable",
+      "C": "Optical fiber",
+      "D": "Radio wave"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 104,
+    "question": "Which protocol is connection-oriented and provides reliable byte-stream delivery?",
+    "options": {
+      "A": "UDP",
+      "B": "IP",
+      "C": "TCP",
+      "D": "ARP"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 105,
+    "question": "Which protocol is connectionless and generally has lower overhead than TCP?",
+    "options": {
+      "A": "TCP",
+      "B": "UDP",
+      "C": "FTP",
+      "D": "HTTP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 106,
+    "question": "Which protocol maps an IPv4 address to a MAC address on a local network?",
+    "options": {
+      "A": "DNS",
+      "B": "ARP",
+      "C": "DHCP",
+      "D": "ICMP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 107,
+    "question": "Which protocol is primarily used to translate domain names into IP addresses?",
+    "options": {
+      "A": "DNS",
+      "B": "ARP",
+      "C": "SMTP",
+      "D": "FTP"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 108,
+    "question": "Which protocol dynamically assigns IP configuration parameters to hosts?",
+    "options": {
+      "A": "DNS",
+      "B": "DHCP",
+      "C": "HTTP",
+      "D": "SNMP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 109,
+    "question": "In TCP/IP, IP primarily provides:",
+    "options": {
+      "A": "Process-to-process reliability",
+      "B": "Best-effort packet delivery and addressing/routing",
+      "C": "File transfer",
+      "D": "Encryption by default"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 110,
+    "question": "Which networking device regenerates or reshapes signals to extend transmission distance?",
+    "options": {
+      "A": "Repeater",
+      "B": "Router",
+      "C": "Switch",
+      "D": "Firewall"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 111,
+    "question": "Which topology has a single shared backbone cable?",
+    "options": {
+      "A": "Star",
+      "B": "Bus",
+      "C": "Mesh",
+      "D": "Tree only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 112,
+    "question": "Which OSI layer is closest to the end user?",
+    "options": {
+      "A": "Transport",
+      "B": "Session",
+      "C": "Presentation",
+      "D": "Application"
+    },
+    "correctAnswer": "D"
+  },
+  {
+    "id": 113,
+    "question": "Which OSI layer is responsible for data format translation, encryption and compression?",
+    "options": {
+      "A": "Presentation",
+      "B": "Session",
+      "C": "Transport",
+      "D": "Network"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 114,
+    "question": "Which protocol is commonly used to transfer files between a client and server?",
+    "options": {
+      "A": "FTP",
+      "B": "ARP",
+      "C": "ICMP",
+      "D": "DHCP"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 115,
+    "question": "Which protocol is commonly used to send email between mail servers?",
+    "options": {
+      "A": "SMTP",
+      "B": "POP3 only",
+      "C": "FTP",
+      "D": "TELNET"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 116,
+    "question": "Which type of multimedia data represents continuous-time signals such as speech and music?",
+    "options": {
+      "A": "Text",
+      "B": "Audio",
+      "C": "Vector graphics only",
+      "D": "Hypertext"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 117,
+    "question": "Sampling in digital audio refers to:",
+    "options": {
+      "A": "Increasing speaker volume",
+      "B": "Measuring the amplitude of an analog signal at discrete time intervals",
+      "C": "Removing all noise",
+      "D": "Converting text to binary"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 118,
+    "question": "According to the Nyquist sampling theorem, the sampling frequency should be at least:",
+    "options": {
+      "A": "Equal to the highest signal frequency",
+      "B": "Twice the highest signal frequency",
+      "C": "Half the highest signal frequency",
+      "D": "Four times the bit depth"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 119,
+    "question": "Which image format commonly uses lossless compression and supports transparency?",
+    "options": {
+      "A": "JPEG",
+      "B": "PNG",
+      "C": "MP3",
+      "D": "MPEG"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 120,
+    "question": "JPEG compression is primarily associated with:",
+    "options": {
+      "A": "Lossy image compression",
+      "B": "Lossless audio compression",
+      "C": "Text compression",
+      "D": "Executable compression"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 121,
+    "question": "Which HTML element is used to create a hyperlink?",
+    "options": {
+      "A": "<link>",
+      "B": "<a>",
+      "C": "<href>",
+      "D": "<url>"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 122,
+    "question": "Which HTML element is used to embed an image?",
+    "options": {
+      "A": "<picture> only",
+      "B": "<img>",
+      "C": "<image>",
+      "D": "<src>"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 123,
+    "question": "Which attribute specifies the destination URL of an HTML hyperlink?",
+    "options": {
+      "A": "src",
+      "B": "href",
+      "C": "link",
+      "D": "targetURL"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 124,
+    "question": "CSS is primarily used for:",
+    "options": {
+      "A": "Database management",
+      "B": "Styling and presentation of web documents",
+      "C": "Server hardware control",
+      "D": "Network routing"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 125,
+    "question": "Which CSS property is used to change the text color?",
+    "options": {
+      "A": "font-color",
+      "B": "text-color",
+      "C": "color",
+      "D": "foreground"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 126,
+    "question": "Which HTML element defines the largest standard heading?",
+    "options": {
+      "A": "<h6>",
+      "B": "<head>",
+      "C": "<h1>",
+      "D": "<heading>"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 127,
+    "question": "Which technology is primarily responsible for structuring content on a web page?",
+    "options": {
+      "A": "HTML",
+      "B": "CSS",
+      "C": "SQL",
+      "D": "FTP"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 128,
+    "question": "The World Wide Web was originally developed as a system for sharing:",
+    "options": {
+      "A": "Printed books only",
+      "B": "Hyperlinked information over the Internet",
+      "C": "Operating system kernels",
+      "D": "Local printer drivers"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 129,
+    "question": "Which image representation stores an image as a grid of pixels?",
+    "options": {
+      "A": "Raster",
+      "B": "Vector",
+      "C": "Bezier-only",
+      "D": "Object code"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 130,
+    "question": "Which representation describes graphics using mathematical primitives such as lines and curves?",
+    "options": {
+      "A": "Raster",
+      "B": "Vector",
+      "C": "Bitmap only",
+      "D": "Sampled audio"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 131,
+    "question": "Which addressing mode places the operand value directly in the instruction?",
+    "options": {
+      "A": "Immediate",
+      "B": "Direct",
+      "C": "Indirect",
+      "D": "Indexed"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 132,
+    "question": "Which addressing mode calculates an effective address using a base address plus an offset?",
+    "options": {
+      "A": "Immediate",
+      "B": "Base/displacement",
+      "C": "Implied",
+      "D": "Register only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 133,
+    "question": "The ALU is primarily responsible for:",
+    "options": {
+      "A": "Arithmetic and logical operations",
+      "B": "Permanent file storage",
+      "C": "Network routing",
+      "D": "Power regulation"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 134,
+    "question": "Which CPU register normally contains the address of the next instruction?",
+    "options": {
+      "A": "Program Counter",
+      "B": "Instruction Register",
+      "C": "Memory Data Register",
+      "D": "Accumulator only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 135,
+    "question": "Which register holds the instruction currently being decoded or executed?",
+    "options": {
+      "A": "PC",
+      "B": "IR",
+      "C": "MAR",
+      "D": "SP"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 136,
+    "question": "Which register holds the memory address of the location to be accessed?",
+    "options": {
+      "A": "MDR",
+      "B": "MAR",
+      "C": "IR",
+      "D": "PC only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 137,
+    "question": "Which register holds data being transferred to or from memory?",
+    "options": {
+      "A": "MDR",
+      "B": "MAR",
+      "C": "PC",
+      "D": "IR"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 138,
+    "question": "Cache memory is primarily used to:",
+    "options": {
+      "A": "Increase secondary storage capacity",
+      "B": "Reduce average memory access time",
+      "C": "Replace the operating system",
+      "D": "Store only input devices"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 139,
+    "question": "Which memory is generally closest to the CPU and fastest among the following?",
+    "options": {
+      "A": "Magnetic disk",
+      "B": "Main memory",
+      "C": "Cache",
+      "D": "Optical disk"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 140,
+    "question": "DMA allows data to be transferred between an I/O device and memory with minimal involvement of the:",
+    "options": {
+      "A": "CPU",
+      "B": "RAM",
+      "C": "Disk controller",
+      "D": "I/O device"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 141,
+    "question": "During DMA transfer, the DMA controller primarily takes control of the:",
+    "options": {
+      "A": "System bus",
+      "B": "Keyboard",
+      "C": "Compiler",
+      "D": "File system"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 142,
+    "question": "Which organization uses separate instruction and data memories or paths?",
+    "options": {
+      "A": "Von Neumann architecture",
+      "B": "Harvard architecture",
+      "C": "Stack architecture only",
+      "D": "Accumulator architecture only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 143,
+    "question": "A major limitation of the traditional Von Neumann architecture is the:",
+    "options": {
+      "A": "Absence of registers",
+      "B": "Von Neumann bottleneck due to shared instruction/data path",
+      "C": "Inability to execute arithmetic",
+      "D": "Lack of main memory"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 144,
+    "question": "Which I/O method allows the CPU to continue other work while an I/O device operates and later signals completion?",
+    "options": {
+      "A": "Interrupt-driven I/O",
+      "B": "Pure polling only",
+      "C": "Immediate addressing",
+      "D": "Direct arithmetic I/O"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 145,
+    "question": "Which memory is volatile?",
+    "options": {
+      "A": "ROM",
+      "B": "RAM",
+      "C": "Flash ROM only",
+      "D": "Optical storage"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 146,
+    "question": "Which logic gate produces a HIGH output only when all its inputs are HIGH?",
+    "options": {
+      "A": "OR",
+      "B": "AND",
+      "C": "XOR",
+      "D": "NOR"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 147,
+    "question": "Which gate produces a LOW output only when all its inputs are HIGH?",
+    "options": {
+      "A": "NAND",
+      "B": "NOR",
+      "C": "AND",
+      "D": "XOR"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 148,
+    "question": "Which gate is known as a universal gate because any Boolean function can be implemented using only it?",
+    "options": {
+      "A": "XOR",
+      "B": "NAND",
+      "C": "AND",
+      "D": "OR"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 149,
+    "question": "What is the decimal equivalent of binary 101101?",
+    "options": {
+      "A": "43",
+      "B": "45",
+      "C": "47",
+      "D": "53"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 150,
+    "question": "What is the binary representation of decimal 25?",
+    "options": {
+      "A": "11001",
+      "B": "10101",
+      "C": "11100",
+      "D": "10011"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 151,
+    "question": "Which flip-flop has no invalid state when both inputs are simultaneously active, in its standard characteristic behavior?",
+    "options": {
+      "A": "SR flip-flop",
+      "B": "JK flip-flop",
+      "C": "D flip-flop",
+      "D": "T flip-flop"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 152,
+    "question": "A D flip-flop primarily transfers the value of D to Q on the active clock edge. Its main purpose is to:",
+    "options": {
+      "A": "Store one bit",
+      "B": "Perform division only",
+      "C": "Amplify analog signals",
+      "D": "Rectify AC"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 153,
+    "question": "Which flip-flop toggles its output when its input is HIGH at the active clock edge?",
+    "options": {
+      "A": "SR",
+      "B": "D",
+      "C": "T",
+      "D": "Latch only"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 154,
+    "question": "A semiconductor material whose electrical conductivity lies between that of a conductor and an insulator is called a:",
+    "options": {
+      "A": "Dielectric",
+      "B": "Semiconductor",
+      "C": "Superconductor",
+      "D": "Perfect conductor"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 155,
+    "question": "Adding a small controlled amount of impurity to a pure semiconductor is called:",
+    "options": {
+      "A": "Rectification",
+      "B": "Doping",
+      "C": "Modulation",
+      "D": "Filtering"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 156,
+    "question": "A semiconductor doped with a trivalent impurity becomes predominantly:",
+    "options": {
+      "A": "N-type",
+      "B": "P-type",
+      "C": "Intrinsic only",
+      "D": "Metallic"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 157,
+    "question": "A semiconductor doped with a pentavalent impurity becomes predominantly:",
+    "options": {
+      "A": "P-type",
+      "B": "N-type",
+      "C": "Intrinsic only",
+      "D": "Insulating"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 158,
+    "question": "The primary function of a rectifier is to convert:",
+    "options": {
+      "A": "DC to AC",
+      "B": "AC to DC",
+      "C": "Digital to analog",
+      "D": "Mechanical to optical"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 159,
+    "question": "Which rectifier uses both half cycles of an AC input?",
+    "options": {
+      "A": "Half-wave rectifier",
+      "B": "Full-wave rectifier",
+      "C": "Single diode clamp",
+      "D": "Zener regulator only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 160,
+    "question": "A capacitor filter in a rectifier circuit is primarily used to:",
+    "options": {
+      "A": "Increase ripple",
+      "B": "Reduce ripple in the rectified output",
+      "C": "Convert DC to AC",
+      "D": "Provide transistor gain"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 161,
+    "question": "A transistor can be used as an electronic switch when operated mainly between:",
+    "options": {
+      "A": "Cutoff and saturation",
+      "B": "Active and breakdown only",
+      "C": "Reverse bias only",
+      "D": "Thermal equilibrium only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 162,
+    "question": "In a BJT, the region used for linear amplification is generally the:",
+    "options": {
+      "A": "Cutoff region",
+      "B": "Active region",
+      "C": "Saturation region",
+      "D": "Breakdown region"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 163,
+    "question": "Which Boolean identity is represented by A + A' = 1?",
+    "options": {
+      "A": "Idempotent law",
+      "B": "Complement law",
+      "C": "Absorption law",
+      "D": "Associative law"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 164,
+    "question": "According to De Morgan's theorem, (AB)' is equivalent to:",
+    "options": {
+      "A": "A'B'",
+      "B": "A' + B'",
+      "C": "A + B",
+      "D": "AB"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 165,
+    "question": "Which memory loses its contents when power is removed?",
+    "options": {
+      "A": "RAM",
+      "B": "ROM",
+      "C": "EEPROM",
+      "D": "Flash ROM"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 166,
+    "question": "Which phase of software development primarily identifies and documents what the system must do?",
+    "options": {
+      "A": "Requirements analysis",
+      "B": "Coding",
+      "C": "Maintenance",
+      "D": "Deployment only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 167,
+    "question": "Which software development model follows a sequential progression through predefined phases?",
+    "options": {
+      "A": "Waterfall model",
+      "B": "Spiral model only",
+      "C": "Agile iteration only",
+      "D": "Prototype-only model"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 168,
+    "question": "Which model explicitly emphasizes iterative development and risk analysis?",
+    "options": {
+      "A": "Waterfall",
+      "B": "Spiral",
+      "C": "Big Bang only",
+      "D": "V-model only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 169,
+    "question": "In the V-model, testing activities are associated with:",
+    "options": {
+      "A": "Corresponding development phases",
+      "B": "Only after maintenance",
+      "C": "Only coding",
+      "D": "Database normalization"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 170,
+    "question": "Which testing technique divides the input domain into classes expected to behave similarly?",
+    "options": {
+      "A": "Equivalence partitioning",
+      "B": "Mutation testing",
+      "C": "Stress testing only",
+      "D": "Load balancing"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 171,
+    "question": "Boundary value analysis focuses primarily on:",
+    "options": {
+      "A": "Middle values only",
+      "B": "Values at and around input boundaries",
+      "C": "Source-code comments",
+      "D": "Network topology"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 172,
+    "question": "White-box testing primarily examines:",
+    "options": {
+      "A": "Internal structure and control flow of the program",
+      "B": "Only user interface appearance",
+      "C": "Only requirements documents",
+      "D": "Network cables"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 173,
+    "question": "Black-box testing primarily derives test cases from:",
+    "options": {
+      "A": "Internal source-code paths",
+      "B": "External behavior and specified requirements",
+      "C": "CPU registers",
+      "D": "Database indexes only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 174,
+    "question": "Testing individual modules or functions in isolation is called:",
+    "options": {
+      "A": "Unit testing",
+      "B": "System testing",
+      "C": "Acceptance testing",
+      "D": "Regression testing only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 175,
+    "question": "Testing the integrated interaction among modules is called:",
+    "options": {
+      "A": "Unit testing",
+      "B": "Integration testing",
+      "C": "Statement coverage",
+      "D": "Mutation testing"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 176,
+    "question": "Regression testing is performed mainly to ensure that:",
+    "options": {
+      "A": "New changes have not broken existing functionality",
+      "B": "Only new code compiles",
+      "C": "Hardware is replaced",
+      "D": "Requirements are deleted"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 177,
+    "question": "Which design principle aims to make a module focused on a single, well-defined responsibility?",
+    "options": {
+      "A": "High cohesion",
+      "B": "High coupling",
+      "C": "Low cohesion",
+      "D": "Global dependency"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 178,
+    "question": "Good software design generally aims for:",
+    "options": {
+      "A": "High coupling and low cohesion",
+      "B": "Low coupling and high cohesion",
+      "C": "High coupling and high cohesion",
+      "D": "Low coupling and low cohesion"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 179,
+    "question": "Which feasibility study evaluates whether the proposed system is technically practical with available technology and skills?",
+    "options": {
+      "A": "Technical feasibility",
+      "B": "Social feasibility",
+      "C": "Legal feasibility only",
+      "D": "Marketing feasibility only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 180,
+    "question": "A defect discovered after a software modification is best handled initially by:",
+    "options": {
+      "A": "Ignoring all previous tests",
+      "B": "Investigating the change and performing appropriate regression testing",
+      "C": "Deleting the entire system",
+      "D": "Changing the operating system"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 181,
+    "question": "Which component on a motherboard provides the physical connection points for the CPU and other major components?",
+    "options": {
+      "A": "CPU socket",
+      "B": "Heat sink only",
+      "C": "CMOS battery only",
+      "D": "Speaker"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 182,
+    "question": "Which component stores firmware settings and maintains certain configuration information when the system is powered off?",
+    "options": {
+      "A": "CMOS/RTC circuitry",
+      "B": "RAM only",
+      "C": "CPU cache",
+      "D": "GPU VRAM only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 183,
+    "question": "Which storage technology has no moving mechanical parts?",
+    "options": {
+      "A": "HDD",
+      "B": "SSD",
+      "C": "Magnetic tape",
+      "D": "Floppy disk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 184,
+    "question": "Which characteristic generally makes an SSD faster than a conventional HDD for random access?",
+    "options": {
+      "A": "Use of magnetic platters",
+      "B": "Absence of mechanical seek time",
+      "C": "Lower transistor density",
+      "D": "Use of optical media"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 185,
+    "question": "Which memory is normally used as high-speed temporary working memory for active programs?",
+    "options": {
+      "A": "RAM",
+      "B": "ROM",
+      "C": "EPROM only",
+      "D": "Optical disk"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 186,
+    "question": "Which device converts AC mains power into regulated DC voltages required by computer components?",
+    "options": {
+      "A": "SMPS/Power supply unit",
+      "B": "Heat sink",
+      "C": "NIC",
+      "D": "Chipset only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 187,
+    "question": "Which device is primarily used to connect a computer to an Ethernet network?",
+    "options": {
+      "A": "NIC",
+      "B": "Sound card",
+      "C": "Graphics card only",
+      "D": "Power supply"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 188,
+    "question": "Which interface is commonly associated with modern internal SSDs and can use PCIe lanes for high-speed transfer?",
+    "options": {
+      "A": "NVMe",
+      "B": "PS/2",
+      "C": "VGA",
+      "D": "IDE only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 189,
+    "question": "Which connector is traditionally associated with digital video output and can also carry audio in many implementations?",
+    "options": {
+      "A": "HDMI",
+      "B": "PS/2",
+      "C": "RJ-11",
+      "D": "Serial DB-9 only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 190,
+    "question": "A computer repeatedly shutting down under heavy load may most directly indicate:",
+    "options": {
+      "A": "Thermal or power-related protection",
+      "B": "A missing keyboard driver only",
+      "C": "A text formatting issue",
+      "D": "A browser cache problem"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 191,
+    "question": "What is the first recommended step before physically servicing internal computer hardware?",
+    "options": {
+      "A": "Increase CPU voltage",
+      "B": "Disconnect power and follow appropriate ESD precautions",
+      "C": "Run a game",
+      "D": "Remove the operating system"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 192,
+    "question": "ESD precautions are intended to protect electronic components from:",
+    "options": {
+      "A": "Electrostatic discharge",
+      "B": "Excessive storage capacity",
+      "C": "Software bugs",
+      "D": "Network congestion"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 193,
+    "question": "Which device converts digital computer data into a form suitable for transmission over certain communication media and vice versa?",
+    "options": {
+      "A": "Modem",
+      "B": "Heat sink",
+      "C": "UPS only",
+      "D": "Printer"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 194,
+    "question": "Which peripheral is primarily an input device?",
+    "options": {
+      "A": "Scanner",
+      "B": "Monitor",
+      "C": "Printer",
+      "D": "Projector"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 195,
+    "question": "Which peripheral is primarily an output device?",
+    "options": {
+      "A": "Keyboard",
+      "B": "Mouse",
+      "C": "Printer",
+      "D": "Scanner"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 196,
+    "question": "Which storage unit is generally larger in capacity than a megabyte?",
+    "options": {
+      "A": "Kilobyte",
+      "B": "Byte",
+      "C": "Gigabyte",
+      "D": "Bit"
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "id": 197,
+    "question": "Which component is primarily responsible for rendering graphics and parallel graphical computations?",
+    "options": {
+      "A": "GPU",
+      "B": "PSU",
+      "C": "NIC",
+      "D": "BIOS chip only"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 198,
+    "question": "A POST sequence during system startup is primarily used to:",
+    "options": {
+      "A": "Check basic hardware functionality",
+      "B": "Format the hard disk",
+      "C": "Install applications",
+      "D": "Compile the kernel"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 199,
+    "question": "If a computer powers on but produces no display and emits diagnostic beep codes, the most appropriate troubleshooting approach is to:",
+    "options": {
+      "A": "Ignore the codes",
+      "B": "Use the motherboard's diagnostic information to identify the hardware fault",
+      "C": "Immediately reinstall all applications",
+      "D": "Delete all user files"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 200,
+    "question": "Which maintenance practice is most appropriate for preventing overheating caused by accumulated dust?",
+    "options": {
+      "A": "Regularly clean vents, fans and heat sinks using safe procedures",
+      "B": "Disable all fans",
+      "C": "Increase CPU voltage",
+      "D": "Block ventilation openings"
+    },
+    "correctAnswer": "A"
+  }
+]
