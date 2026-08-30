@@ -598,12 +598,15 @@ function QuizApp() {
                 return (
                   <label
                     key={key}
-                    className={`flex items-center gap-3 rounded-lg border px-4 py-3 cursor-pointer transition ${cls}`}
+                    className={`flex items-center gap-3 rounded-lg border px-4 py-3 transition ${
+                      answered ? "cursor-default" : "cursor-pointer"
+                    } ${cls}`}
                   >
                     <input
                       type="radio"
                       name={`q-${q.id}`}
                       checked={isChosen}
+                      disabled={answered}
                       onChange={() => selectOption(q.id, key)}
                       className="accent-zinc-900 dark:accent-zinc-50"
                     />
@@ -625,13 +628,14 @@ function QuizApp() {
             </div>
 
             <div className="flex flex-wrap gap-3 mt-4">
-              <button
-                onClick={() => clearResponse(q.id)}
-                disabled={answers[q.id] === undefined}
-                className="rounded-full border border-zinc-300 dark:border-zinc-700 px-4 py-1.5 text-sm disabled:opacity-40 text-zinc-900 dark:text-zinc-50"
-              >
-                Clear Response
-              </button>
+              {answers[q.id] !== undefined && (
+                <button
+                  onClick={() => clearResponse(q.id)}
+                  className="rounded-full border border-zinc-300 dark:border-zinc-700 px-4 py-1.5 text-sm text-zinc-900 dark:text-zinc-50 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+                >
+                  Clear & Change
+                </button>
+              )}
               <button
                 onClick={() => toggleMarkForReview(q.id)}
                 className={`rounded-full border px-4 py-1.5 text-sm font-medium transition ${
@@ -681,17 +685,35 @@ function QuizApp() {
           </div>
 
           <div className="lg:w-64 bg-white dark:bg-zinc-900 rounded-xl shadow p-4 h-fit">
+            <div className="mb-4 grid grid-cols-3 gap-2 text-center">
+              <div className="rounded-lg bg-green-50 dark:bg-green-900/20 py-2">
+                <p className="text-lg font-bold text-green-600">{score.correct}</p>
+                <p className="text-[10px] uppercase tracking-wide text-zinc-500">Correct</p>
+              </div>
+              <div className="rounded-lg bg-red-50 dark:bg-red-900/20 py-2">
+                <p className="text-lg font-bold text-red-600">{score.wrong}</p>
+                <p className="text-[10px] uppercase tracking-wide text-zinc-500">Wrong</p>
+              </div>
+              <div className="rounded-lg bg-zinc-100 dark:bg-zinc-800 py-2">
+                <p className="text-lg font-bold text-zinc-500">{score.skipped}</p>
+                <p className="text-[10px] uppercase tracking-wide text-zinc-500">Left</p>
+              </div>
+            </div>
+            <p className="mb-3 text-xs text-zinc-500 dark:text-zinc-400">
+              Net: <span className="font-semibold text-zinc-900 dark:text-zinc-50">{score.marks.toFixed(2)}</span> / {activeQuestions.length}
+            </p>
             <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-3">
               Question Palette
             </p>
             <div className="grid grid-cols-8 lg:grid-cols-6 gap-2">
               {activeQuestions.map((qq, i) => {
                 const answered = answers[qq.id] !== undefined;
+                const correct = answered && answers[qq.id] === qq.correctAnswer;
                 const marked = markedForReview.has(qq.id);
                 const isCurrent = i === current;
                 let colorCls = "bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200";
                 if (marked) colorCls = "bg-purple-600 text-white";
-                else if (answered) colorCls = "bg-green-500 text-white";
+                else if (answered) colorCls = correct ? "bg-green-500 text-white" : "bg-red-500 text-white";
                 return (
                   <button
                     key={qq.id}
@@ -709,7 +731,8 @@ function QuizApp() {
               })}
             </div>
             <div className="mt-3 space-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-              <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500 mr-1.5" />Answered</p>
+              <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500 mr-1.5" />Correct</p>
+              <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-red-500 mr-1.5" />Wrong</p>
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-purple-600 mr-1.5" />Marked for review</p>
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mr-1.5" />Not answered</p>
             </div>
