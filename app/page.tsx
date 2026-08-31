@@ -79,7 +79,9 @@ type SessionState = {
   answers: Record<number, OptionKey>;
   markedForReview: number[];
   current: number;
-  endAt: number; // epoch ms the timer runs out
+  timeLeft: number; // seconds remaining on the clock
+  paused: boolean; // clock frozen; resume from exactly here
+  savedAt: number; // epoch ms this snapshot was written
 };
 
 function isValidQuestion(q: unknown): q is Question {
@@ -245,7 +247,13 @@ function QuizApp() {
           Array.isArray(s.activeQuestions) &&
           s.activeQuestions.length > 0
         ) {
-          const remaining = Math.max(0, Math.round((s.endAt - Date.now()) / 1000));
+          // Paused sessions freeze the clock: resume from the exact stored
+          // seconds. Running sessions keep counting down real time even while
+          // the tab was closed.
+          const elapsed = Math.max(0, Math.round((Date.now() - s.savedAt) / 1000));
+          const remaining = s.paused
+            ? Math.max(0, s.timeLeft)
+            : Math.max(0, s.timeLeft - elapsed);
           const restoredPhase: Phase = s.phase === "quiz" && remaining <= 0 ? "results" : s.phase;
 
           setSelectedSetName(s.selectedSetName);
@@ -253,6 +261,7 @@ function QuizApp() {
           setAnswers(s.answers ?? {});
           setMarkedForReview(new Set(s.markedForReview ?? []));
           setCurrent(s.current ?? 0);
+          setPaused(restoredPhase === "quiz" ? Boolean(s.paused) : false);
           setTimeLeft(restoredPhase === "quiz" ? remaining : 0);
 
           prevPhaseRef.current = restoredPhase;
@@ -304,13 +313,15 @@ function QuizApp() {
         answers,
         markedForReview: [...markedForReview],
         current,
-        endAt: Date.now() + timeLeft * 1000,
+        timeLeft,
+        paused,
+        savedAt: Date.now(),
       };
       localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(session));
     } else {
       localStorage.removeItem(SESSION_STORAGE_KEY);
     }
-  }, [phase, selectedSetName, activeQuestions, answers, markedForReview, current, timeLeft]);
+  }, [phase, selectedSetName, activeQuestions, answers, markedForReview, current, timeLeft, paused]);
 
   // URL -> phase: browser Back/Forward should move the app back, not just the URL.
   useEffect(() => {
@@ -744,6 +755,29 @@ function QuizApp() {
             </button>
           </div>
         </div>
+
+        {paused && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+            <div className="max-w-sm w-full bg-white dark:bg-zinc-900 rounded-xl shadow-lg p-8 text-center space-y-4">
+              <h2 className="text-xl font-bold text-zinc-900 dark:text-zinc-50">
+                Test Paused
+              </h2>
+              <p className="font-mono text-2xl font-semibold text-zinc-900 dark:text-zinc-50">
+                {formatTime(timeLeft)}
+              </p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                Clock is frozen. Your progress is saved — you can close this tab
+                and reopen it later to continue from exactly here.
+              </p>
+              <button
+                onClick={() => setPaused(false)}
+                className="w-full rounded-full bg-zinc-900 dark:bg-zinc-50 text-white dark:text-black font-medium py-3 hover:opacity-90 transition"
+              >
+                Resume Test
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
