@@ -81,6 +81,7 @@ type SessionState = {
   current: number;
   timeLeft: number; // seconds remaining on the clock
   paused: boolean; // clock frozen; resume from exactly here
+  pauseOverlay: boolean; // show the full-screen "Test Paused" curtain
   savedAt: number; // epoch ms this snapshot was written
 };
 
@@ -139,6 +140,9 @@ function QuizApp() {
   const [markedForReview, setMarkedForReview] = useState<Set<number>>(new Set());
   const [timeLeft, setTimeLeft] = useState(TIME_ALLOWED_SECONDS);
   const [paused, setPaused] = useState(false);
+  // When paused via the plain "Pause timer" button the questions stay visible;
+  // the "Pause" button also drops a full-screen curtain over them.
+  const [pauseOverlay, setPauseOverlay] = useState(false);
   const [customSets, setCustomSets] = useState<QuestionSet[]>([]);
   const [selectedSetName, setSelectedSetName] = useState<string>(DEFAULT_SET_NAME);
   const [uploadError, setUploadError] = useState<string | null>(null);
@@ -262,6 +266,9 @@ function QuizApp() {
           setMarkedForReview(new Set(s.markedForReview ?? []));
           setCurrent(s.current ?? 0);
           setPaused(restoredPhase === "quiz" ? Boolean(s.paused) : false);
+          setPauseOverlay(
+            restoredPhase === "quiz" && Boolean(s.paused) && Boolean(s.pauseOverlay)
+          );
           setTimeLeft(restoredPhase === "quiz" ? remaining : 0);
 
           prevPhaseRef.current = restoredPhase;
@@ -315,13 +322,14 @@ function QuizApp() {
         current,
         timeLeft,
         paused,
+        pauseOverlay,
         savedAt: Date.now(),
       };
       localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(session));
     } else {
       localStorage.removeItem(SESSION_STORAGE_KEY);
     }
-  }, [phase, selectedSetName, activeQuestions, answers, markedForReview, current, timeLeft, paused]);
+  }, [phase, selectedSetName, activeQuestions, answers, markedForReview, current, timeLeft, paused, pauseOverlay]);
 
   // URL -> phase: browser Back/Forward should move the app back, not just the URL.
   useEffect(() => {
@@ -370,6 +378,7 @@ function QuizApp() {
     setCurrent(0);
     setTimeLeft(TIME_ALLOWED_SECONDS);
     setPaused(false);
+    setPauseOverlay(false);
     setPhase("quiz");
   }
 
@@ -564,12 +573,37 @@ function QuizApp() {
             >
               {formatTime(timeLeft)}
             </span>
-            <button
-              onClick={() => setPaused((p) => !p)}
-              className="rounded-full border border-zinc-300 dark:border-zinc-700 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
-            >
-              {paused ? "Resume" : "Pause"}
-            </button>
+            {paused ? (
+              <button
+                onClick={() => {
+                  setPaused(false);
+                  setPauseOverlay(false);
+                }}
+                className="rounded-full border border-zinc-300 dark:border-zinc-700 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+              >
+                Resume
+              </button>
+            ) : (
+              <>
+                <button
+                  onClick={() => setPaused(true)}
+                  aria-label="Pause timer, keep questions visible"
+                  className="rounded-full border border-zinc-300 dark:border-zinc-700 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+                >
+                  Pause timer
+                </button>
+                <button
+                  onClick={() => {
+                    setPaused(true);
+                    setPauseOverlay(true);
+                  }}
+                  aria-label="Pause and hide questions"
+                  className="rounded-full border border-zinc-300 dark:border-zinc-700 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+                >
+                  Pause
+                </button>
+              </>
+            )}
             <button
               onClick={submitQuiz}
               className="rounded-full bg-green-600 text-white text-sm font-medium px-3 py-1.5"
@@ -580,7 +614,7 @@ function QuizApp() {
         </div>
 
         <div className="flex-1 flex flex-col lg:flex-row max-w-5xl mx-auto w-full gap-6 p-4">
-          <div className="flex-1 bg-white dark:bg-zinc-900 rounded-xl shadow p-6">
+          <div className="flex-1 bg-white dark:bg-zinc-900 rounded-xl shadow p-6 lg:sticky lg:top-20 lg:self-start">
             <div className="flex items-start justify-between gap-3 mb-6">
               <p className="text-lg text-zinc-900 dark:text-zinc-50">
                 {q.question}
@@ -695,7 +729,7 @@ function QuizApp() {
             </div>
           </div>
 
-          <div className="lg:w-64 bg-white dark:bg-zinc-900 rounded-xl shadow p-4 h-fit">
+          <div className="lg:w-64 bg-white dark:bg-zinc-900 rounded-xl shadow p-4 h-fit lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto no-scrollbar">
             <div className="mb-4 grid grid-cols-3 gap-2 text-center">
               <div className="rounded-lg bg-green-50 dark:bg-green-900/20 py-2">
                 <p className="text-lg font-bold text-green-600">{score.correct}</p>
@@ -756,7 +790,13 @@ function QuizApp() {
           </div>
         </div>
 
-        {paused && (
+        {paused && !pauseOverlay && (
+          <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 rounded-full bg-zinc-900 dark:bg-zinc-50 text-white dark:text-black text-sm font-medium px-4 py-2 shadow-lg">
+            Timer paused · {formatTime(timeLeft)}
+          </div>
+        )}
+
+        {paused && pauseOverlay && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
             <div className="max-w-sm w-full bg-white dark:bg-zinc-900 rounded-xl shadow-lg p-8 text-center space-y-4">
               <h2 className="text-xl font-bold text-zinc-900 dark:text-zinc-50">
@@ -770,7 +810,10 @@ function QuizApp() {
                 and reopen it later to continue from exactly here.
               </p>
               <button
-                onClick={() => setPaused(false)}
+                onClick={() => {
+                  setPaused(false);
+                  setPauseOverlay(false);
+                }}
                 className="w-full rounded-full bg-zinc-900 dark:bg-zinc-50 text-white dark:text-black font-medium py-3 hover:opacity-90 transition"
               >
                 Resume Test
