@@ -188,6 +188,9 @@ function QuizApp() {
   const [copiedQ, setCopiedQ] = useState(false);
   const [notes, setNotes] = useState<Notes>({});
   const [aiOpen, setAiOpen] = useState(false);
+  // Hides right/wrong colours in the palette and the score tally, so the
+  // sidebar only shows answered vs not answered.
+  const [paletteHidden, setPaletteHidden] = useState(false);
   const [aiInput, setAiInput] = useState("");
   const [copiedPrompt, setCopiedPrompt] = useState(false);
   // Link to the user's ongoing Claude/ChatGPT conversation, so every doubt goes
@@ -903,11 +906,11 @@ function QuizApp() {
           <div className="lg:w-64 bg-white dark:bg-zinc-900 rounded-xl shadow p-4 h-fit lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto no-scrollbar">
             <div className="mb-4 grid grid-cols-3 gap-2 text-center">
               <div className="rounded-lg bg-green-50 dark:bg-green-900/20 py-2">
-                <p className="text-lg font-bold text-green-600">{score.correct}</p>
+                <p className="text-lg font-bold text-green-600">{paletteHidden ? "–" : score.correct}</p>
                 <p className="text-[10px] uppercase tracking-wide text-zinc-500">Correct</p>
               </div>
               <div className="rounded-lg bg-red-50 dark:bg-red-900/20 py-2">
-                <p className="text-lg font-bold text-red-600">{score.wrong}</p>
+                <p className="text-lg font-bold text-red-600">{paletteHidden ? "–" : score.wrong}</p>
                 <p className="text-[10px] uppercase tracking-wide text-zinc-500">Wrong</p>
               </div>
               <div className="rounded-lg bg-zinc-100 dark:bg-zinc-800 py-2">
@@ -916,11 +919,20 @@ function QuizApp() {
               </div>
             </div>
             <p className="mb-3 text-xs text-zinc-500 dark:text-zinc-400">
-              Net: <span className="font-semibold text-zinc-900 dark:text-zinc-50">{score.marks.toFixed(2)}</span> / {activeQuestions.length}
+              Net: <span className="font-semibold text-zinc-900 dark:text-zinc-50">{paletteHidden ? "–" : score.marks.toFixed(2)}</span> / {activeQuestions.length}
             </p>
-            <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-3">
-              Question Palette
-            </p>
+            <div className="flex items-center justify-between mb-3">
+              <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                Question Palette
+              </p>
+              <button
+                onClick={() => setPaletteHidden((b) => !b)}
+                aria-pressed={paletteHidden}
+                className="rounded-full border border-zinc-300 dark:border-zinc-700 px-2.5 py-0.5 text-xs text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+              >
+                {paletteHidden ? "Show colours" : "Hide colours"}
+              </button>
+            </div>
             <div className="grid grid-cols-8 lg:grid-cols-6 gap-2">
               {activeQuestions.map((qq, i) => {
                 const answered = answers[qq.id] !== undefined;
@@ -930,6 +942,7 @@ function QuizApp() {
                 const hasNote = Boolean(notes[noteKey(selectedSetName, qq.id)]);
                 let colorCls = "bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200";
                 if (marked) colorCls = "bg-purple-600 text-white";
+                else if (answered && paletteHidden) colorCls = "bg-zinc-600 dark:bg-zinc-400 text-white dark:text-black";
                 else if (answered) colorCls = correct ? "bg-green-500 text-white" : "bg-red-500 text-white";
                 return (
                   <button
@@ -941,7 +954,11 @@ function QuizApp() {
                   >
                     {i + 1}
                     {marked && answered && (
-                      <span className="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-green-500 border border-white dark:border-zinc-900" />
+                      <span
+                        className={`absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full border border-white dark:border-zinc-900 ${
+                          paletteHidden ? "bg-zinc-600 dark:bg-zinc-400" : "bg-green-500"
+                        }`}
+                      />
                     )}
                     {hasNote && (
                       <span className="absolute -bottom-1 -right-1 h-2.5 w-2.5 rounded-full bg-blue-500 border border-white dark:border-zinc-900" />
@@ -951,8 +968,14 @@ function QuizApp() {
               })}
             </div>
             <div className="mt-3 space-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-              <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500 mr-1.5" />Correct</p>
-              <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-red-500 mr-1.5" />Wrong</p>
+              {paletteHidden ? (
+                <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-zinc-600 dark:bg-zinc-400 mr-1.5" />Answered</p>
+              ) : (
+                <>
+                  <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500 mr-1.5" />Correct</p>
+                  <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-red-500 mr-1.5" />Wrong</p>
+                </>
+              )}
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-purple-600 mr-1.5" />Marked for review</p>
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mr-1.5" />Not answered</p>
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-blue-500 mr-1.5" />Has note</p>
