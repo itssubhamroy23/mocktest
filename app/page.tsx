@@ -766,6 +766,9 @@ function QuizApp() {
           <div className="flex-1 bg-white dark:bg-zinc-900 rounded-xl shadow p-6 lg:sticky lg:top-20 lg:self-start">
             <div className="flex items-start justify-between gap-3 mb-6">
               <p className="text-lg text-zinc-900 dark:text-zinc-50">
+                <span className="font-semibold text-zinc-500 dark:text-zinc-400 mr-2">
+                  Q{current + 1}.
+                </span>
                 {q.question}
               </p>
               <button
