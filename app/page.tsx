@@ -553,7 +553,13 @@ function QuizApp() {
 
   function exitQuiz() {
     if (confirm("Exit test? Your progress and timer will be lost.")) {
-      router.back();
+      // Go home directly rather than router.back(): after a resumed session
+      // (page reload) there is no start-screen entry in history to go back to.
+      // Replace the quiz URL so Back doesn't land in the abandoned test.
+      prevPhaseRef.current = "start";
+      isInternalNav.current = true;
+      router.replace(pathname);
+      setPhase("start");
     }
   }
 
