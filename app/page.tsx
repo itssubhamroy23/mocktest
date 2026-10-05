@@ -65,13 +65,51 @@ const DEFAULT_SET_NAME = BUILTIN_GROUPS[0].papers[0].name;
 const STORAGE_KEY = "mocktest.customSets";
 const SAVED_STORAGE_KEY = "mocktest.savedQuestions";
 const SESSION_STORAGE_KEY = "mocktest.session";
+const NOTES_STORAGE_KEY = "mocktest.notes";
+const AI_CHAT_URL_STORAGE_KEY = "mocktest.aiChatUrl";
+// Window name so every "Ask AI" click reuses one browser tab instead of piling up new ones.
+const AI_TAB_NAME = "mocktest-ai";
 
 const TIME_ALLOWED_SECONDS = 2 * 60 * 60; // 2 hours
 const NEGATIVE_MARK = 0.25;
 
-type Phase = "start" | "quiz" | "results" | "revision";
+type Phase = "start" | "quiz" | "results" | "revision" | "notes";
 type QuestionSet = { name: string; questions: Question[] };
 type SavedQuestion = { setName: string; question: Question };
+// Per-question notes, keyed by noteKey(setName, questionId).
+type Notes = Record<string, string>;
+
+// Free "Ask AI": open the question in the user's own Claude / ChatGPT tab with
+// the prompt pre-filled. No API key or server call involved.
+const AI_TARGETS = [
+  { name: "Claude", url: (prompt: string) => `https://claude.ai/new?q=${encodeURIComponent(prompt)}` },
+  { name: "ChatGPT", url: (prompt: string) => `https://chatgpt.com/?q=${encodeURIComponent(prompt)}` },
+];
+const AI_QUICK_ASKS = [
+  "Explain the correct answer.",
+  "Why are the other options wrong?",
+  "Give me a hint without telling me the answer.",
+];
+
+function buildAiPrompt(q: Question, chosen: OptionKey | undefined, doubt: string) {
+  const opts = (Object.keys(q.options) as OptionKey[])
+    .map((k) => `(${k}) ${q.options[k]}`)
+    .join("\n");
+  return [
+    "I'm practising a multiple-choice mock test for an Assam power-sector recruitment exam (APGCL / AEGCL / APDCL). Help me with this question. Keep it short and exam-focused, and add a memory tip if useful. If the answer key looks wrong, say so.",
+    "",
+    `Question: ${q.question}`,
+    opts,
+    `Answer key: (${q.correctAnswer})`,
+    chosen ? `I picked: (${chosen})` : "I haven't answered yet.",
+    "",
+    `My doubt: ${doubt.trim() || AI_QUICK_ASKS[0]}`,
+  ].join("\n");
+}
+
+function noteKey(setName: string, qId: number) {
+  return `${setName}::${qId}`;
+}
 type SessionState = {
   phase: "quiz" | "results";
   selectedSetName: string;
@@ -123,7 +161,7 @@ function formatTime(totalSeconds: number) {
 }
 
 function isPhase(v: string | null): v is Phase {
-  return v === "start" || v === "quiz" || v === "results" || v === "revision";
+  return v === "start" || v === "quiz" || v === "results" || v === "revision" || v === "notes";
 }
 
 function QuizApp() {
@@ -148,6 +186,15 @@ function QuizApp() {
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [savedQuestions, setSavedQuestions] = useState<SavedQuestion[]>([]);
   const [copiedQ, setCopiedQ] = useState(false);
+  const [notes, setNotes] = useState<Notes>({});
+  const [aiOpen, setAiOpen] = useState(false);
+  const [aiInput, setAiInput] = useState("");
+  const [copiedPrompt, setCopiedPrompt] = useState(false);
+  // Link to the user's ongoing Claude/ChatGPT conversation, so every doubt goes
+  // into the same chat. Sites can't be typed into from here, so we copy the
+  // prompt and bring that chat up; the user pastes.
+  const [aiChatUrl, setAiChatUrl] = useState("");
+  const [aiChatUrlDraft, setAiChatUrlDraft] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const questions =
@@ -191,6 +238,44 @@ function QuizApp() {
     setSavedQuestions(list);
     localStorage.setItem(SAVED_STORAGE_KEY, JSON.stringify(list));
   }
+
+  useEffect(() => {
+    const stored = localStorage.getItem(NOTES_STORAGE_KEY);
+    if (!stored) return;
+    try {
+      const parsed = JSON.parse(stored);
+      if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+        setNotes(parsed as Notes);
+      }
+    } catch {
+      localStorage.removeItem(NOTES_STORAGE_KEY);
+    }
+  }, []);
+
+  function updateNote(setName: string, qId: number, text: string) {
+    setNotes((prev) => {
+      const next = { ...prev };
+      if (text.trim()) next[noteKey(setName, qId)] = text;
+      else delete next[noteKey(setName, qId)];
+      localStorage.setItem(NOTES_STORAGE_KEY, JSON.stringify(next));
+      return next;
+    });
+  }
+
+  // Every saved note joined back to its question, grouped by set. Notes whose
+  // set or question no longer exists (e.g. deleted custom set) are skipped.
+  const notesBySet = useMemo(() => {
+    const allSets = [...BUILTIN_SETS, ...customSets];
+    const groups: { setName: string; items: { question: Question; note: string }[] }[] = [];
+    for (const set of allSets) {
+      const items = set.questions
+        .filter((q) => notes[noteKey(set.name, q.id)])
+        .map((q) => ({ question: q, note: notes[noteKey(set.name, q.id)] }));
+      if (items.length > 0) groups.push({ setName: set.name, items });
+    }
+    return groups;
+  }, [notes, customSets]);
+  const notesCount = notesBySet.reduce((n, g) => n + g.items.length, 0);
 
   function isQuestionSaved(q: Question) {
     return savedQuestions.some((s) => s.setName === selectedSetName && s.question.id === q.id);
@@ -379,6 +464,8 @@ function QuizApp() {
     setTimeLeft(TIME_ALLOWED_SECONDS);
     setPaused(false);
     setPauseOverlay(false);
+    setAiInput("");
+    setAiOpen(false);
     setPhase("quiz");
   }
 
@@ -399,6 +486,51 @@ function QuizApp() {
       () => {
         setCopiedQ(true);
         setTimeout(() => setCopiedQ(false), 1500);
+      },
+      () => {}
+    );
+  }
+
+  useEffect(() => {
+    const stored = localStorage.getItem(AI_CHAT_URL_STORAGE_KEY);
+    if (stored) setAiChatUrl(stored);
+  }, []);
+
+  function saveAiChatUrl(url: string) {
+    const trimmed = url.trim();
+    if (trimmed && !/^https:\/\//.test(trimmed)) return;
+    setAiChatUrl(trimmed);
+    setAiChatUrlDraft("");
+    if (trimmed) localStorage.setItem(AI_CHAT_URL_STORAGE_KEY, trimmed);
+    else localStorage.removeItem(AI_CHAT_URL_STORAGE_KEY);
+  }
+
+  // Starts a brand-new conversation with the prompt pre-filled.
+  function openInAi(target: (typeof AI_TARGETS)[number], q: Question) {
+    const prompt = buildAiPrompt(q, answers[q.id], aiInput);
+    // Also copy, in case the site ignores the pre-filled ?q= text.
+    navigator.clipboard?.writeText(prompt).catch(() => {});
+    window.open(target.url(prompt), AI_TAB_NAME);
+  }
+
+  // Sends this question to the saved conversation: copy, then switch to that chat.
+  function sendToSavedChat(q: Question) {
+    const prompt = buildAiPrompt(q, answers[q.id], aiInput);
+    navigator.clipboard?.writeText(prompt).then(
+      () => {
+        setCopiedPrompt(true);
+        setTimeout(() => setCopiedPrompt(false), 3000);
+      },
+      () => {}
+    );
+    window.open(aiChatUrl, AI_TAB_NAME);
+  }
+
+  function copyAiPrompt(q: Question) {
+    navigator.clipboard?.writeText(buildAiPrompt(q, answers[q.id], aiInput)).then(
+      () => {
+        setCopiedPrompt(true);
+        setTimeout(() => setCopiedPrompt(false), 1500);
       },
       () => {}
     );
@@ -520,6 +652,14 @@ function QuizApp() {
             ★ Revision List ({savedQuestions.length})
           </button>
 
+          <button
+            onClick={() => setPhase("notes")}
+            disabled={notesCount === 0}
+            className="w-full rounded-full border border-blue-400 text-blue-700 dark:text-blue-300 font-medium py-2 disabled:opacity-40 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition"
+          >
+            ✎ My Notes ({notesCount})
+          </button>
+
           <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800">
             <input
               ref={fileInputRef}
@@ -626,6 +766,13 @@ function QuizApp() {
               >
                 {copiedQ ? "Copied ✓" : "Copy"}
               </button>
+              <button
+                onClick={() => setAiOpen(true)}
+                aria-label="Ask AI about this question"
+                className="shrink-0 rounded-full border border-indigo-300 dark:border-indigo-700 px-3 py-1.5 text-xs font-medium text-indigo-700 dark:text-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-900/20"
+              >
+                ✦ Ask AI
+              </button>
             </div>
             <div className="space-y-3">
               {(Object.keys(q.options) as OptionKey[]).map((key) => {
@@ -703,6 +850,24 @@ function QuizApp() {
               </button>
             </div>
 
+            <div className="mt-4">
+              <label
+                htmlFor={`note-${q.id}`}
+                className="block text-sm font-medium text-zinc-600 dark:text-zinc-400 mb-1"
+              >
+                Notes
+              </label>
+              <textarea
+                id={`note-${q.id}`}
+                key={q.id}
+                value={notes[noteKey(selectedSetName, q.id)] ?? ""}
+                onChange={(e) => updateNote(selectedSetName, q.id, e.target.value)}
+                placeholder="Write a note for this question…"
+                rows={3}
+                className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700 bg-transparent px-3 py-2 text-sm text-zinc-900 dark:text-zinc-50 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+              />
+            </div>
+
             <div className="flex justify-between mt-6">
               <button
                 onClick={() => setCurrent((c) => Math.max(0, c - 1))}
@@ -756,6 +921,7 @@ function QuizApp() {
                 const correct = answered && answers[qq.id] === qq.correctAnswer;
                 const marked = markedForReview.has(qq.id);
                 const isCurrent = i === current;
+                const hasNote = Boolean(notes[noteKey(selectedSetName, qq.id)]);
                 let colorCls = "bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-200";
                 if (marked) colorCls = "bg-purple-600 text-white";
                 else if (answered) colorCls = correct ? "bg-green-500 text-white" : "bg-red-500 text-white";
@@ -771,6 +937,9 @@ function QuizApp() {
                     {marked && answered && (
                       <span className="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-green-500 border border-white dark:border-zinc-900" />
                     )}
+                    {hasNote && (
+                      <span className="absolute -bottom-1 -right-1 h-2.5 w-2.5 rounded-full bg-blue-500 border border-white dark:border-zinc-900" />
+                    )}
                   </button>
                 );
               })}
@@ -780,6 +949,7 @@ function QuizApp() {
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-red-500 mr-1.5" />Wrong</p>
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-purple-600 mr-1.5" />Marked for review</p>
               <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mr-1.5" />Not answered</p>
+              <p><span className="inline-block h-2.5 w-2.5 rounded-full bg-blue-500 mr-1.5" />Has note</p>
             </div>
             <button
               onClick={submitQuiz}
@@ -789,6 +959,135 @@ function QuizApp() {
             </button>
           </div>
         </div>
+
+        {aiOpen && (
+          <div className="fixed inset-y-0 right-0 z-40 w-full sm:w-[28rem] flex flex-col bg-white dark:bg-zinc-900 border-l border-zinc-200 dark:border-zinc-800 shadow-2xl">
+            <div className="flex items-center justify-between px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+              <div>
+                <p className="font-semibold text-zinc-900 dark:text-zinc-50">Ask AI</p>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                  About question {current + 1} · opens in a new tab · timer keeps running
+                </p>
+              </div>
+              <button
+                onClick={() => setAiOpen(false)}
+                aria-label="Close AI panel"
+                className="text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 text-lg"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto px-4 py-3 space-y-4">
+              <p className="text-sm text-zinc-700 dark:text-zinc-300 line-clamp-4">{q.question}</p>
+
+              <div className="space-y-2">
+                <label
+                  htmlFor="ai-doubt"
+                  className="block text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  Your doubt
+                </label>
+                <textarea
+                  id="ai-doubt"
+                  value={aiInput}
+                  onChange={(e) => setAiInput(e.target.value)}
+                  placeholder={AI_QUICK_ASKS[0]}
+                  rows={3}
+                  className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700 bg-transparent px-3 py-2 text-sm text-zinc-900 dark:text-zinc-50 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-y"
+                />
+                <div className="flex flex-wrap gap-2">
+                  {AI_QUICK_ASKS.map((ask) => (
+                    <button
+                      key={ask}
+                      onClick={() => setAiInput(ask)}
+                      className="rounded-full border border-zinc-200 dark:border-zinc-700 px-3 py-1 text-xs text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+                    >
+                      {ask}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {aiChatUrl ? (
+                <div className="space-y-2">
+                  <button
+                    onClick={() => sendToSavedChat(q)}
+                    className="w-full rounded-full bg-indigo-600 text-white text-sm font-medium py-2.5 hover:opacity-90 transition"
+                  >
+                    Send to my chat ↗
+                  </button>
+                  {copiedPrompt && (
+                    <p className="text-xs font-medium text-green-600">
+                      Copied ✓ — in the chat tab press ⌘V then Enter.
+                    </p>
+                  )}
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 break-all">
+                    Using: {aiChatUrl}{" "}
+                    <button
+                      onClick={() => saveAiChatUrl("")}
+                      className="font-medium text-zinc-700 dark:text-zinc-300 hover:underline"
+                    >
+                      Change
+                    </button>
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-3 rounded-lg border border-zinc-200 dark:border-zinc-700 p-3">
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                    <span className="font-semibold">Keep everything in one chat:</span> start a chat
+                    below, copy its link from the address bar (e.g. chatgpt.com/c/…), and save it
+                    here. After that, every question goes to that same chat.
+                  </p>
+                  <div className="flex gap-2">
+                    {AI_TARGETS.map((target) => (
+                      <button
+                        key={target.name}
+                        onClick={() => openInAi(target, q)}
+                        className="flex-1 rounded-full bg-indigo-600 text-white text-sm font-medium py-2 hover:opacity-90 transition"
+                      >
+                        New {target.name} chat ↗
+                      </button>
+                    ))}
+                  </div>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      saveAiChatUrl(aiChatUrlDraft);
+                    }}
+                    className="flex gap-2"
+                  >
+                    <input
+                      value={aiChatUrlDraft}
+                      onChange={(e) => setAiChatUrlDraft(e.target.value)}
+                      placeholder="Paste chat link (https://…)"
+                      className="flex-1 min-w-0 rounded-full border border-zinc-300 dark:border-zinc-700 bg-transparent px-3 py-1.5 text-sm text-zinc-900 dark:text-zinc-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
+                    <button
+                      type="submit"
+                      disabled={!/^https:\/\//.test(aiChatUrlDraft.trim())}
+                      className="rounded-full border border-indigo-400 text-indigo-700 dark:text-indigo-300 text-sm font-medium px-3 py-1.5 disabled:opacity-40"
+                    >
+                      Save
+                    </button>
+                  </form>
+                </div>
+              )}
+
+              <button
+                onClick={() => copyAiPrompt(q)}
+                className="w-full rounded-full border border-zinc-300 dark:border-zinc-700 text-sm text-zinc-700 dark:text-zinc-300 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+              >
+                {copiedPrompt ? "Copied ✓" : "Copy prompt only"}
+              </button>
+
+              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                Free — uses your own Claude or ChatGPT account, always in the same browser tab.
+                Paste anything useful back into this question&apos;s Notes.
+              </p>
+            </div>
+          </div>
+        )}
 
         {paused && !pauseOverlay && (
           <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 rounded-full bg-zinc-900 dark:bg-zinc-50 text-white dark:text-black text-sm font-medium px-4 py-2 shadow-lg">
@@ -821,6 +1120,80 @@ function QuizApp() {
             </div>
           </div>
         )}
+      </div>
+    );
+  }
+
+  if (phase === "notes") {
+    return (
+      <div className="min-h-screen bg-zinc-50 dark:bg-black px-4 py-10">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="flex items-center justify-between">
+            <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
+              My Notes
+            </h1>
+            <button
+              onClick={() => setPhase("start")}
+              className="rounded-full border border-zinc-300 dark:border-zinc-700 px-4 py-1.5 text-sm text-zinc-900 dark:text-zinc-50"
+            >
+              Back
+            </button>
+          </div>
+
+          {notesBySet.length === 0 ? (
+            <p className="text-zinc-500 dark:text-zinc-400">No notes yet.</p>
+          ) : (
+            notesBySet.map(({ setName, items }) => (
+              <div key={setName} className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 dark:text-zinc-500">
+                  {setName} · {items.length}
+                </p>
+                {items.map(({ question: q, note }) => (
+                  <div
+                    key={`${setName}-${q.id}`}
+                    className="bg-white dark:bg-zinc-900 rounded-xl shadow p-5"
+                  >
+                    <div className="flex items-start justify-between gap-3 mb-2">
+                      <p className="font-medium text-zinc-900 dark:text-zinc-50">
+                        {q.id}. {q.question}
+                      </p>
+                      <button
+                        onClick={() => {
+                          if (confirm("Delete this note?")) updateNote(setName, q.id, "");
+                        }}
+                        className="shrink-0 text-zinc-400 hover:text-red-600"
+                        aria-label="Delete note"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <div className="text-sm space-y-1">
+                      {(Object.keys(q.options) as OptionKey[]).map((key) => {
+                        const isRightAnswer = q.correctAnswer === key;
+                        return (
+                          <p
+                            key={key}
+                            className={
+                              isRightAnswer
+                                ? "text-green-600 font-semibold"
+                                : "text-zinc-600 dark:text-zinc-400"
+                            }
+                          >
+                            ({key}) {q.options[key]}
+                            {isRightAnswer && " ✓"}
+                          </p>
+                        );
+                      })}
+                    </div>
+                    <p className="mt-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 px-3 py-2 text-sm text-zinc-700 dark:text-zinc-300 whitespace-pre-wrap">
+                      <span className="font-medium">Note:</span> {note}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ))
+          )}
+        </div>
       </div>
     );
   }
@@ -887,6 +1260,11 @@ function QuizApp() {
                       );
                     })}
                   </div>
+                  {notes[noteKey(setName, q.id)] && (
+                    <p className="mt-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 px-3 py-2 text-sm text-zinc-700 dark:text-zinc-300 whitespace-pre-wrap">
+                      <span className="font-medium">Note:</span> {notes[noteKey(setName, q.id)]}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
@@ -947,6 +1325,11 @@ function QuizApp() {
                   })}
                   {!a && <p className="text-zinc-400 italic">Not answered</p>}
                 </div>
+                {notes[noteKey(selectedSetName, q.id)] && (
+                  <p className="mt-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 px-3 py-2 text-sm text-zinc-700 dark:text-zinc-300 whitespace-pre-wrap">
+                    <span className="font-medium">Note:</span> {notes[noteKey(selectedSetName, q.id)]}
+                  </p>
+                )}
               </div>
             );
           })}
